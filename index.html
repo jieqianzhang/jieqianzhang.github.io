@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Search Ranks of Presidential Candidates</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <style>
+
+
+    body {
+    font-size: 12px;
+    font-family: 'Abel', sans-serif;
+    }
+
+    .x.axis path,.x.axis line {
+    fill: none;
+    stroke: none;
+    }
+
+    .y.axis path {
+    fill: none;
+    }
+
+    .y.axis line {
+    fill: none;
+    stroke: #eeeeee;
+    shape-rendering: crispEdges;
+    }
+
+    .x.axis text, .y.axis text{
+      font-size: 10px;
+      fill:grey;
+    }
+
+    #title, .explain{
+      text-indent: 15px;
+    }
+
+    #credit{
+      color:grey;
+      text-indent: 20px;
+      line-height: 30px;
+    }
+
+
+    a:hover{
+      cursor:pointer;
+    }
+
+
+
+    </style>
+  </head>
+
+<body>
+
+<h1 id="title">Weekly Rankings of Presidential Candidates on Google Search</h1>
+<h5 id="credit">By <a href="https://twitter.com/Jieqian_Zhang">@Jieqian_Zhang</a></h5>
+<p class="explain"> · Click on a candidate's name in dropdown menus to see the search interest ranking of him/her among all candidates on Google over the past six months.</p>
+<p class="explain"> · Hover over a candidate's name tag to see the search interest trend of him/her. </p>
+<p class="explain"> · Click on the Replay Button to replay the race.</p>
+
+<div class="bs-example">
+    <ul class="nav nav-pills" role="tablist">
+      <li role="presentation" class="dropdown">
+        <a id="drop4" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Democrats
+          <span class="caret"></span>
+        </a>
+        <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4">
+          <li id="democrats"><a data-target="#">All Democrats</a></li>
+          <li role="separator" class="divider"></li>
+          <li id="a"><a data-target="#">Hillary Clinton</a></li>
+          <li id="b"><a data-target="#">Bernie Sanders</a></li>
+          <li id="c"><a data-target="#">Martin O'Malley</a></li>
+          <li id="d"><a data-target="#">Lincoln Chafee</a></li>
+          <li id="e"><a data-target="#">Jim Webb</a></li>        
+        </ul>
+      </li>
+
+      <li role="presentation" class="dropdown">
+        <a id="drop5" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Republicans
+          <span class="caret"></span>
+        </a>
+        <ul id="menu2" class="dropdown-menu" aria-labelledby="drop5">
+          <li id="republicans"><a data-target="#">All Republicans</a></li>
+           <li role="separator" class="divider"></li>
+          <li id="f"><a data-target="#">Donald Trump</a></li>
+          <li id="g"><a data-target="#">Jeb Bush</a></li>
+          <li id="h"><a data-target="#">Rand Paul</a></li>
+          <li id="i"><a data-target="#">Ben Carson</a></li>
+          <li id="j"><a data-target="#">Marco Rubio</a></li>
+          <li id="k"><a data-target="#">Chris Christie</a></li>
+          <li id="l"><a data-target="#">Lindsey Graham</a></li>
+          <li id="m"><a data-target="#">Rick Perry</a></li>
+          <li id="n"><a data-target="#">Ted Cruz</a></li>
+          <li id="o"><a data-target="#">Carly Fiorina</a></li>
+          <li id="p"><a data-target="#">Rick Santorum</a></li>
+          <li id="q"><a data-target="#">Mike Huckabee</a></li>
+          <li id="r"><a data-target="#">Bobby Jindal</a></li>
+          <li id="s"><a data-target="#">John Kasich</a></li>
+          <li id="t"><a data-target="#">George Pataki</a></li>         
+        </ul>
+      </li>
+      <li role="presentation" class="active" id="replay"><a data-target="#">Replay Race</a></li>
+    </ul> 
+  </div> 
+
+<div id="graphic"></div>
+
+
+<script>
+
+
+
+
+function drawGraphic(){
+
+
+var margin = {top: 70, right: 120, bottom: 0, left: 30},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var speed = 600;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.ordinal()
+    .rangeRoundBands([height, 0], .1);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .tickSize(0)
+    .orient("top");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .tickSize(-width)
+    .tickPadding(10)
+    .orient("left");
+
+var line = d3.svg.line()
+    .x(function(d) { return x(d.week); })
+    .y(function(d) { return y(d.position) + y.rangeBand()/2; });
+
+var svg = d3.select('#graphic').append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    // .call(responsivefy)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var clip = svg.append("clipPath")
+  .attr("id", "clip")
+  .append("rect")
+    .attr("width", 0)
+    .attr("height", height);
+
+d3.json("data.json", function(error, data) { 
+  
+  y.domain(d3.range(1,d3.max(data.standing, function(candidate) { return d3.max(candidate.rank, function(d) { return d.position; }); }) + 1 ).reverse());
+  xAxis.tickValues(data.standing[0].rank.map(function(d) { return d.week; }));
+  x.domain(d3.extent(data.standing[0].rank.map(function(d) { return d.week; })));
+
+  var tickLabels = ["Dec 28, 2014","Jan 4, 2015","Jan 11, 2015","Jan 18, 2015","Jan 25, 2015","Feb 1,2015","Feb 8, 2015","Feb 15, 2015","Feb 22, 2015","Mar 1, 2015","Mar 8, 2015","Mar 15, 2015","Mar 22, 2015","Mar 29, 2015","Apr 5, 2015","Apr 12, 2015","Apr 19, 2015","Apr 26, 2015","May 3, 2015","May 10, 2015","May 17, 2015","May 24, 2015","May 31, 2015","Jun 7, 2015","Jun 14, 2015"];
+
+  xAxis.tickFormat(function(d,i){
+    return tickLabels[i]
+  });
+  
+  svg.append("g")
+  .attr("class", "y axis")
+    .call(yAxis);
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform","translate(0,0)")
+    .call(xAxis)
+    .selectAll("text")
+    .style("text-anchor","start")
+    .attr("dx", "0em")
+    .attr("dy", "0em") 
+    .attr("transform",function(d){
+      return "rotate(-60)"});
+
+  var candidate = svg.selectAll(".candidate")
+      .data(data.standing)
+    .enter().append("g")
+      .attr("class", "candidate");
+
+  var path = candidate.append("path")
+      .attr("class", "line")
+      .style("stroke", function(d) { return d.color; })
+      .style("stroke-width", 1.5)
+      .style("fill","none")
+      .attr("clip-path", function(d) { return "url(#clip)"; })
+      .attr("d", function(d) { return line(d.rank); });
+
+  var circleStart = candidate.append("circle")
+      .attr("cx", function(d) { return x(d.rank[0].week); })
+      .attr("cy", function(d) { return y(d.rank[0].position) + y.rangeBand()/2; })
+      .style("fill", function(d) { return d.color; })
+      .attr("r", 2)
+
+  var circleEnd = candidate.append("circle")
+      .attr("cx", function(d) { return x(d.rank[0].week); })
+      .attr("cy", function(d) { return y(d.rank[0].position) + y.rangeBand()/2; })
+      .style("fill", function(d) { return d.color; })
+      .attr("r", 2);
+
+
+  var round = candidate.append("circle")
+      .attr("transform", function(d) { return "translate(" + (x(d.rank[0].week) + 13) + "," + (y(d.rank[0].position) + y.rangeBand()/2) + ")"; })
+      .attr("x", 8)
+      .attr("y",0)
+      .attr("r", 10)
+      .on("mouseover", function (d) {
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+      })
+      .on("mouseout", function (d) { candidate.style("opacity",1); })
+      .style("fill", function(d) { return d.color; });
+
+
+
+  var ranking = candidate.append("text")
+      .attr("transform", function(d) { return "translate(" + (x(d.rank[0].week) + 7) + "," + (y(d.rank[0].position) + y.rangeBand()/2) + ")"; })
+      .attr("x", 8)
+      .attr("dy", ".31em")
+      .attr("text-anchor","middle")
+      .on("mouseover", function (d) {
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+      })
+      .on("mouseout", function (d) { candidate.style("opacity",1); })
+      .style("cursor","pointer")
+      .style("fill", "#ffffff")
+      .style("font-weight", "bold")
+      .text(function(d) { return d.rank[0].position; });
+
+
+
+
+  var label = candidate.append("text")
+      .attr("transform", function(d) { return "translate(" + (x(d.rank[0].week) + 20) + "," + (y(d.rank[0].position) + y.rangeBand()/2) + ")"; })
+      .attr("x", 8)
+      .attr("dy", ".31em")
+      .on("mouseover", function (d) {
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+      })
+      .on("mouseout", function (d) { candidate.style("opacity",1); })
+      .style("cursor","pointer")
+      .style("fill", function(d) { return d.color; })
+      .style("font-weight", "bold")
+      .text(function(d) { return d.name; });
+
+  
+
+   
+  var week = 1;
+
+  var transition = d3.transition()
+    .duration(speed)
+    .each("start", function start() {
+
+      label.transition()
+        .duration(speed)
+        .ease('linear')
+      .attr("transform", function(d) { return "translate(" + (x(d.rank[week].week) + 20) + "," + (y(d.rank[week].position) + y.rangeBand()/2) + ")"; })
+      .text(function(d) { return  d.name; });
+
+      ranking.transition()
+        .duration(speed)
+        .ease('linear')
+        .attr("transform", function(d) { return "translate(" + (x(d.rank[week].week) + 7) + "," + (y(d.rank[week].position) + y.rangeBand()/2) + ")"; })
+      .text(function(d) { return  d.rank[week].position; });
+
+      round.transition()
+        .duration(speed)
+        .ease('linear')
+        .attr("transform", function(d) { return "translate(" + (x(d.rank[week].week) + 15) + "," + (y(d.rank[week].position) + y.rangeBand()/2) + ")"; });
+    
+
+  
+      circleEnd.transition()
+        .duration(speed)
+        .ease('linear')
+        .attr("cx", function(d) { return x(d.rank[week].week); })
+        .attr("cy", function(d) { return y(d.rank[week].position) + y.rangeBand()/2; });
+
+      clip.transition()
+        .duration(speed)
+        .ease('linear')
+        .attr("width", x(week+1))
+        .attr("height", height);
+      
+      week+=1;
+
+      if (week !== data.standing[0].rank.length) transition = transition.transition().each("start", start);
+
+    
+     
+    });
+
+
+  // how to combine those functions into 1? 
+
+  d3.select("#democrats")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.color === "#7183d3"; 
+
+        }).style("opacity",1);
+    });
+
+  d3.select("#republicans")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.color === "#e04575"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#a")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Hillary Clinton"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#b")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Bernie Sanders"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#c")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Martin O'Malley"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#d")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Lincoln Chafee"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#e")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Jim Webb"; 
+
+        }).style("opacity",1);
+    });
+    
+    d3.select("#f")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Donald Trump"; 
+        }).style("opacity",1);
+    });
+
+    d3.select("#g")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Jeb Bush"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#h")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Rand Paul"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#i")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Ben Carson"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#j")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Marco Rubio"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#k")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Chris Christie"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#l")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Lindsey Graham"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#m")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Rich Perry"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#n")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Ted Cruz"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#o")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Carly Fiorina"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#p")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Rich Santorum"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#q")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Mike Huckabee"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#r")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "Bobby Jindal"; 
+
+        }).style("opacity",1);
+    });
+
+    d3.select("#s")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "John Kasich"; 
+        }).style("opacity",1);
+    });
+
+    d3.select("#t")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === "George Pataki"; 
+        }).style("opacity",1);
+    });
+              
+
+    
+
+
+
+  // d3.select(this)
+  //   .on("click", function(){
+  //     candidate.style("opacity",0.1);
+  //     candidate.filter(function(path) {
+  //         return path.index === this.id; 
+  //       }).style("opacity",1);
+  //    }
+
+  
+        
+  //     };
+  //   })
+ 
+
+  
+
+      
+  
+
+});
+
+
+}
+  
+
+ 
+
+  </script>
+  </body>
+  <script>  
+  
+  drawGraphic();
+
+  d3.select("#replay")
+    .on("click", function(){
+      location.reload()
+    })
+
+
+
+  
+  
+    
+     
+
+
+
+
+  </script>
+ 
+  
+</html>

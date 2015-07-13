@@ -1,0 +1,2231 @@
+{
+    "candidateCaption": "presidential candidate", 
+    "standing": [
+        {
+            "name": "Jeb Bush",
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 1
+                }, 
+                {
+                    "week": 2, 
+                    "position": 4
+                }, 
+                {
+                    "week": 3, 
+                    "position": 5
+                }, 
+                {
+                    "week": 4, 
+                    "position": 7
+                }, 
+                {
+                    "week": 5, 
+                    "position": 4
+                }, 
+                {
+                    "week": 6, 
+                    "position": 6
+                }, 
+                {
+                    "week": 7, 
+                    "position": 5
+                }, 
+                {
+                    "week": 8, 
+                    "position": 4
+                }, 
+                {
+                    "week": 9, 
+                    "position": 4
+                }, 
+                {
+                    "week": 10, 
+                    "position": 5
+                }, 
+                {
+                    "week": 11, 
+                    "position": 5
+                }, 
+                {
+                    "week": 12, 
+                    "position": 6
+                }, 
+                {
+                    "week": 13, 
+                    "position": 5
+                }, 
+                {
+                    "week": 14, 
+                    "position": 7
+                }, 
+                {
+                    "week": 15, 
+                    "position": 4
+                }, 
+                {
+                    "week": 16, 
+                    "position": 5
+                }, 
+                {
+                    "week": 17, 
+                    "position": 6
+                }, 
+                {
+                    "week": 18, 
+                    "position": 6
+                }, 
+                {
+                    "week": 19, 
+                    "position": 9
+                }, 
+                {
+                    "week": 20, 
+                    "position": 2
+                }, 
+                {
+                    "week": 21, 
+                    "position": 4
+                }, 
+                {
+                    "week": 22, 
+                    "position": 9
+                }, 
+                {
+                    "week": 23, 
+                    "position": 9
+                }, 
+                {
+                    "week": 24, 
+                    "position": 4
+                }, 
+                {
+                    "week": 25, 
+                    "position": 2
+                }
+            ]
+        }, 
+        {
+            "name": "Hillary Clinton",
+            "color": "#7183d3", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 2
+                }, 
+                {
+                    "week": 2, 
+                    "position": 3
+                }, 
+                {
+                    "week": 3, 
+                    "position": 1
+                }, 
+                {
+                    "week": 4, 
+                    "position": 2
+                }, 
+                {
+                    "week": 5, 
+                    "position": 2
+                }, 
+                {
+                    "week": 6, 
+                    "position": 2
+                }, 
+                {
+                    "week": 7, 
+                    "position": 1
+                }, 
+                {
+                    "week": 8, 
+                    "position": 1
+                }, 
+                {
+                    "week": 9, 
+                    "position": 2
+                }, 
+                {
+                    "week": 10, 
+                    "position": 1
+                }, 
+                {
+                    "week": 11, 
+                    "position": 1
+                }, 
+                {
+                    "week": 12, 
+                    "position": 1
+                }, 
+                {
+                    "week": 13, 
+                    "position": 2
+                }, 
+                {
+                    "week": 14, 
+                    "position": 1
+                }, 
+                {
+                    "week": 15, 
+                    "position": 2
+                }, 
+                {
+                    "week": 16, 
+                    "position": 1
+                }, 
+                {
+                    "week": 17, 
+                    "position": 1
+                }, 
+                {
+                    "week": 18, 
+                    "position": 2
+                }, 
+                {
+                    "week": 19, 
+                    "position": 2
+                }, 
+                {
+                    "week": 20, 
+                    "position": 1
+                }, 
+                {
+                    "week": 21, 
+                    "position": 1
+                }, 
+                {
+                    "week": 22, 
+                    "position": 1
+                }, 
+                {
+                    "week": 23, 
+                    "position": 1
+                }, 
+                {
+                    "week": 24, 
+                    "position": 1
+                }, 
+                {
+                    "week": 25, 
+                    "position": 3
+                }
+            ]
+        }, 
+        {
+            "name": "Donald Trump",
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 3
+                }, 
+                {
+                    "week": 2, 
+                    "position": 2
+                }, 
+                {
+                    "week": 3, 
+                    "position": 2
+                }, 
+                {
+                    "week": 4, 
+                    "position": 1
+                }, 
+                {
+                    "week": 5, 
+                    "position": 1
+                }, 
+                {
+                    "week": 6, 
+                    "position": 4
+                }, 
+                {
+                    "week": 7, 
+                    "position": 4
+                }, 
+                {
+                    "week": 8, 
+                    "position": 2
+                }, 
+                {
+                    "week": 9, 
+                    "position": 3
+                }, 
+                {
+                    "week": 10, 
+                    "position": 4
+                }, 
+                {
+                    "week": 11, 
+                    "position": 2
+                }, 
+                {
+                    "week": 12, 
+                    "position": 2
+                }, 
+                {
+                    "week": 13, 
+                    "position": 3
+                }, 
+                {
+                    "week": 14, 
+                    "position": 3
+                }, 
+                {
+                    "week": 15, 
+                    "position": 6
+                }, 
+                {
+                    "week": 16, 
+                    "position": 6
+                }, 
+                {
+                    "week": 17, 
+                    "position": 7
+                }, 
+                {
+                    "week": 18, 
+                    "position": 3
+                }, 
+                {
+                    "week": 19, 
+                    "position": 6
+                }, 
+                {
+                    "week": 20, 
+                    "position": 7
+                }, 
+                {
+                    "week": 21, 
+                    "position": 7
+                }, 
+                {
+                    "week": 22, 
+                    "position": 7
+                }, 
+                {
+                    "week": 23, 
+                    "position": 8
+                }, 
+                {
+                    "week": 24, 
+                    "position": 7
+                }, 
+                {
+                    "week": 25, 
+                    "position": 1
+                }
+            ]
+        }, 
+        {
+            "name": "Ben Carson", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 4
+                }, 
+                {
+                    "week": 2, 
+                    "position": 6
+                }, 
+                {
+                    "week": 3, 
+                    "position": 6
+                }, 
+                {
+                    "week": 4, 
+                    "position": 6
+                }, 
+                {
+                    "week": 5, 
+                    "position": 5
+                }, 
+                {
+                    "week": 6, 
+                    "position": 7
+                }, 
+                {
+                    "week": 7, 
+                    "position": 3
+                }, 
+                {
+                    "week": 8, 
+                    "position": 5
+                }, 
+                {
+                    "week": 9, 
+                    "position": 5
+                }, 
+                {
+                    "week": 10, 
+                    "position": 2
+                }, 
+                {
+                    "week": 11, 
+                    "position": 3
+                }, 
+                {
+                    "week": 12, 
+                    "position": 5
+                }, 
+                {
+                    "week": 13, 
+                    "position": 7
+                }, 
+                {
+                    "week": 14, 
+                    "position": 8
+                }, 
+                {
+                    "week": 15, 
+                    "position": 7
+                }, 
+                {
+                    "week": 16, 
+                    "position": 7
+                }, 
+                {
+                    "week": 17, 
+                    "position": 9
+                }, 
+                {
+                    "week": 18, 
+                    "position": 8
+                }, 
+                {
+                    "week": 19, 
+                    "position": 1
+                }, 
+                {
+                    "week": 20, 
+                    "position": 4
+                }, 
+                {
+                    "week": 21, 
+                    "position": 5
+                }, 
+                {
+                    "week": 22, 
+                    "position": 5
+                }, 
+                {
+                    "week": 23, 
+                    "position": 10
+                }, 
+                {
+                    "week": 24, 
+                    "position": 9
+                }, 
+                {
+                    "week": 25, 
+                    "position": 6
+                }
+            ]
+        }, 
+        {
+            "name": "Ted Cruz", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 5
+                }, 
+                {
+                    "week": 2, 
+                    "position": 8
+                }, 
+                {
+                    "week": 3, 
+                    "position": 4
+                }, 
+                {
+                    "week": 4, 
+                    "position": 4
+                }, 
+                {
+                    "week": 5, 
+                    "position": 7
+                }, 
+                {
+                    "week": 6, 
+                    "position": 10
+                }, 
+                {
+                    "week": 7, 
+                    "position": 8
+                }, 
+                {
+                    "week": 8, 
+                    "position": 8
+                }, 
+                {
+                    "week": 9, 
+                    "position": 8
+                }, 
+                {
+                    "week": 10, 
+                    "position": 8
+                }, 
+                {
+                    "week": 11, 
+                    "position": 8
+                }, 
+                {
+                    "week": 12, 
+                    "position": 3
+                }, 
+                {
+                    "week": 13, 
+                    "position": 1
+                }, 
+                {
+                    "week": 14, 
+                    "position": 2
+                }, 
+                {
+                    "week": 15, 
+                    "position": 3
+                }, 
+                {
+                    "week": 16, 
+                    "position": 4
+                }, 
+                {
+                    "week": 17, 
+                    "position": 4
+                }, 
+                {
+                    "week": 18, 
+                    "position": 4
+                }, 
+                {
+                    "week": 19, 
+                    "position": 7
+                }, 
+                {
+                    "week": 20, 
+                    "position": 6
+                }, 
+                {
+                    "week": 21, 
+                    "position": 6
+                }, 
+                {
+                    "week": 22, 
+                    "position": 8
+                }, 
+                {
+                    "week": 23, 
+                    "position": 6
+                }, 
+                {
+                    "week": 24, 
+                    "position": 10
+                }, 
+                {
+                    "week": 25, 
+                    "position": 12
+                }
+            ]
+        }, 
+        {
+            "name": "Chris Christie", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 6
+                }, 
+                {
+                    "week": 2, 
+                    "position": 1
+                }, 
+                {
+                    "week": 3, 
+                    "position": 3
+                }, 
+                {
+                    "week": 4, 
+                    "position": 11
+                }, 
+                {
+                    "week": 5, 
+                    "position": 6
+                }, 
+                {
+                    "week": 6, 
+                    "position": 5
+                }, 
+                {
+                    "week": 7, 
+                    "position": 7
+                }, 
+                {
+                    "week": 8, 
+                    "position": 7
+                }, 
+                {
+                    "week": 9, 
+                    "position": 7
+                }, 
+                {
+                    "week": 10, 
+                    "position": 7
+                }, 
+                {
+                    "week": 11, 
+                    "position": 9
+                }, 
+                {
+                    "week": 12, 
+                    "position": 8
+                }, 
+                {
+                    "week": 13, 
+                    "position": 9
+                }, 
+                {
+                    "week": 14, 
+                    "position": 10
+                }, 
+                {
+                    "week": 15, 
+                    "position": 9
+                }, 
+                {
+                    "week": 16, 
+                    "position": 8
+                }, 
+                {
+                    "week": 17, 
+                    "position": 8
+                }, 
+                {
+                    "week": 18, 
+                    "position": 9
+                }, 
+                {
+                    "week": 19, 
+                    "position": 12
+                }, 
+                {
+                    "week": 20, 
+                    "position": 9
+                }, 
+                {
+                    "week": 21, 
+                    "position": 12
+                }, 
+                {
+                    "week": 22, 
+                    "position": 14
+                }, 
+                {
+                    "week": 23, 
+                    "position": 7
+                }, 
+                {
+                    "week": 24, 
+                    "position": 6
+                }, 
+                {
+                    "week": 25, 
+                    "position": 8
+                }
+            ]
+        }, 
+        {
+            "name": "Rand Paul", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 7
+                }, 
+                {
+                    "week": 2, 
+                    "position": 7
+                }, 
+                {
+                    "week": 3, 
+                    "position": 9
+                }, 
+                {
+                    "week": 4, 
+                    "position": 9
+                }, 
+                {
+                    "week": 5, 
+                    "position": 9
+                }, 
+                {
+                    "week": 6, 
+                    "position": 3
+                }, 
+                {
+                    "week": 7, 
+                    "position": 6
+                }, 
+                {
+                    "week": 8, 
+                    "position": 6
+                }, 
+                {
+                    "week": 9, 
+                    "position": 6
+                }, 
+                {
+                    "week": 10, 
+                    "position": 6
+                }, 
+                {
+                    "week": 11, 
+                    "position": 6
+                }, 
+                {
+                    "week": 12, 
+                    "position": 7
+                }, 
+                {
+                    "week": 13, 
+                    "position": 4
+                }, 
+                {
+                    "week": 14, 
+                    "position": 9
+                }, 
+                {
+                    "week": 15, 
+                    "position": 1
+                }, 
+                {
+                    "week": 16, 
+                    "position": 3
+                }, 
+                {
+                    "week": 17, 
+                    "position": 3
+                }, 
+                {
+                    "week": 18, 
+                    "position": 5
+                }, 
+                {
+                    "week": 19, 
+                    "position": 8
+                }, 
+                {
+                    "week": 20, 
+                    "position": 8
+                }, 
+                {
+                    "week": 21, 
+                    "position": 3
+                }, 
+                {
+                    "week": 22, 
+                    "position": 4
+                }, 
+                {
+                    "week": 23, 
+                    "position": 3
+                }, 
+                {
+                    "week": 24, 
+                    "position": 8
+                }, 
+                {
+                    "week": 25, 
+                    "position": 5
+                }
+            ]
+        }, 
+        {
+            "name": "Marco Rubio", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 8
+                }, 
+                {
+                    "week": 2, 
+                    "position": 11
+                }, 
+                {
+                    "week": 3, 
+                    "position": 7
+                }, 
+                {
+                    "week": 4, 
+                    "position": 8
+                }, 
+                {
+                    "week": 5, 
+                    "position": 10
+                }, 
+                {
+                    "week": 6, 
+                    "position": 11
+                }, 
+                {
+                    "week": 7, 
+                    "position": 13
+                }, 
+                {
+                    "week": 8, 
+                    "position": 10
+                }, 
+                {
+                    "week": 9, 
+                    "position": 10
+                }, 
+                {
+                    "week": 10, 
+                    "position": 9
+                }, 
+                {
+                    "week": 11, 
+                    "position": 10
+                }, 
+                {
+                    "week": 12, 
+                    "position": 9
+                }, 
+                {
+                    "week": 13, 
+                    "position": 8
+                }, 
+                {
+                    "week": 14, 
+                    "position": 6
+                }, 
+                {
+                    "week": 15, 
+                    "position": 8
+                }, 
+                {
+                    "week": 16, 
+                    "position": 2
+                }, 
+                {
+                    "week": 17, 
+                    "position": 2
+                }, 
+                {
+                    "week": 18, 
+                    "position": 7
+                }, 
+                {
+                    "week": 19, 
+                    "position": 11
+                }, 
+                {
+                    "week": 20, 
+                    "position": 5
+                }, 
+                {
+                    "week": 21, 
+                    "position": 8
+                }, 
+                {
+                    "week": 22, 
+                    "position": 11
+                }, 
+                {
+                    "week": 23, 
+                    "position": 11
+                }, 
+                {
+                    "week": 24, 
+                    "position": 3
+                }, 
+                {
+                    "week": 25, 
+                    "position": 7
+                }
+            ]
+        }, 
+        {
+            "name": "Scott Walker",
+            "color": "#e04575",  
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 9
+                }, 
+                {
+                    "week": 2, 
+                    "position": 9
+                }, 
+                {
+                    "week": 3, 
+                    "position": 10
+                }, 
+                {
+                    "week": 4, 
+                    "position": 10
+                }, 
+                {
+                    "week": 5, 
+                    "position": 3
+                }, 
+                {
+                    "week": 6, 
+                    "position": 1
+                }, 
+                {
+                    "week": 7, 
+                    "position": 2
+                }, 
+                {
+                    "week": 8, 
+                    "position": 3
+                }, 
+                {
+                    "week": 9, 
+                    "position": 2
+                }, 
+                {
+                    "week": 10, 
+                    "position": 3
+                }, 
+                {
+                    "week": 11, 
+                    "position": 4
+                }, 
+                {
+                    "week": 12, 
+                    "position": 4
+                }, 
+                {
+                    "week": 13, 
+                    "position": 6
+                }, 
+                {
+                    "week": 14, 
+                    "position": 5
+                }, 
+                {
+                    "week": 15, 
+                    "position": 5
+                }, 
+                {
+                    "week": 16, 
+                    "position": 9
+                }, 
+                {
+                    "week": 17, 
+                    "position": 5
+                }, 
+                {
+                    "week": 18, 
+                    "position": 10
+                }, 
+                {
+                    "week": 19, 
+                    "position": 10
+                }, 
+                {
+                    "week": 20, 
+                    "position": 11
+                }, 
+                {
+                    "week": 21, 
+                    "position": 10
+                }, 
+                {
+                    "week": 22, 
+                    "position": 13
+                }, 
+                {
+                    "week": 23, 
+                    "position": 12
+                }, 
+                {
+                    "week": 24, 
+                    "position": 11
+                }, 
+                {
+                    "week": 25, 
+                    "position": 11
+                }
+            ]
+        }, 
+        {
+            "name": "Bernie Sanders", 
+            "color": "#7183d3", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 10
+                }, 
+                {
+                    "week": 2, 
+                    "position": 13
+                }, 
+                {
+                    "week": 3, 
+                    "position": 12
+                }, 
+                {
+                    "week": 4, 
+                    "position": 14
+                }, 
+                {
+                    "week": 5, 
+                    "position": 13
+                }, 
+                {
+                    "week": 6, 
+                    "position": 14
+                }, 
+                {
+                    "week": 7, 
+                    "position": 11
+                }, 
+                {
+                    "week": 8, 
+                    "position": 11
+                }, 
+                {
+                    "week": 9, 
+                    "position": 14
+                }, 
+                {
+                    "week": 10, 
+                    "position": 11
+                }, 
+                {
+                    "week": 11, 
+                    "position": 11
+                }, 
+                {
+                    "week": 12, 
+                    "position": 12
+                }, 
+                {
+                    "week": 13, 
+                    "position": 10
+                }, 
+                {
+                    "week": 14, 
+                    "position": 11
+                }, 
+                {
+                    "week": 15, 
+                    "position": 11
+                }, 
+                {
+                    "week": 16, 
+                    "position": 11
+                }, 
+                {
+                    "week": 17, 
+                    "position": 12
+                }, 
+                {
+                    "week": 18, 
+                    "position": 1
+                }, 
+                {
+                    "week": 19, 
+                    "position": 3
+                }, 
+                {
+                    "week": 20, 
+                    "position": 3
+                }, 
+                {
+                    "week": 21, 
+                    "position": 2
+                }, 
+                {
+                    "week": 22, 
+                    "position": 2
+                }, 
+                {
+                    "week": 23, 
+                    "position": 2
+                }, 
+                {
+                    "week": 24, 
+                    "position": 2
+                }, 
+                {
+                    "week": 25, 
+                    "position": 4
+                }
+            ]
+        }, 
+        {
+            "name": "Rick Santorum", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 11
+                }, 
+                {
+                    "week": 2, 
+                    "position": 12
+                }, 
+                {
+                    "week": 3, 
+                    "position": 14
+                }, 
+                {
+                    "week": 4, 
+                    "position": 15
+                }, 
+                {
+                    "week": 5, 
+                    "position": 15
+                }, 
+                {
+                    "week": 6, 
+                    "position": 17
+                }, 
+                {
+                    "week": 7, 
+                    "position": 10
+                }, 
+                {
+                    "week": 8, 
+                    "position": 15
+                }, 
+                {
+                    "week": 9, 
+                    "position": 16
+                }, 
+                {
+                    "week": 10, 
+                    "position": 15
+                }, 
+                {
+                    "week": 11, 
+                    "position": 16
+                }, 
+                {
+                    "week": 12, 
+                    "position": 11
+                }, 
+                {
+                    "week": 13, 
+                    "position": 11
+                }, 
+                {
+                    "week": 14, 
+                    "position": 13
+                }, 
+                {
+                    "week": 15, 
+                    "position": 12
+                }, 
+                {
+                    "week": 16, 
+                    "position": 18
+                }, 
+                {
+                    "week": 17, 
+                    "position": 10
+                }, 
+                {
+                    "week": 18, 
+                    "position": 13
+                }, 
+                {
+                    "week": 19, 
+                    "position": 13
+                }, 
+                {
+                    "week": 20, 
+                    "position": 14
+                }, 
+                {
+                    "week": 21, 
+                    "position": 15
+                }, 
+                {
+                    "week": 22, 
+                    "position": 3
+                }, 
+                {
+                    "week": 23, 
+                    "position": 14
+                }, 
+                {
+                    "week": 24, 
+                    "position": 14
+                }, 
+                {
+                    "week": 25, 
+                    "position": 14
+                }
+            ]
+        }, 
+        {
+            "name": "Jim Webb", 
+            "color": "#7183d3", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 12
+                }, 
+                {
+                    "week": 2, 
+                    "position": 15
+                }, 
+                {
+                    "week": 3, 
+                    "position": 19
+                }, 
+                {
+                    "week": 4, 
+                    "position": 18
+                }, 
+                {
+                    "week": 5, 
+                    "position": 18
+                }, 
+                {
+                    "week": 6, 
+                    "position": 19
+                }, 
+                {
+                    "week": 7, 
+                    "position": 18
+                }, 
+                {
+                    "week": 8, 
+                    "position": 18
+                }, 
+                {
+                    "week": 9, 
+                    "position": 15
+                }, 
+                {
+                    "week": 10, 
+                    "position": 18
+                }, 
+                {
+                    "week": 11, 
+                    "position": 14
+                }, 
+                {
+                    "week": 12, 
+                    "position": 15
+                }, 
+                {
+                    "week": 13, 
+                    "position": 16
+                }, 
+                {
+                    "week": 14, 
+                    "position": 19
+                }, 
+                {
+                    "week": 15, 
+                    "position": 18
+                }, 
+                {
+                    "week": 16, 
+                    "position": 15
+                }, 
+                {
+                    "week": 17, 
+                    "position": 17
+                }, 
+                {
+                    "week": 18,
+                    "position": 15
+                }, 
+                {
+                    "week": 19, 
+                    "position": 16
+                }, 
+                {
+                    "week": 20, 
+                    "position": 17
+                }, 
+                {
+                    "week": 21, 
+                    "position": 19
+                }, 
+                {
+                    "week": 22, 
+                    "position": 20
+                }, 
+                {
+                    "week": 23, 
+                    "position": 21
+                }, 
+                {
+                    "week": 24, 
+                    "position": 20
+                }, 
+                {
+                    "week": 25, 
+                    "position": 21
+                }
+            ]
+        }, 
+        {
+            "name": "Rick Perry", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 13
+                }, 
+                {
+                    "week": 2, 
+                    "position": 10
+                }, 
+                {
+                    "week": 3, 
+                    "position": 11
+                }, 
+                {
+                    "week": 4, 
+                    "position": 12
+                }, 
+                {
+                    "week": 5, 
+                    "position": 11
+                }, 
+                {
+                    "week": 6, 
+                    "position": 13
+                }, 
+                {
+                    "week": 7, 
+                    "position": 14
+                }, 
+                {
+                    "week": 8, 
+                    "position": 12
+                }, 
+                {
+                    "week": 9, 
+                    "position": 12
+                }, 
+                {
+                    "week": 10, 
+                    "position": 12
+                }, 
+                {
+                    "week": 11, 
+                    "position": 15
+                }, 
+                {
+                    "week": 12, 
+                    "position": 17
+                }, 
+                {
+                    "week": 13, 
+                    "position": 15
+                }, 
+                {
+                    "week": 14, 
+                    "position": 14
+                }, 
+                {
+                    "week": 15, 
+                    "position": 15
+                }, 
+                {
+                    "week": 16, 
+                    "position": 16
+                }, 
+                {
+                    "week": 17, 
+                    "position": 18
+                }, 
+                {
+                    "week": 18, 
+                    "position": 18
+                }, 
+                {
+                    "week": 19, 
+                    "position": 14
+                }, 
+                {
+                    "week": 20, 
+                    "position": 13
+                }, 
+                {
+                    "week": 21, 
+                    "position": 16
+                }, 
+                {
+                    "week": 22, 
+                    "position": 18
+                }, 
+                {
+                    "week": 23, 
+                    "position": 5
+                }, 
+                {
+                    "week": 24, 
+                    "position": 12
+                }, 
+                {
+                    "week": 25, 
+                    "position": 10
+                }
+            ]
+        }, 
+        {
+            "name": "George Pataki", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 14
+                }, 
+                {
+                    "week": 2, 
+                    "position": 19
+                }, 
+                {
+                    "week": 3, 
+                    "position": 18
+                }, 
+                {
+                    "week": 4, 
+                    "position": 20
+                }, 
+                {
+                    "week": 5, 
+                    "position": 19
+                }, 
+                {
+                    "week": 6, 
+                    "position": 16
+                }, 
+                {
+                    "week": 7, 
+                    "position": 19
+                }, 
+                {
+                    "week": 8, 
+                    "position": 19
+                }, 
+                {
+                    "week": 9, 
+                    "position": 19
+                }, 
+                {
+                    "week": 10, 
+                    "position": 20
+                }, 
+                {
+                    "week": 11, 
+                    "position": 20
+                }, 
+                {
+                    "week": 12, 
+                    "position": 20
+                }, 
+                {
+                    "week": 13, 
+                    "position": 20
+                }, 
+                {
+                    "week": 14, 
+                    "position": 20
+                }, 
+                {
+                    "week": 15, 
+                    "position": 21
+                }, 
+                {
+                    "week": 16, 
+                    "position": 21
+                }, 
+                {
+                    "week": 17, 
+                    "position": 21
+                }, 
+                {
+                    "week": 18, 
+                    "position": 21
+                }, 
+                {
+                    "week": 19, 
+                    "position": 21
+                }, 
+                {
+                    "week": 20, 
+                    "position": 16
+                }, 
+                {
+                    "week": 21, 
+                    "position": 18
+                }, 
+                {
+                    "week": 22, 
+                    "position": 6
+                }, 
+                {
+                    "week": 23, 
+                    "position": 19
+                }, 
+                {
+                    "week": 24, 
+                    "position": 19
+                }, 
+                {
+                    "week": 25, 
+                    "position": 19
+                }
+            ]
+        }, 
+        {
+            "name": "Carly Fiorina", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 15
+                }, 
+                {
+                    "week": 2, 
+                    "position": 14
+                }, 
+                {
+                    "week": 3, 
+                    "position": 13
+                }, 
+                {
+                    "week": 4, 
+                    "position": 17
+                }, 
+                {
+                    "week": 5, 
+                    "position": 17
+                }, 
+                {
+                    "week": 6, 
+                    "position": 12
+                }, 
+                {
+                    "week": 7, 
+                    "position": 17
+                }, 
+                {
+                    "week": 8, 
+                    "position": 13
+                }, 
+                {
+                    "week": 9, 
+                    "position": 9
+                }, 
+                {
+                    "week": 10, 
+                    "position": 14
+                }, 
+                {
+                    "week": 11, 
+                    "position": 13
+                }, 
+                {
+                    "week": 12, 
+                    "position": 14
+                }, 
+                {
+                    "week": 13, 
+                    "position": 17
+                }, 
+                {
+                    "week": 14, 
+                    "position": 4
+                }, 
+                {
+                    "week": 15, 
+                    "position": 10
+                }, 
+                {
+                    "week": 16, 
+                    "position": 10
+                }, 
+                {
+                    "week": 17, 
+                    "position": 11
+                }, 
+                {
+                    "week": 18, 
+                    "position": 11
+                }, 
+                {
+                    "week": 19, 
+                    "position": 4
+                }, 
+                {
+                    "week": 20, 
+                    "position": 10
+                }, 
+                {
+                    "week": 21, 
+                    "position": 14
+                }, 
+                {
+                    "week": 22, 
+                    "position": 12
+                }, 
+                {
+                    "week": 23, 
+                    "position": 16
+                }, 
+                {
+                    "week": 24, 
+                    "position": 13
+                }, 
+                {
+                    "week": 25, 
+                    "position": 13
+                }
+            ]
+        }, 
+        {
+            "name": "Mike Huckabee", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 16
+                }, 
+                {
+                    "week": 2, 
+                    "position": 5
+                }, 
+                {
+                    "week": 3, 
+                    "position": 8
+                }, 
+                {
+                    "week": 4, 
+                    "position": 3
+                }, 
+                {
+                    "week": 5, 
+                    "position": 8
+                }, 
+                {
+                    "week": 6, 
+                    "position": 8
+                }, 
+                {
+                    "week": 7, 
+                    "position": 12
+                }, 
+                {
+                    "week": 8, 
+                    "position": 9
+                }, 
+                {
+                    "week": 9, 
+                    "position": 13
+                }, 
+                {
+                    "week": 10, 
+                    "position": 10
+                }, 
+                {
+                    "week": 11, 
+                    "position": 12
+                }, 
+                {
+                    "week": 12, 
+                    "position": 10
+                }, 
+                {
+                    "week": 13, 
+                    "position": 13
+                }, 
+                {
+                    "week": 14, 
+                    "position": 12
+                }, 
+                {
+                    "week": 15, 
+                    "position": 14
+                }, 
+                {
+                    "week": 16, 
+                    "position": 12
+                }, 
+                {
+                    "week": 17, 
+                    "position": 16
+                }, 
+                {
+                    "week": 18, 
+                    "position": 12
+                }, 
+                {
+                    "week": 19, 
+                    "position": 5
+                }, 
+                {
+                    "week": 20, 
+                    "position": 12
+                }, 
+                {
+                    "week": 21, 
+                    "position": 9
+                }, 
+                {
+                    "week": 22, 
+                    "position": 10
+                }, 
+                {
+                    "week": 23, 
+                    "position": 13
+                }, 
+                {
+                    "week": 24, 
+                    "position": 15
+                }, 
+                {
+                    "week": 25, 
+                    "position": 16
+                }
+            ]
+        }, 
+        {
+            "name": "John Kasich",
+            "color": "#e04575",  
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 17
+                }, 
+                {
+                    "week": 2, 
+                    "position": 17
+                }, 
+                {
+                    "week": 3, 
+                    "position": 16
+                }, 
+                {
+                    "week": 4, 
+                    "position": 16
+                }, 
+                {
+                    "week": 5, 
+                    "position": 16
+                }, 
+                {
+                    "week": 6, 
+                    "position": 18
+                }, 
+                {
+                    "week": 7, 
+                    "position": 16
+                }, 
+                {
+                    "week": 8, 
+                    "position": 16
+                }, 
+                {
+                    "week": 9, 
+                    "position": 18
+                }, 
+                {
+                    "week": 10, 
+                    "position": 17
+                }, 
+                {
+                    "week": 11, 
+                    "position": 19
+                }, 
+                {
+                    "week": 12, 
+                    "position": 18
+                }, 
+                {
+                    "week": 13, 
+                    "position": 14
+                }, 
+                {
+                    "week": 14, 
+                    "position": 17
+                }, 
+                {
+                    "week": 15, 
+                    "position": 19
+                }, 
+                {
+                    "week": 16, 
+                    "position": 20
+                }, 
+                {
+                    "week": 17, 
+                    "position": 15
+                }, 
+                {
+                    "week": 18, 
+                    "position": 16
+                }, 
+                {
+                    "week": 19, 
+                    "position": 17
+                }, 
+                {
+                    "week": 20, 
+                    "position": 18
+                }, 
+                {
+                    "week": 21, 
+                    "position": 17
+                }, 
+                {
+                    "week": 22, 
+                    "position": 19
+                }, 
+                {
+                    "week": 23, 
+                    "position": 20
+                }, 
+                {
+                    "week": 24, 
+                    "position": 17
+                }, 
+                {
+                    "week": 25, 
+                    "position": 18
+                }
+            ]
+        }, 
+        {
+            "name": "Martin O'Malley", 
+            "color": "#7183d3", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 18
+                }, 
+                {
+                    "week": 2, 
+                    "position": 20
+                }, 
+                {
+                    "week": 3, 
+                    "position": 21
+                }, 
+                {
+                    "week": 4, 
+                    "position": 19
+                }, 
+                {
+                    "week": 5, 
+                    "position": 20
+                }, 
+                {
+                    "week": 6, 
+                    "position": 20
+                }, 
+                {
+                    "week": 7, 
+                    "position": 20
+                }, 
+                {
+                    "week": 8, 
+                    "position": 20
+                }, 
+                {
+                    "week": 9, 
+                    "position": 20
+                }, 
+                {
+                    "week": 10, 
+                    "position": 19
+                }, 
+                {
+                    "week": 11, 
+                    "position": 18
+                }, 
+                {
+                    "week": 12, 
+                    "position": 19
+                }, 
+                {
+                    "week": 13, 
+                    "position": 19
+                }, 
+                {
+                    "week": 14, 
+                    "position": 18
+                }, 
+                {
+                    "week": 15, 
+                    "position": 20
+                }, 
+                {
+                    "week": 16, 
+                    "position": 17
+                }, 
+                {
+                    "week": 17, 
+                    "position": 19
+                }, 
+                {
+                    "week": 18, 
+                    "position": 14
+                }, 
+                {
+                    "week": 19, 
+                    "position": 19
+                }, 
+                {
+                    "week": 20, 
+                    "position": 21
+                }, 
+                {
+                    "week": 21, 
+                    "position": 20
+                }, 
+                {
+                    "week": 22, 
+                    "position": 16
+                }, 
+                {
+                    "week": 23, 
+                    "position": 17
+                }, 
+                {
+                    "week": 24, 
+                    "position": 21
+                }, 
+                {
+                    "week": 25, 
+                    "position": 15
+                }
+            ]
+        }, 
+        {
+            "name": "Bobby Jindal", 
+            "color": "#e04575", 
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 19
+                }, 
+                {
+                    "week": 2, 
+                    "position": 18
+                }, 
+                {
+                    "week": 3, 
+                    "position": 15
+                }, 
+                {
+                    "week": 4, 
+                    "position": 5
+                }, 
+                {
+                    "week": 5, 
+                    "position": 12
+                }, 
+                {
+                    "week": 6, 
+                    "position": 9
+                }, 
+                {
+                    "week": 7, 
+                    "position": 9
+                }, 
+                {
+                    "week": 8, 
+                    "position": 14
+                }, 
+                {
+                    "week": 9, 
+                    "position": 11
+                }, 
+                {
+                    "week": 10, 
+                    "position": 16
+                }, 
+                {
+                    "week": 11, 
+                    "position": 17
+                }, 
+                {
+                    "week": 12, 
+                    "position": 13
+                }, 
+                {
+                    "week": 13, 
+                    "position": 12
+                }, 
+                {
+                    "week": 14, 
+                    "position": 15
+                }, 
+                {
+                    "week": 15, 
+                    "position": 16
+                }, 
+                {
+                    "week": 16, 
+                    "position": 14
+                }, 
+                {
+                    "week": 17, 
+                    "position": 13
+                }, 
+                {
+                    "week": 18, 
+                    "position": 17
+                }, 
+                {
+                    "week": 19, 
+                    "position": 18
+                }, 
+                {
+                    "week": 20, 
+                    "position": 15
+                }, 
+                {
+                    "week": 21, 
+                    "position": 13
+                }, 
+                {
+                    "week": 22, 
+                    "position": 15
+                }, 
+                {
+                    "week": 23, 
+                    "position": 18
+                }, 
+                {
+                    "week": 24, 
+                    "position": 18
+                }, 
+                {
+                    "week": 25, 
+                    "position": 17
+                }
+            ]
+        }, 
+        {
+            "name": "Lindsey Graham",
+            "color": "#e04575",  
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 20
+                }, 
+                {
+                    "week": 2, 
+                    "position": 16
+                }, 
+                {
+                    "week": 3, 
+                    "position": 17
+                }, 
+                {
+                    "week": 4, 
+                    "position": 13
+                }, 
+                {
+                    "week": 5, 
+                    "position": 14
+                }, 
+                {
+                    "week": 6, 
+                    "position": 15
+                }, 
+                {
+                    "week": 7, 
+                    "position": 15
+                }, 
+                {
+                    "week": 8, 
+                    "position": 17
+                }, 
+                {
+                    "week": 9, 
+                    "position": 17
+                }, 
+                {
+                    "week": 10, 
+                    "position": 13
+                }, 
+                {
+                    "week": 11, 
+                    "position": 7
+                }, 
+                {
+                    "week": 12, 
+                    "position": 16
+                }, 
+                {
+                    "week": 13, 
+                    "position": 18
+                }, 
+                {
+                    "week": 14, 
+                    "position": 16
+                }, 
+                {
+                    "week": 15, 
+                    "position": 17
+                }, 
+                {
+                    "week": 16, 
+                    "position": 19
+                }, 
+                {
+                    "week": 17, 
+                    "position": 14
+                }, 
+                {
+                    "week": 18, 
+                    "position": 19
+                }, 
+                {
+                    "week": 19, 
+                    "position": 15
+                }, 
+                {
+                    "week": 20, 
+                    "position": 19
+                }, 
+                {
+                    "week": 21, 
+                    "position": 11
+                }, 
+                {
+                    "week": 22, 
+                    "position": 17
+                }, 
+                {
+                    "week": 23, 
+                    "position": 4
+                }, 
+                {
+                    "week": 24, 
+                    "position": 5
+                }, 
+                {
+                    "week": 25, 
+                    "position": 9
+                }
+            ]
+        },
+        {
+            "name": "Lincoln Chafee",
+            "color": "#7183d3",  
+            "rank": [
+                {
+                    "week": 1, 
+                    "position": 21
+                }, 
+                {
+                    "week": 2, 
+                    "position": 21
+                }, 
+                {
+                    "week": 3, 
+                    "position": 20
+                }, 
+                {
+                    "week": 4, 
+                    "position": 21
+                }, 
+                {
+                    "week": 5, 
+                    "position": 21
+                }, 
+                {
+                    "week": 6, 
+                    "position": 21
+                }, 
+                {
+                    "week": 7, 
+                    "position": 21
+                }, 
+                {
+                    "week": 8, 
+                    "position": 21
+                }, 
+                {
+                    "week": 9, 
+                    "position": 21
+                }, 
+                {
+                    "week": 10, 
+                    "position": 21
+                }, 
+                {
+                    "week": 11, 
+                    "position": 21
+                }, 
+                {
+                    "week": 12, 
+                    "position": 21
+                }, 
+                {
+                    "week": 13, 
+                    "position": 21
+                }, 
+                {
+                    "week": 14, 
+                    "position": 21
+                }, 
+                {
+                    "week": 15, 
+                    "position": 13
+                }, 
+                {
+                    "week": 16, 
+                    "position": 13
+                }, 
+                {
+                    "week": 17, 
+                    "position": 20
+                }, 
+                {
+                    "week": 18, 
+                    "position": 20
+                }, 
+                {
+                    "week": 19, 
+                    "position": 20
+                }, 
+                {
+                    "week": 20, 
+                    "position": 20
+                }, 
+                {
+                    "week": 21, 
+                    "position": 21
+                }, 
+                {
+                    "week": 22, 
+                    "position": 21
+                }, 
+                {
+                    "week": 23, 
+                    "position": 15
+                }, 
+                {
+                    "week": 24, 
+                    "position": 16
+                }, 
+                {
+                    "week": 25, 
+                    "position": 20
+                }
+            ]
+        }
+    ]
+}
