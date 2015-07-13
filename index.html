@@ -49,6 +49,11 @@
       line-height: 30px;
     }
 
+    #source{
+      text-indent: 10px;
+      color:grey;
+    }
+
 
     a:hover{
       cursor:pointer;
@@ -127,7 +132,7 @@ function drawGraphic(){
 
 var margin = {top: 70, right: 120, bottom: 0, left: 30},
     width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 600 - margin.top - margin.bottom;
 
 var speed = 600;
 
@@ -543,6 +548,8 @@ d3.json("data.json", function(error, data) {
  
 
   </script>
+  <p id="source">Data source: <a href="http://googletrends.github.io">Google Trends</a></p>
+
   </body>
   <script>  
   
