@@ -10,18 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <style>
 
 
     body {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 30px;
-    }
-
-    li{
-    margin-left: 30px;
+    font-family: 'Abel', sans-serif;
     }
 
     .x.axis path,.x.axis line {
@@ -48,15 +43,12 @@
       text-indent: 15px;
     }
 
-    #graphic{
-      margin-left: 30px;
-    }
-
     #credit{
       color:grey;
       text-indent: 20px;
       line-height: 30px;
     }
+
 
     a:hover{
       cursor:pointer;
@@ -69,27 +61,27 @@
 
 <body>
 
-<!-- <h1 id="title">Weekly Rankings of Presidential Candidates on Google Search</h1>
+<h1 id="title">Weekly Rankings of Presidential Candidates on Google Search</h1>
 <h5 id="credit">By <a href="https://twitter.com/Jieqian_Zhang">@Jieqian_Zhang</a></h5>
 <p class="explain"> · Click on a candidate's name in dropdown menus to see the search interest ranking of him/her among all candidates on Google over the past six months.</p>
 <p class="explain"> · Hover over a candidate's name tag to see the search interest trend of him/her. </p>
-<p class="explain"> · Click on the Replay Button to replay the race.</p> -->
+<p class="explain"> · Click on the Replay Button to replay the race.</p>
 
 <div class="bs-example">
     <ul class="nav nav-pills" role="tablist">
-      <!-- <li role="presentation" class="dropdown">
+      <li role="presentation" class="dropdown">
         <a id="drop4" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Democrats
           <span class="caret"></span>
-        </a> -->
-        <!-- <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4">
+        </a>
+        <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4">
           <li id="democrats"><a data-target="#">All Democrats</a></li>
           <li role="separator" class="divider"></li>
-          <li id="a"><a data-target="#">Hillary Clinton</a></li>
-          <li id="b"><a data-target="#">Bernie Sanders</a></li>
-          <li id="c"><a data-target="#">Martin O'Malley</a></li>
-          <li id="d"><a data-target="#">Lincoln Chafee</a></li>
-          <li id="e"><a data-target="#">Jim Webb</a></li>        
+          <li class="candidatename"><a data-target="#">Hillary Clinton</a></li>
+          <li class="candidatename"><a data-target="#">Bernie Sanders</a></li>
+          <li class="candidatename"><a data-target="#">Martin O'Malley</a></li>
+          <li class="candidatename"><a data-target="#">Lincoln Chafee</a></li>
+          <li class="candidatename"><a data-target="#">Jim Webb</a></li>        
         </ul>
       </li>
 
@@ -101,23 +93,23 @@
         <ul id="menu2" class="dropdown-menu" aria-labelledby="drop5">
           <li id="republicans"><a data-target="#">All Republicans</a></li>
            <li role="separator" class="divider"></li>
-          <li id="f"><a data-target="#">Donald Trump</a></li>
-          <li id="g"><a data-target="#">Jeb Bush</a></li>
-          <li id="h"><a data-target="#">Rand Paul</a></li>
-          <li id="i"><a data-target="#">Ben Carson</a></li>
-          <li id="j"><a data-target="#">Marco Rubio</a></li>
-          <li id="k"><a data-target="#">Chris Christie</a></li>
-          <li id="l"><a data-target="#">Lindsey Graham</a></li>
-          <li id="m"><a data-target="#">Rick Perry</a></li>
-          <li id="n"><a data-target="#">Ted Cruz</a></li>
-          <li id="o"><a data-target="#">Carly Fiorina</a></li>
-          <li id="p"><a data-target="#">Rick Santorum</a></li>
-          <li id="q"><a data-target="#">Mike Huckabee</a></li>
-          <li id="r"><a data-target="#">Bobby Jindal</a></li>
-          <li id="s"><a data-target="#">John Kasich</a></li>
-          <li id="t"><a data-target="#">George Pataki</a></li>         
+          <li class="candidatename"><a data-target="#">Donald Trump</a></li>
+          <li class="candidatename"><a data-target="#">Jeb Bush</a></li>
+          <li class="candidatename"><a data-target="#">Rand Paul</a></li>
+          <li class="candidatename"><a data-target="#">Ben Carson</a></li>
+          <li class="candidatename"><a data-target="#">Marco Rubio</a></li>
+          <li class="candidatename"><a data-target="#">Chris Christie</a></li>
+          <li class="candidatename"><a data-target="#">Lindsey Graham</a></li>
+          <li class="candidatename"><a data-target="#">Rick Perry</a></li>
+          <li class="candidatename"><a data-target="#">Ted Cruz</a></li>
+          <li class="candidatename"><a data-target="#">Carly Fiorina</a></li>
+          <li class="candidatename"><a data-target="#">Rick Santorum</a></li>
+          <li class="candidatename"><a data-target="#">Mike Huckabee</a></li>
+          <li class="candidatename"><a data-target="#">Bobby Jindal</a></li>
+          <li class="candidatename"><a data-target="#">John Kasich</a></li>
+          <li class="candidatename"><a data-target="#">George Pataki</a></li>         
         </ul>
-      </li> -->
+      </li>
       <li role="presentation" class="active" id="replay"><a data-target="#">Replay Race</a></li>
     </ul> 
   </div> 
@@ -133,9 +125,9 @@
 function drawGraphic(){
 
 
-var margin = {top: 0, right: 160, bottom: 0, left: 20},
+var margin = {top: 70, right: 120, bottom: 0, left: 30},
     width = 960 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    height = 500 - margin.top - margin.bottom;
 
 var speed = 600;
 
@@ -163,7 +155,7 @@ var line = d3.svg.line()
 var svg = d3.select('#graphic').append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .call(responsivefy)
+    // .call(responsivefy)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -321,233 +313,44 @@ d3.json("data.json", function(error, data) {
     });
 
 
-  // how to combine those functions into 1? 
+  // failed to combine these two because the colors are not directly related to the buttons themselves (there might be other ways that could work but I'm not sure how)
 
-  // d3.select("#democrats")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.color === "#7183d3"; 
+  d3.select("#democrats")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.color === "#7183d3"; 
 
-  //       }).style("opacity",1);
-  //   });
+        }).style("opacity",1);
+    });
 
-  // d3.select("#republicans")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.color === "#e04575"; 
+  d3.select("#republicans")
+    .on("click", function(){
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.color === "#e04575"; 
 
-  //       }).style("opacity",1);
-  //   });
+        }).style("opacity",1);
+    });
 
+  // combined function for each candidate
+  // ids are not necessary (just use jquery selector)
+  $(".candidatename").on("click",function(){
+  		// get the name of the candidate the user clicked on
+  		var nameOfCandidate = $(this).text();
+  		// use d3 to change the style of all except for the clicked one
+        candidate.style("opacity",0.1);
+        candidate.filter(function(path) {
+          return path.name === nameOfCandidate;
 
-    
-  //   d3.select("#a")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Hillary Clinton"; 
+        }).style("opacity",1);
+  });
 
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#b")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Bernie Sanders"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#c")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Martin O'Malley"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#d")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Lincoln Chafee"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#e")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Jim Webb"; 
-
-  //       }).style("opacity",1);
-  //   });
-    
-  //   d3.select("#f")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Donald Trump"; 
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#g")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Jeb Bush"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#h")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Rand Paul"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#i")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Ben Carson"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#j")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Marco Rubio"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#k")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Chris Christie"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#l")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Lindsey Graham"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#m")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Rich Perry"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#n")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Ted Cruz"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#o")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Carly Fiorina"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#p")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Rich Santorum"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#q")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Mike Huckabee"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#r")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "Bobby Jindal"; 
-
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#s")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "John Kasich"; 
-  //       }).style("opacity",1);
-  //   });
-
-  //   d3.select("#t")
-  //   .on("click", function(){
-  //       candidate.style("opacity",0.1);
-  //       candidate.filter(function(path) {
-  //         return path.name === "George Pataki"; 
-  //       }).style("opacity",1);
-  //   });
 
 });
 
-function responsivefy(svg) {
-        var container = d3.select(svg.node().parentNode),
-            width = parseInt(svg.style("width")),
-            height = parseInt(svg.style("height")),
-            aspect = width / height;
-
-        svg.attr("viewBox", "0 0 " + width + " " + height)
-            .attr("perserveAspectRatio", "xMinYMid")
-            .call(resize);
-
-        d3.select(window).on("resize." + container.attr("#graphic"), resize);
-
-        function resize() {
-            var targetWidth = parseInt(container.style("width"));
-            svg.attr("width", targetWidth * 0.8);
-            svg.attr("height", Math.round(targetWidth / aspect));
-        }
-    }
-
-
-
-
 
 }
-
-
   
 
  
@@ -574,6 +377,7 @@ function responsivefy(svg) {
 
 
   </script>
+  <script src="temp.js"></script>
  
   
 </html>
