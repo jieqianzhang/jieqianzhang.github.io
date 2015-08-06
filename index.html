@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html>
 
-  <head>
-    <meta charset="utf-8" />
+<head>
+  <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Language" content="en" />
     <title>Search Ranks of Presidential Candidates</title>
@@ -11,53 +12,68 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <style>
+</head>
 
 
-    body {
-    font-size: 12px;
-    font-family: 'Abel', sans-serif;
+<style>
+
+body {
+  font-size: 12px;
+  font-family: 'Abel', sans-serif;
+  margin-top: 20px;
+}
+
+li{
+    margin-left: 0px;
     }
 
-    .x.axis path,.x.axis line {
+.x.axis path,.x.axis line {
     fill: none;
     stroke: none;
     }
 
-    .y.axis path {
+.y.axis path {
     fill: none;
     }
 
-    .y.axis line {
+.y.axis line {
     fill: none;
     stroke: #eeeeee;
     shape-rendering: crispEdges;
     }
 
-    .x.axis text, .y.axis text{
+.x.axis text, .y.axis text{
       font-size: 10px;
       fill:grey;
     }
 
-    #title, .explain{
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.tick line{
+    stroke: #e0e1e1;
+    opacity: 1;
+    }
+
+#title, .explain{
       text-indent: 15px;
     }
 
-    #credit{
+#credit{
       color:grey;
       text-indent: 20px;
       line-height: 30px;
     }
-
-
-    a:hover{
+ 
+ a:hover{
       cursor:pointer;
     }
 
 
+</style>
 
-    </style>
-  </head>
 
 <body>
 
@@ -75,8 +91,8 @@
           <span class="caret"></span>
         </a>
         <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4">
-          <li id="democrats"><a data-target="#">All Democrats</a></li>
-          <li role="separator" class="divider"></li>
+         <!--  <li id="democrats"><a data-target="#">All Democrats</a></li>
+          <li role="separator" class="divider"></li> -->
           <li class="candidatename"><a data-target="#">Hillary Clinton</a></li>
           <li class="candidatename"><a data-target="#">Bernie Sanders</a></li>
           <li class="candidatename"><a data-target="#">Martin O'Malley</a></li>
@@ -91,8 +107,8 @@
           <span class="caret"></span>
         </a>
         <ul id="menu2" class="dropdown-menu" aria-labelledby="drop5">
-          <li id="republicans"><a data-target="#">All Republicans</a></li>
-           <li role="separator" class="divider"></li>
+        <!--   <li id="republicans"><a data-target="#">All Republicans</a></li>
+           <li role="separator" class="divider"></li> -->
           <li class="candidatename"><a data-target="#">Donald Trump</a></li>
           <li class="candidatename"><a data-target="#">Jeb Bush</a></li>
           <li class="candidatename"><a data-target="#">Rand Paul</a></li>
@@ -117,267 +133,347 @@
 <div id="graphic"></div>
 
 
+
+<script src="http://d3js.org/d3.v3.js"></script>
+
 <script>
 
+function drawGrahpics(){
 
-
-
-function drawGraphic(){
-
-
-var margin = {top: 70, right: 120, bottom: 0, left: 30},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var margin = {top: 90, right: 120, bottom: 30, left: 50},
+    width = 1200 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
 var speed = 600;
 
 var x = d3.scale.linear()
     .range([0, width]);
 
-var y = d3.scale.ordinal()
-    .rangeRoundBands([height, 0], .1);
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = d3.scale.category10();
+
 
 var xAxis = d3.svg.axis()
     .scale(x)
     .tickSize(0)
+    .ticks(25)
     .orient("top");
+
+var xtickLabels = ["Dec 28, 2014","Jan 4, 2015","Jan 11, 2015","Jan 18, 2015","Jan 25, 2015","Feb 1,2015","Feb 8, 2015","Feb 15, 2015","Feb 22, 2015","Mar 1, 2015","Mar 8, 2015","Mar 15, 2015","Mar 22, 2015","Mar 29, 2015","Apr 5, 2015","Apr 12, 2015","Apr 19, 2015","Apr 26, 2015","May 3, 2015","May 10, 2015","May 17, 2015","May 24, 2015","May 31, 2015","Jun 7, 2015","Jun 14, 2015"];
+
+xAxis.tickFormat(function(d,i){
+    return xtickLabels[i]
+  });
 
 var yAxis = d3.svg.axis()
     .scale(y)
-    .tickSize(-width)
+    .tickFormat(function(d) { return d;})
+    .ticks(16)
+    .innerTickSize(- width)
     .tickPadding(10)
+    .outerTickSize(0)
     .orient("left");
+
 
 var line = d3.svg.line()
     .x(function(d) { return x(d.week); })
-    .y(function(d) { return y(d.position) + y.rangeBand()/2; });
+    .y(function(d) { return y(d.rank); });
 
-var svg = d3.select('#graphic').append("svg")
+
+var svg = d3.select("#graphic").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    // .call(responsivefy)
+    .call(responsivefy)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var clip = svg.append("clipPath")
-  .attr("id", "clip")
-  .append("rect")
+    .attr("id", "clip")
+    .append("rect")
+    .attr("x","-5")
+    .attr("y","-20")
     .attr("width", 0)
-    .attr("height", height);
+    .attr("height", height*1.2);
 
-d3.json("data.json", function(error, data) { 
+d3.csv("rankdata.csv", function(error, data) {
   
-  y.domain(d3.range(1,d3.max(data.standing, function(candidate) { return d3.max(candidate.rank, function(d) { return d.position; }); }) + 1 ).reverse());
-  xAxis.tickValues(data.standing[0].rank.map(function(d) { return d.week; }));
-  x.domain(d3.extent(data.standing[0].rank.map(function(d) { return d.week; })));
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "week"; }));
 
-  var tickLabels = ["Dec 28, 2014","Jan 4, 2015","Jan 11, 2015","Jan 18, 2015","Jan 25, 2015","Feb 1,2015","Feb 8, 2015","Feb 15, 2015","Feb 22, 2015","Mar 1, 2015","Mar 8, 2015","Mar 15, 2015","Mar 22, 2015","Mar 29, 2015","Apr 5, 2015","Apr 12, 2015","Apr 19, 2015","Apr 26, 2015","May 3, 2015","May 10, 2015","May 17, 2015","May 24, 2015","May 31, 2015","Jun 7, 2015","Jun 14, 2015"];
-
-  xAxis.tickFormat(function(d,i){
-    return tickLabels[i]
+  data.forEach(function(d) {
+    d.week = +[d.week];
   });
-  
-  svg.append("g")
-  .attr("class", "y axis")
-    .call(yAxis);
+
+
+  var candidates = color.domain().map(function(name) {
+    return {
+      name: name,
+      values: data.map(function(d) {
+        return {name:name, week: d.week, rank: +d[name]};
+      })
+    };
+  });
+
+
+  x.domain(d3.extent(data, function(d) { return d.week; }));
+
+
+  y.domain([
+    d3.min(candidates, function(c) { return d3.min(c.values, function(v) { return v.rank ; }); }),
+    d3.max(candidates, function(c) { return d3.max(c.values, function(v) { return v.rank ; }); })
+  ].reverse());
+
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform","translate(0,0)")
+      .call(xAxis)
+      .selectAll("text")
+      .style("text-anchor","start")
+      .attr("dx", "2.3em")
+      .attr("dy", "-0.9em") 
+      .attr("transform",function(d){
+        return "rotate(-60)"});
 
   svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform","translate(0,0)")
-    .call(xAxis)
-    .selectAll("text")
-    .style("text-anchor","start")
-    .attr("dx", "0em")
-    .attr("dy", "0em") 
-    .attr("transform",function(d){
-      return "rotate(-60)"});
+      .attr("class", "y axis")
+      .call(yAxis)
 
-  var candidate = svg.selectAll(".candidate")
-      .data(data.standing)
+  //timeline 
+  svg.append("line")
+        .attr(
+        {
+            "class":"horizontalGrid",
+            "x1" : -2,
+            "x2" : width,
+            "y1" : y(1) - 13,
+            "y2" : y(1) - 13,
+            "fill" : "none",
+            "shape-rendering" : "crispEdges",
+            "stroke" : "#e0e1e1",
+            "stroke-width" : "1px",
+            "stroke-dasharray": ("3, 3")
+        })
+        .attr("id","dotted")
+        .attr("clip-path", function(d) { return "url(#clip)"; });
+
+
+        
+       
+  //end of timeline
+
+ 
+
+  var candidates = svg.selectAll(".candidate")
+      .data(candidates)
     .enter().append("g")
       .attr("class", "candidate");
 
-  var path = candidate.append("path")
-      .attr("class", "line")
-      .style("stroke", function(d) { return d.color; })
-      .style("stroke-width", 1.5)
-      .style("fill","none")
-      .attr("clip-path", function(d) { return "url(#clip)"; })
-      .attr("d", function(d) { return line(d.rank); });
 
-  var circleStart = candidate.append("circle")
-      .attr("cx", function(d) { return x(d.rank[0].week); })
-      .attr("cy", function(d) { return y(d.rank[0].position) + y.rangeBand()/2; })
-      .style("fill", function(d) { return d.color; })
+ function colorFilter(d){
+    if (d.name === "Hillary Clinton") {
+          return "#7183d3";
+      } else if (d.name === "Bernie Sanders") {
+          return "#7183d3";
+      } else if (d.name === "Martin O'Malley"){
+        return "#7183d3";
+      } else if (d.name === "Lincoln Chafee"){
+        return "#7183d3";
+      } else if (d.name === "Jim Webb"){
+        return "#7183d3";
+      }else {
+          return "#ce3b69";}
+    }
+
+  var path = svg.selectAll(".candidate").append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      .attr("clip-path", function(d) { return "url(#clip)"; })
+      .style("stroke", colorFilter)
+
+    
+
+var circleStart = candidates.append("circle")
+      .attr("cx", "0")
+      .attr("cy", function(d) { return y(d.values[0].rank); })
+      .style("fill", colorFilter)
       .attr("r", 2)
 
-  var circleEnd = candidate.append("circle")
-      .attr("cx", function(d) { return x(d.rank[0].week); })
-      .attr("cy", function(d) { return y(d.rank[0].position) + y.rangeBand()/2; })
-      .style("fill", function(d) { return d.color; })
+ 
+
+var circleEnd = candidates.append("circle")
+      .attr("cx", function(d) { return x(d.values[0].week); })
+      .attr("cy", function(d) { return y(d.values[0].rank);} )
+      .style("fill", colorFilter)
       .attr("r", 2);
 
 
-  var round = candidate.append("circle")
-      .attr("transform", function(d) { return "translate(" + (x(d.rank[0].week) + 13) + "," + (y(d.rank[0].position) + y.rangeBand()/2) + ")"; })
-      .attr("x", 8)
+var timemark = candidates.append("path")
+                  .attr("d", d3.svg.symbol().type("triangle-up"))
+                  .style("fill", "grey")
+                  .attr("transform",function(d) { return "translate(" + (x(d.values[0].week) ) + "," + (y(1)-15) + ") rotate(-30)"; })
+
+
+var round = candidates.append("circle")
+      .attr("transform", function(d) { return "translate(" + (x(d.values[0].week) + 15) + "," + (y(d.values[0].rank)) + ")"; })
+      .attr("x", 0)
       .attr("y",0)
       .attr("r", 10)
       .on("mouseover", function (d) {
-        candidate.style("opacity",0.1);
-        candidate.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+        candidates.style("opacity",0.1);
+        candidates.filter(function(path) {return path.name === d.name; }).style("opacity",1);
       })
-      .on("mouseout", function (d) { candidate.style("opacity",1); })
-      .style("fill", function(d) { return d.color; });
+      .on("mouseout", function (d) { candidates.style("opacity",1); })
+      .style("fill", colorFilter);
 
 
-
-  var ranking = candidate.append("text")
-      .attr("transform", function(d) { return "translate(" + (x(d.rank[0].week) + 7) + "," + (y(d.rank[0].position) + y.rangeBand()/2) + ")"; })
-      .attr("x", 8)
+  var ranking = candidates.append("text")
+      .attr("transform", function(d) { return "translate(" + (x(d.values[0].week) + 15 ) + "," + (y(d.values[0].rank) ) + ")"; })
+      .attr("x", 0)
       .attr("dy", ".31em")
       .attr("text-anchor","middle")
       .on("mouseover", function (d) {
-        candidate.style("opacity",0.1);
-        candidate.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+        candidates.style("opacity",0.1);
+        candidates.filter(function(path) {return path.name === d.name; }).style("opacity",1);
       })
-      .on("mouseout", function (d) { candidate.style("opacity",1); })
+      .on("mouseout", function (d) { candidates.style("opacity",1); })
       .style("cursor","pointer")
       .style("fill", "#ffffff")
       .style("font-weight", "bold")
-      .text(function(d) { return d.rank[0].position; });
+      .text(function(d) { return d.values[0].rank; });
 
 
-
-
-  var label = candidate.append("text")
-      .attr("transform", function(d) { return "translate(" + (x(d.rank[0].week) + 20) + "," + (y(d.rank[0].position) + y.rangeBand()/2) + ")"; })
+  var label = candidates.append("text")
+      .attr("transform", function(d) { return "translate(" + (x(d.values[0].week) + 20) + "," + (y(d.values[0].rank) ) + ")"; })
       .attr("x", 8)
       .attr("dy", ".31em")
+      .attr("id","label")
       .on("mouseover", function (d) {
-        candidate.style("opacity",0.1);
-        candidate.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+        candidates.style("opacity",0.1);
+        candidates.filter(function(path) {return path.name === d.name; }).style("opacity",1);
       })
-      .on("mouseout", function (d) { candidate.style("opacity",1); })
+      .on("mouseout", function (d) { candidates.style("opacity",1); })
       .style("cursor","pointer")
-      .style("fill", function(d) { return d.color; })
-      .style("font-weight", "bold")
+      .style("stroke", colorFilter)
       .text(function(d) { return d.name; });
 
   
 
-   
+
   var week = 1;
 
   var transition = d3.transition()
+    .delay(500)
     .duration(speed)
-    .each("start", function start() {
-
+    .each("start", function start() {     
+          
       label.transition()
         .duration(speed)
         .ease('linear')
-      .attr("transform", function(d) { return "translate(" + (x(d.rank[week].week) + 20) + "," + (y(d.rank[week].position) + y.rangeBand()/2) + ")"; })
+      .attr("transform", function(d) { return "translate(" + (x(d.values[week].week) + 20) + "," + (y(d.values[week].rank)) + ")"; })
       .text(function(d) { return  d.name; });
 
       ranking.transition()
         .duration(speed)
         .ease('linear')
-        .attr("transform", function(d) { return "translate(" + (x(d.rank[week].week) + 7) + "," + (y(d.rank[week].position) + y.rangeBand()/2) + ")"; })
-      .text(function(d) { return  d.rank[week].position; });
+        .attr("transform", function(d) { return "translate(" + (x(d.values[week].week) + 15) + "," + (y(d.values[week].rank) ) + ")"; })
+      .text(function(d,i) { return  d.values[week].rank; });
 
       round.transition()
         .duration(speed)
         .ease('linear')
-        .attr("transform", function(d) { return "translate(" + (x(d.rank[week].week) + 15) + "," + (y(d.rank[week].position) + y.rangeBand()/2) + ")"; });
+        .attr("transform", function(d) { return "translate(" + (x(d.values[week].week) + 15) + "," + (y(d.values[week].rank)) + ")"; });
     
-
-  
       circleEnd.transition()
         .duration(speed)
         .ease('linear')
-        .attr("cx", function(d) { return x(d.rank[week].week); })
-        .attr("cy", function(d) { return y(d.rank[week].position) + y.rangeBand()/2; });
+        .attr("cx", function(d) { return x(d.values[week].week); })
+        .attr("cy", function(d) { return y(d.values[week].rank); });
 
       clip.transition()
         .duration(speed)
         .ease('linear')
-        .attr("width", x(week+1))
-        .attr("height", height);
-      
-      week+=1;
+        .attr("width", x(week+1)+5)
+        .attr("height", height*1.2);
 
-      if (week !== data.standing[0].rank.length) transition = transition.transition().each("start", start);
+      timemark.transition()
+         .duration(speed)
+         .ease('linear')
+         .attr("transform",function(d) { return "translate(" + (x(d.values[week].week) ) + "," + (y(1)-15) + ") rotate(-30)"; })
 
     
-     
-    });
+      week+=1;
 
 
-  // failed to combine these two because the colors are not directly related to the buttons themselves (there might be other ways that could work but I'm not sure how)
+      if (week !== data[0].length){
 
-  d3.select("#democrats")
-    .on("click", function(){
-        candidate.style("opacity",0.1);
-        candidate.filter(function(path) {
-          return path.color === "#7183d3"; 
+        transition = transition.transition().each("start", start);}     
+      });
 
-        }).style("opacity",1);
-    });
 
-  d3.select("#republicans")
-    .on("click", function(){
-        candidate.style("opacity",0.1);
-        candidate.filter(function(path) {
-          return path.color === "#e04575"; 
-
-        }).style("opacity",1);
-    });
-
+    
   // combined function for each candidate
   // ids are not necessary (just use jquery selector)
-  $(".candidatename").on("click",function(){
-  		// get the name of the candidate the user clicked on
-  		var nameOfCandidate = $(this).text();
-  		// use d3 to change the style of all except for the clicked one
-        candidate.style("opacity",0.1);
-        candidate.filter(function(path) {
+    $(".candidatename").on("click",function(){
+      // get the name of the candidate the user clicked on
+      var nameOfCandidate = $(this).text();
+      // use d3 to change the style of all except for the clicked one
+        candidates.style("opacity",0.1);
+        candidates.filter(function(path) {
           return path.name === nameOfCandidate;
-
         }).style("opacity",1);
-  });
+      });
 
 
-});
 
+      
+   });
+
+
+   
+   
+
+  
+
+  
+      
+      function responsivefy(svg) {
+
+        var container = d3.select(svg.node().parentNode),
+            width = parseInt(svg.style("width")),
+            height = parseInt(svg.style("height")),
+            aspect = width / height;
+
+        svg.attr("viewBox", "0 0 " + width + " " + height)
+            .attr("perserveAspectRatio", "xMinYMid")
+            .call(resize);
+
+        d3.select(window).on("resize." + container.attr("#graphic"), resize);
+
+        function resize() {
+            var targetWidth = parseInt(container.style("width"));
+            svg.attr("width", targetWidth * 0.8);
+            svg.attr("height", Math.round(targetWidth /aspect * 0.8));
+        }  
+    }
 
 }
-  
 
- 
+</script>
 
-  </script>
-  </body>
-  <script>  
-  
-  drawGraphic();
+</body>
 
-  d3.select("#replay")
+<script>
+
+drawGrahpics()
+
+d3.select("#replay")
     .on("click", function(){
       location.reload()
     })
 
 
+</script>
 
-  
-  
-    
-     
-
-
-
-
-  </script>
-  <script src="temp.js"></script>
- 
-  
 </html>
