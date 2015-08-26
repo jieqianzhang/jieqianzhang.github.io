@@ -114,9 +114,9 @@
         cursor: pointer;
     }
 
-    #hidden4{
+   /* #hidden4{
         background: url(purplebk.png) repeat;
-    }
+    }*/
 
     #hidden1{
         background-color: #91219E ;
@@ -130,9 +130,9 @@
         background-color: #500f9b ;
     }
 
-   /* #hidden4{
+    #hidden4{
         background-color: #2E0854;
-    }*/
+    }
     
   /*  #hidden5{
         background-color: #8d186A;
