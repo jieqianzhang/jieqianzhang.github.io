@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href="mainpage.css" rel="stylesheet" type="text/css" />
+    <title>JQ ZHANG</title>
+</head>
+
+<body>
+    <header>
+        <div class="menubtn">
+          <button class="c-hamburger c-hamburger--htx">
+            <span>toggle menu</span>
+          </button>
+        </div>
+    </header>
+
+    <script>
+    (function() {
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+        toggle.addEventListener( "click", function(e) {
+            e.preventDefault();
+            (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+    </script>
+
+    <section class="data">
+        <div class="toggle " id="hidden1">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 90%;">Data</h2>
+                <div class="number" color="#8d186A">01</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="toggle " id="hidden2">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 80%;">Videography</h2>
+                <div class="number">02</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+
+
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="toggle " id="hidden3">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 70%;">Photography</h2>
+                <div class="number">03</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="toggle " id="hidden4">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 60%;">Articles</h2>
+                <div class="number">04</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+
+
+         </div>
+    </section>
+
+   <!--  <section>
+        <div class="toggle " id="hidden5">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 50%;">About</h2>
+                <div class="number">05</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+ -->
+    <footer>
+        <div class="container clearfix">
+            <div class="alignleft">
+                <p>© 2015 Jieqian Zhang | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" defer="defer" src="autoptimize.js"></script>
+</body>
+
+</html>

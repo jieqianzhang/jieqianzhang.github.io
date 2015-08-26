@@ -1,0 +1,400 @@
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    em,
+    font,
+    img,
+    strong,
+    ul,
+    li,
+    td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline
+    }
+ 
+    
+    .clear {
+        clear: both
+    }
+    
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden
+    }
+    
+    .clearfix {
+        display: inline-block
+    }
+    
+    .alignleft {
+        float: left
+    }
+    
+    .alignright {
+        float: right
+    }
+    
+    .aligncenter {
+        margin: auto;
+        display: block
+    }
+    
+    .centered {
+        text-align: center
+    }
+    
+    html {
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll
+    }
+    
+    body {
+        font-family: 'Abel', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    
+    p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0 0 20px 0
+    }
+
+    
+    header {
+        width: 100%;
+        position: relative;
+        height: 300px;
+        border-bottom: 1px solid #d0ceca;
+        background: url(bk.png);
+    }
+    
+    .container {
+        padding-left:50px;
+        width: 1500px;
+        position: relative;
+        margin: 0 auto;
+
+    }
+    
+    .overflow {
+        overflow: hidden
+    }
+    
+    .toggle,
+    .fixed {
+        height: 102px;
+        width: 100%;
+        border-bottom: 1px solid #d0ceca;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 98px;
+        cursor: pointer;
+    }
+
+    #hidden1{
+        background-color: #91219E ;
+    }
+
+    #hidden2{
+        background-color: #8121CF;
+    }
+
+    #hidden3{
+        background-color: #500f9b ;
+    }
+
+    #hidden4{
+        background-color: #2E0854;
+    }
+    
+  /*  #hidden5{
+        background-color: #8d186A;
+    }*/
+
+    .number {
+        font-size: 72px;
+        font-weight: 300;
+        padding-right: 21px;
+        float: right;
+        color: white;
+    }
+    
+    .number i {
+        font-size: 50px;
+        line-height: 0;
+        position: relative;
+        top: -26px
+    }
+    
+    .name {
+        float: right;
+        height: 102px;
+        padding-left: 32px;
+        color:white;
+    }
+    
+    .hidden {
+        border-bottom: 1px solid white;
+        padding: 0;
+        display: none
+    }
+    
+    .hidden.show-this {
+        display: block
+    }
+    
+    .hidden .space,
+    .space {
+        position: relative;
+        display: block;
+        height: 30px
+    }
+    
+  
+    .close {
+       /* background: url("bk.png") repeat;
+        *background: url("bk.png") repeat;
+        _background: url("bk.png") repeat;*/
+        background-size: 18px 18px;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 1px solid #c7c7c7
+    }
+    
+    
+    footer {
+        height: 80px;
+        padding: 20px 0 0 0;
+        position: relative;
+        font-size: 12px;
+        color: white;
+        line-height: 12px;
+        background: url('bk.png') repeat;
+    }
+    
+    footer .alignright {
+        text-align: right;
+        margin-right: 10px
+    }
+    
+    footer .alignleft {
+        margin-left: 10px
+    }
+    
+    footer .alignright p,
+    footer .alignleft p {
+        font-size: 12px
+    }
+    
+    .fixed .name {
+        width: 96%
+    }
+
+    
+    @media only screen and (min-width:768px) and (max-width:900px) {
+        .container {
+            width: 100%
+        }
+    
+    }
+    
+    @media only screen and (max-width:767px) {
+        .container {
+            width: 100%;
+            padding-left: 10px;
+        }
+        
+        .number {
+            display: none
+        }
+        .toggle,
+        .name,
+        .fixed {
+            background: black
+        }
+        .name {
+            padding-left: 10px;
+            width: 300px !important
+        }
+    }
+    
+    
+    .hidden {
+       background: url('bk.png');
+    }
+    
+    .name {
+        background: black;
+    }
+    
+    
+    .number {
+        color: p;
+    }
+    
+/********************* showcase ********************/
+
+.pic-frame.rounded > p {
+    line-height: 15px;
+}
+
+
+
+.pic
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin-bottom: 15px;
+    background-color: black;
+}
+.pic a
+{
+    display: block;
+    width: 260px;
+    height: 260px;  
+}
+.pic-frame 
+{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-left:20px;
+    width: 260px;
+    height: 320px;
+    margin: 0 40px 40px 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #a8a8a8;
+    border: 20px solid white;
+    -moz-border-radius: 10px;  /*Firefox */
+    -webkit-border-radius: 10px;  /*Safari, Chrome */
+    border-radius: 10px;  CSS3 
+}
+
+/******************** hamburger menu bar ***************************/
+
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 45px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger--htx {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: black;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
