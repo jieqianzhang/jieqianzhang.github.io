@@ -30,7 +30,29 @@
         font-family: inherit;
         vertical-align: baseline
     }
- 
+    
+    .logo{
+        float:left;
+        margin-left: 80px;
+        /*margin-top: 40px;*/
+    }
+
+    .intro{
+        float:left;
+        color:white;
+        /*font-size: 30px;*/
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .intro h1{
+        font-size: 30px;
+        font-family: "Arial Black"
+    }
+
+    .intro p{
+        font-size: 30px;
+    }
     
     .clear {
         clear: both
@@ -67,7 +89,8 @@
     
     html {
         overflow: -moz-scrollbars- vertical;
-        overflow-y: scroll
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     
     body {
@@ -88,6 +111,7 @@
         height: 300px;
         border-bottom: 1px solid #d0ceca;
         background: url(bk.png);
+        /*background-color: black;*/
     }
     
     .container {
@@ -144,6 +168,7 @@
         padding-right: 21px;
         float: right;
         color: black;
+        opacity:0.6;
     }
     
     .number i {
@@ -258,10 +283,7 @@
     }
     
     
-    .number {
-        color: p;
-    }
-    
+
 /********************* showcase ********************/
 
 .pic-frame.rounded > p {
