@@ -255,9 +255,6 @@
         .container {
             width: 100%
         }
-        .c-hamburger{
-            display: none;
-        }
     
     }
     
@@ -282,9 +279,7 @@
         .intro{
             display: none;
         }
-        .c-hamburger{
-            display:normal;
-        }
+        
     }
     
     
