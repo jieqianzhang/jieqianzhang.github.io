@@ -276,6 +276,9 @@
             padding-left: 10px;
             width: 300px !important
         }
+        .intro{
+            display: none;
+        }
     }
     
     
