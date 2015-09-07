@@ -34,9 +34,12 @@
     .logo{
         float:left;
         margin-left: 80px;
+        /*margin-top: 40px;*/
+    }
+    
+    .logo img{
         width:150px;
         height:auto;
-        /*margin-top: 40px;*/
     }
 
     .intro{
