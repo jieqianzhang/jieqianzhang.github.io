@@ -1,6 +1,6 @@
     html,
     body,
-    div,
+   /* div,*/
     span,
     applet,
     object,
@@ -15,7 +15,6 @@
     a,
     em,
     font,
-    img,
     strong,
     ul,
     li,
@@ -31,16 +30,7 @@
         vertical-align: baseline
     }
     
-    .logo{
-        float:left;
-        margin-left: 80px;
-        /*margin-top: 40px;*/
-    }
     
-    .logo img{
-        width:150px;
-        height:auto;
-    }
 
     .intro{
         float:left;
@@ -120,10 +110,9 @@
     }
     
     .container {
-        padding-left:50px;
         width: 100%;
         position: relative;
-        margin: 0 auto;
+       /* margin: 0 auto;*/
 
     }
     
@@ -251,17 +240,31 @@
     }
 
     
-    @media only screen and (min-width:768px) and (max-width:900px) {
+    @media only screen and (min-width:768px) and (max-width:1500px) {
         .container {
-            width: 100%
+            margin-top: 0;
+            margin-right: auto;
+            margin-left:auto;
+            padding-left: 50px;
+            padding-right:auto;
         }
+        .pic-frame{
+            margin: 0 40px 40px 0;
+            float:left;
+        }
+
+        .logo{
+        float:left;
+        margin-left: 80px;
+    }
     
     }
     
-    @media only screen and (max-width:767px) {
+    @media only screen and (max-width:768px) {
         .container {
-            width: 100%;
-            padding-left: 10px;
+            margin-right: auto;
+            margin-left:auto;
+
         }
         
         .number {
@@ -279,7 +282,19 @@
         .intro{
             display: none;
         }
+
+        .pic-frame{
+            margin-bottom:40px;
+            margin-right: auto;
+            margin-left:auto;
+        }
         
+        .logo{
+            width:150px;
+            margin-right: auto;
+            margin-left:auto;
+
+        }
     }
     
     
@@ -319,11 +334,9 @@
 {
     position: relative;
     cursor: pointer;
-    float: left;
-    margin-left:20px;
     width: 260px;
     height: 320px;
-    margin: 0 40px 40px 0;
+    /*margin: 0 40px 40px 0;*/
     font-size: 14px;
     background-color: #ffffff;
     color: #a8a8a8;
@@ -331,6 +344,11 @@
     -moz-border-radius: 10px;  /*Firefox */
     -webkit-border-radius: 10px;  /*Safari, Chrome */
     border-radius: 10px;  CSS3 
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /******************** hamburger menu bar ***************************/
