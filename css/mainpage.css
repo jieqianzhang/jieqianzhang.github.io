@@ -31,9 +31,15 @@
     }
     
     .pic-frame h2{
+        font-size: 16px;
         color:black;
-        line-height: 20px;
-        padding-top: 3px;
+        line-height: 18px;
+    }
+
+    .pic-frame h4{
+        color:black;
+
+        
     }
     
 
@@ -108,7 +114,7 @@
     header {
         width: 100%;
         position: relative;
-        height: 300px;
+        height: 350px;
         border-bottom: 1px solid #d0ceca;
         background: url(bk.png);
         /*background-color: black;*/
@@ -127,13 +133,13 @@
     
     .toggle,
     .fixed {
-        height: 102px;
+        height: 120px;
         width: 100%;
         border-bottom: 1px solid #d0ceca;
         font-size: 48px;
         font-weight: 600;
         text-transform: uppercase;
-        line-height: 98px;
+        line-height: 115px;
         cursor: pointer;
     }
 
@@ -179,7 +185,7 @@
     
     .name {
         float: right;
-        height: 102px;
+        height: 120px;
         padding-left: 32px;
         color:white;
     }
@@ -217,7 +223,7 @@
     
     
     footer {
-        height: 80px;
+        height: 120px;
         padding: 20px 0 0 0;
         position: relative;
         font-size: 12px;
@@ -259,8 +265,10 @@
         }
 
         .logo{
+
+        padding-top: 40px;
         float:left;
-        margin-left: 80px;
+        margin-left: 120px;
     }
     
     }
@@ -298,6 +306,7 @@
             width:150px;
             margin-right: auto;
             margin-left:auto;
+            padding-top: 40px;
 
         }
     }
