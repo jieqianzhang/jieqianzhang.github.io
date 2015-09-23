@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+
+body {
+  /*margin: auto;*/
+  position: relative;
+  width: 960px;
+}
+
+.title{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  position: relative;
+}
+
+.subtitle{
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  font-size:16px;
+}
+
+.credit{
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  font-size:12px;
+}
+
+.note{
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  font-size:12px;
+}
+
+.notetitle{
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  font-size:16px;
+}
+
+
+.tag{
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  font-size:20px;
+}
+
+.subtag{
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  font-size:25px;
+}
+
+
+form {
+  position:absolute;
+  font-family: "Abel", sans-serif;
+  left: 7px;
+  top: 330px;
+
+}
+
+#pic {
+  position:absolute;
+  width:300px;
+  height:auto;
+  position:3;
+  top:320px;
+  right:330px;
+}
+
+path{
+  position:relative;
+  z-index: 99;
+}
+
+path:hover{
+  opacity:1;
+}
+
+#tooltip {
+        position: absolute;
+        width: 250px;
+        height: 80px;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 5px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+        z-index:999;
+    }
+
+#tooltip.hidden {
+        display: none;
+    }
+
+#tooltip p {
+        margin: 0;
+        font-family: 'Abel', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color:grey;
+    }
+#country{
+  font-size: 20px;
+  color: #5b5a5a;
+}
+
+
+</style>
+
+<form></form>
+
+
+<body bgcolor = "#dddddd">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+
+<div id="graphics"> </div>
+
+<div id="tooltip" class="hidden">
+<p><strong id="country"></strong></p>
+<p>Initial Subscrpition: $ <span id="capital"></span> million</p>
+<p>Percentage Shares: <span id="share"></span> % </p>
+<p>Percentage Votes: <span id="vote"></span> % </p>
+
+</div>
+
+<!-- <img id="pic" src="aiib.png"> -->
+
+
+<script>
+
+
+var width = 960,
+    height = 600,
+    radius = Math.min(width, height) / 2 - 50;
+
+
+var pie = d3.layout.pie()
+    .value(function(d) { return d.share; })
+    .sort(null);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 20);
+
+var svg = d3.select("#graphics").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 1.7 + "," + height / 2 + ")");
+
+var path = svg.selectAll("path");
+
+
+svg.append("text")
+  .text("Asian")
+  .attr("class","title")
+  .attr("fill", "#3e3e3e")
+  .attr("x", -550)
+  .attr("y", -250);
+
+svg.append("text")
+  .text("Infrustructure")
+  .attr("class","title")
+  .attr("fill", "#3e3e3e")
+  .attr("x", -550)
+  .attr("y", -215);
+
+svg.append("text")
+  .text("Investment")
+  .attr("class","title")
+  .attr("fill", "#3e3e3e")
+  .attr("x", -550)
+  .attr("y", -180);
+
+svg.append("text")
+  .text("Bank")
+  .attr("class","title")
+  .attr("fill", "#3e3e3e")
+  .attr("x", -550)
+  .attr("y", -145);
+
+
+svg.append("text")
+  .text("Each Founding Members' Initial Subscription,")
+  .attr("class","subtitle")
+  .attr("fill", " #919190")
+  .attr("x", -550)
+  .attr("y", -120);
+
+svg.append("text")
+  .text("Shares and Voting Shares")
+  .attr("class","subtitle")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", -100);
+
+
+svg.append("text")
+  .text("Sources: Asian Infrastructure Investment Bank")
+  .attr("class","note")
+  .attr("fill", "#ababaa")
+  .attr("x", -550)
+  .attr("y", -80);
+
+svg.append("text")
+  .text("Instructions:")
+  .attr("class","notetitle")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", -55);
+
+svg.append("text")
+  .text("1. Hover over to see what are each country's initial")
+  .attr("class","note")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", -40);
+
+svg.append("text")
+  .text("subscription (in $ million), percentage of shares and percentage")
+  .attr("class","note")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", -25);
+
+svg.append("text")
+  .text("of voting shares among all founding members.")
+  .attr("class","note")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", -10);
+
+svg.append("text")
+  .text("2. Switch between \"Regional\" and \"Nonregional\" to see founding")
+  .attr("class","note")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", 5);
+
+svg.append("text")
+  .text("members in Asia and outside of Asia.")
+  .attr("class","note")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", 20);
+
+svg.append("text")
+  .text("Founding Countries")
+  .attr("class","tag")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", 100);
+
+svg.append("text")
+  .text("57")
+  .attr("class","subtag")
+  .attr("fill", "#3e3e3e")
+  .attr("x", -550)
+  .attr("y", 130);
+
+svg.append("text")
+  .text("Leading Country")
+  .attr("class","tag")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", 170);
+
+svg.append("text")
+  .text("China")
+  .attr("class","subtag")
+  .attr("fill", "#3e3e3e")
+  .attr("x", -550)
+  .attr("y", 200);
+
+svg.append("text")
+  .text("Designed by Jieqian Zhang")
+  .attr("class","credit")
+  .attr("fill", "#919190")
+  .attr("x", -550)
+  .attr("y", 240);
+
+
+
+
+
+
+d3.csv("data.csv", type, function(error, data) {
+
+  var regionsByRegion = d3.nest()
+      .key(function(d) { return d.type; })
+      .entries(data);
+
+  var label = d3.select("form").selectAll("label")
+      .data(regionsByRegion)
+    .enter().append("label");
+
+  label.append("input")
+      .attr("type", "radio")
+      .attr("name", "type")
+      .attr("value", function(d) { return d.key; })
+      .on("change", change)
+      .filter(function(d, i) { return !i; })
+      .each(change)
+      .property("checked", true);
+
+  label.append("span")
+      .text(function(d) { return d.key; });
+
+  function change(country) {
+
+    path = path.data(pie(country.values), function(d) { return d.data.country; });
+    path.enter().append("path").attr("fill", function(d) { return d.data.color; }).attr("opacity",0.7);
+    path.exit().remove();
+    path.attr("d", arc);
+    path.on("mousemove", function(d){
+      d3.select("#tooltip")
+        .select("#country")
+        .text(d.data.country);
+      d3.select("#tooltip")
+        .select("#capital")
+        .text(d.data.capital);
+      d3.select("#tooltip")
+        .select("#share")
+        .text(Math.round(d.data.share * 10000)/100);
+      d3.select("#tooltip")
+        .select("#vote")
+        .text(Math.round(d.data.vote * 10000)/100);
+      x = d3.mouse(this)[0];
+      y = d3.mouse(this)[1];
+      d3.select("#tooltip")
+        .style("left", x + 430 + "px")
+        .style("top", y + 320 + "px")
+        .classed("hidden",false);    
+    });
+
+    path.on("mouseout", function(){
+                d3.select("#tooltip").classed("hidden", true);
+            });
+  }
+
+});
+
+function type(d) {
+  d.share = +d.share;
+  return d;
+};
+
+
+
+
+</script>
+
+</body>
+
