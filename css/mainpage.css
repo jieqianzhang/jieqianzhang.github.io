@@ -38,27 +38,57 @@
 
     .pic-frame h4{
         color:black;
-
-        
     }
     
+    .links{
+        text-decoration: none;
+        color:grey;
+    }
+
 
     .intro{
-        float:left;
+        /*float:left;*/
         color:white;
         /*font-size: 30px;*/
-        margin-top: 20px;
-        margin-left: 20px;
+        position:absolute;
+        margin-top: 50px;
+        margin-left: 320px;
+        margin-right: 50px;
+        /*width:800px;*/
     }
 
     .intro h1{
-        font-size: 30px;
-        font-family: "Arial Black"
+        font-size: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        /*font-family: 'Press Start 2P', cursive;*/
     }
 
-    .intro p{
-        font-size: 30px;
+    .intro h3{
+        font-size: 16px;
+        margin-top: 10px;
+        font-family: "Montserrat", sans-serif;
+        /*font-family: 'Press Start 2P', cursive;*/
     }
+
+   /* i:hover{
+      color:rgba(29, 168, 183,1) !important;
+     }*/
+
+     #panel{
+        display:none;
+        background-color: #e5eecc;
+        position:relative;
+        width:240px;
+        height:125px;
+
+     }
+
+    i{
+        color:white;
+        margin-top: 30px;
+    }
+
     
     .clear {
         clear: both
@@ -188,6 +218,8 @@
         height: 120px;
         padding-left: 32px;
         color:white;
+        font-family: "Montserrat", sans-serif;
+
     }
     
     .hidden {
@@ -259,6 +291,14 @@
             padding-left: 50px;
             padding-right:auto;
         }
+
+        .icon2{
+            display: none;
+        }
+
+        .name{
+            font-size: 45px;
+        }
         .pic-frame{
             margin: 0 40px 40px 0;
             float:left;
@@ -279,6 +319,7 @@
             margin-left:auto;
 
         }
+
         
         .number {
             display: none
@@ -290,7 +331,8 @@
         }
         .name {
             padding-left: 10px;
-            width: 300px !important
+            width: 300px !important;
+            font-size:38px;
         }
         .intro{
             display: none;
@@ -308,6 +350,10 @@
             margin-left:auto;
             padding-top: 40px;
 
+        }
+
+         .icon2{
+            padding-left:80px;
         }
     }
     
