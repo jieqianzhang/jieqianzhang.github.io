@@ -42,7 +42,7 @@ path.chord {
 
         var width = 720,
             height = 720,
-            outerRadius = Math.min(width, height) / 2 - 100,
+            outerRadius = Math.min(width, height) / 2 - 60,
             innerRadius = outerRadius - 15;
 
         var arc = d3.svg.arc()
@@ -175,8 +175,8 @@ path.chord {
 
             function resize() {
                 var targetWidth = parseInt(container.style("width"));
-                svg.attr("width", targetWidth * 0.8);
-                svg.attr("height", Math.round(targetWidth / aspect * 0.8));
+                svg.attr("width", targetWidth * 0.55);
+                svg.attr("height", Math.round(targetWidth / aspect * 0.55));
             }
         }
 
