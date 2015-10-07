@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<title>Google Chord Diagram</title>
+<style>
+
+body{
+    font-family: 'Roboto', sans-serif;
+    pointer-events: all;
+    font-size:12px;
+}
+
+#round circle {
+    fill: none;
+}
+
+path.chord {
+    stroke: #c4c3c1;
+    stroke-width: .25px;
+    opacity: 0.8;
+}
+
+#round:hover path.fade {
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition:opacity 0.2s;
+    transition: opacity 0.2s;
+    opacity:0; 
+}
+
+</style>
+
+<body>
+    <script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+    <script>
+
+
+    function drawGraphic() {
+
+        var width = 720,
+            height = 720,
+            outerRadius = Math.min(width, height) / 2 - 100,
+            innerRadius = outerRadius - 15;
+
+        var arc = d3.svg.arc()
+            .innerRadius(innerRadius)
+            .outerRadius(outerRadius);
+
+        var layout = d3.layout.chord()
+            .padding(.04)
+            .sortSubgroups(d3.descending);
+
+        var path = d3.svg.chord()
+            .radius(innerRadius - 5);
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .call(responsivefy)
+            .append("g")
+            .attr("id", "round")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+       var circle = svg.append("circle")
+            .attr("r", outerRadius);
+
+       
+                
+
+
+       
+
+        d3.csv("data_demo.csv", function(candidates) {
+            d3.json("matrix.json", function(matrix) {
+
+                // computerize the matrix 
+                layout.matrix(matrix);
+
+                // create a group for each candidate
+                var group = svg.selectAll(".group")
+                    .data(layout.groups)
+                    .enter().append("g")
+                    .attr("class", "group")
+                    .on("mouseover", mouseover);
+
+               
+
+                // Add the group arc for each candidate
+                var groupPath = group.append("path")
+                    .attr("id", function(d, i) {
+                        return "group" + i;
+                    })
+                    .attr("d", arc)
+                    .style("fill", function(d, i) {
+                        return candidates[i].color;
+                    })
+                    .style("opacity",".8");
+
+                // Add the name of each candidate
+                var groupText = group.append("text")
+                    .attr("dx", "55")
+                    .attr("dy","-20")
+                    .style("text-anchor", "middle");
+
+                groupText.append("textPath")
+                    .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    .text(function(d, i) { return candidates[i].name; })
+                    .style("fill", function(d, i) { return candidates[i].color; });
+
+                // Add a dividing lines in the middle 
+                var divide1 = svg.append("line")
+                        .attr("x1", - 8)
+                        .attr("y1", -height/2 - 20)
+                        .attr("x2", - 5)
+                        .attr("y2",-245)
+                        .style("stroke","grey")
+                        .style("stroke-width",3);
+
+                var divide2 = svg.append("line")
+                        .attr("x1", 5)
+                        .attr("y1", 245)
+                        .attr("x2", 6)
+                        .attr("y2", height/2)
+                        .style("stroke","grey")
+                        .style("stroke-width",3);
+
+                var origin01 = svg.append("text")
+                        .html("Hover over each candidate to see")
+                        .attr("x", 10)
+                        .attr("y", -342)
+                        .attr("font-size","16px")
+                        .attr("fill", "grey");
+
+                var origin02 = svg.append("text")
+                        .html("how many people who search them also")
+                        .attr("x", 10)
+                        .attr("y", -325)
+                        .attr("font-size","16px")
+                        .attr("fill", "grey");
+
+                var origin03 = svg.append("text")
+                        .html("search for other candidates.")
+                        .attr("x", 10)
+                        .attr("y", -308)
+                        .attr("font-size","16px")
+                        .attr("fill", "grey");
+
+                var target = svg.append("text")
+                        .text("Second searches")
+                        .attr("x", -150)
+                        .attr("y", -342)
+                        .attr("font-size","16px")
+                        .attr("fill", "grey");
+                       
+
+
+                //Add ticks to show percentage
+
+                var ticks = svg.append("g").selectAll("g")
+                    .data(layout.groups)
+                    .enter().append("g").selectAll("g")
+                    .data(groupTicks)
+                    .enter().append("g")
+                    .attr("transform", function(d) {
+                        return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + outerRadius + ",0)";
+                    });
+
+                ticks.append("line")
+                    .attr("x1", 1)
+                    .attr("y1", 0)
+                    .attr("x2", 5)
+                    .attr("y2", 0)
+                    .style("stroke", "#c4c3c1");
+
+
+                function groupTicks(d) {
+                    var k = (d.endAngle - d.startAngle) / d.value;
+                    return d3.range(0, d.value, 10).map(function(v, i) {
+                        return {
+                            angle: v * k + d.startAngle
+                        };
+                    });
+                }
+
+
+                //Add the chords.
+                var chord = svg.selectAll(".chord")
+                    .data(layout.chords)
+                    .enter().append("path")
+                    .attr("class", "chord")
+                    .style("fill", function(d) {
+                        return candidates[d.source.index].color;
+                    })
+                    .attr("d", path);
+                    // .style("display","none");
+
+                //Add the mouseover interactive action 
+
+                function mouseover(d, i) {
+                    chord.classed("fade", function(p) {
+                        return p.source.index != i && p.target.index != i;
+                    });
+
+                }
+
+                
+                        
+                  
+
+              
+
+            });
+        });
+
+        function responsivefy(svg) {
+
+            var container = d3.select(svg.node().parentNode),
+                width = parseInt(svg.style("width")),
+                height = parseInt(svg.style("height")),
+                aspect = width / height;
+
+            svg.attr("viewBox", "0 0 " + width + " " + height)
+                .attr("perserveAspectRatio", "xMinYMid")
+                .call(resize);
+
+            d3.select(window).on("resize." + container.attr("#graphic"), resize);
+
+            function resize() {
+                var targetWidth = parseInt(container.style("width"));
+                svg.attr("width", targetWidth * 0.8);
+                svg.attr("height", Math.round(targetWidth / aspect * 0.8));
+            }
+        }
+
+    }
+    </script>
+</body>
+    <script>
+    drawGraphic()
+    </script>
