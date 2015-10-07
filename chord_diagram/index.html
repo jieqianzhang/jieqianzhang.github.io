@@ -10,7 +10,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     pointer-events: all;
-    font-size:12px;
+    font-size:20px;
 }
 
 #round circle {
@@ -67,13 +67,9 @@ path.chord {
        var circle = svg.append("circle")
             .attr("r", outerRadius);
 
-       
-                
+    
 
-
-       
-
-        d3.csv("data_demo.csv", function(candidates) {
+        d3.csv("data.csv", function(candidates) {
             d3.json("matrix.json", function(matrix) {
 
                 // computerize the matrix 
@@ -101,7 +97,7 @@ path.chord {
 
                 // Add the name of each candidate
                 var groupText = group.append("text")
-                    .attr("dx", "55")
+                    .attr("dx", "120")
                     .attr("dy","-20")
                     .style("text-anchor", "middle");
 
@@ -109,52 +105,6 @@ path.chord {
                     .attr("xlink:href", function(d, i) { return "#group" + i; })
                     .text(function(d, i) { return candidates[i].name; })
                     .style("fill", function(d, i) { return candidates[i].color; });
-
-                // Add a dividing lines in the middle 
-                var divide1 = svg.append("line")
-                        .attr("x1", - 8)
-                        .attr("y1", -height/2 - 20)
-                        .attr("x2", - 5)
-                        .attr("y2",-245)
-                        .style("stroke","grey")
-                        .style("stroke-width",3);
-
-                var divide2 = svg.append("line")
-                        .attr("x1", 5)
-                        .attr("y1", 245)
-                        .attr("x2", 6)
-                        .attr("y2", height/2)
-                        .style("stroke","grey")
-                        .style("stroke-width",3);
-
-                var origin01 = svg.append("text")
-                        .html("Hover over each candidate to see")
-                        .attr("x", 10)
-                        .attr("y", -342)
-                        .attr("font-size","16px")
-                        .attr("fill", "grey");
-
-                var origin02 = svg.append("text")
-                        .html("how many people who search them also")
-                        .attr("x", 10)
-                        .attr("y", -325)
-                        .attr("font-size","16px")
-                        .attr("fill", "grey");
-
-                var origin03 = svg.append("text")
-                        .html("search for other candidates.")
-                        .attr("x", 10)
-                        .attr("y", -308)
-                        .attr("font-size","16px")
-                        .attr("fill", "grey");
-
-                var target = svg.append("text")
-                        .text("Second searches")
-                        .attr("x", -150)
-                        .attr("y", -342)
-                        .attr("font-size","16px")
-                        .attr("fill", "grey");
-                       
 
 
                 //Add ticks to show percentage
@@ -205,12 +155,7 @@ path.chord {
                     });
 
                 }
-
-                
-                        
-                  
-
-              
+        
 
             });
         });
