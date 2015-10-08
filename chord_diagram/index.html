@@ -47,7 +47,7 @@ path.chord {
         var width = 720,
             height = 720,
             outerRadius = Math.min(width, height) / 2 - 60,
-            innerRadius = outerRadius - 15;
+            innerRadius = outerRadius - 25;
 
         var arc = d3.svg.arc()
             .innerRadius(innerRadius)
@@ -159,8 +159,8 @@ path.chord {
 
                 function mouseover(d, i) {
 
-                    svg.selectAll("text")
-                        .remove();
+                    // svg.selectAll("text")
+                    //     .remove();
 
                     // get the name of the candidate the user hovered over on
                 
@@ -170,20 +170,26 @@ path.chord {
 
                     // console.log(thisCandidate)
 
-                    var groupText = group.append("text")
-                    .attr("dx", "140")
-                    .attr("dy","-20")
-                    .style("text-anchor", "middle");
+                    // var groupText = group.append("text")
+                    // .attr("dx", "140")
+                    // .attr("dy","-20")
+                    // .style("text-anchor", "middle");
 
-                    groupText.append("textPath")
-                    .attr("xlink:href", function(d, i) { return "#group" + i; })
-                    .text(function(d, i) { 
-                        if (candidates[i]["Joe Biden"] === "0") {
-                            return candidates[i].name;
-                        }else{
-                        return candidates[i]["Joe Biden"] + ". " + candidates[i].name; }
-                        })
-                    .style("fill", function(d, i) { return candidates[i].color; });
+                    // groupText.append("textPath")
+                    // .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    // .text(function(d, i) { 
+                    //     if (candidates[i]["Joe Biden"] === "0") {
+                    //         return candidates[i].name;
+                    //     }else{
+                    //     return candidates[i]["Joe Biden"] + ". " + candidates[i].name; }
+                    //     })
+                    // .style("fill", function(d, i) { return candidates[i].color; });
+
+                    svg.selectAll(".chord")
+                    .transition()
+                    .duration(200)
+                    .style("fill", "#455A64");
+       
 
 
                     chord.classed("fade", function(p) {
@@ -196,18 +202,26 @@ path.chord {
 
                 function mouseout(d,i){
 
-                    svg.selectAll("text")
-                        .remove();
+                    svg.selectAll(".chord")
+                    .transition()
+                    .duration(200)
+                    .style("fill", function(d) {
+                        return candidates[d.source.index].color;
+                    });
+                
 
-                    var groupText = group.append("text")
-                    .attr("dx", "140")
-                    .attr("dy","-20")
-                    .style("text-anchor", "middle");
+                    // svg.selectAll("text")
+                    //     .remove();
 
-                    groupText.append("textPath")
-                    .attr("xlink:href", function(d, i) { return "#group" + i; })
-                    .text(function(d, i) { return candidates[i].name; })
-                    .style("fill", function(d, i) { return candidates[i].color; });
+                    // var groupText = group.append("text")
+                    // .attr("dx", "140")
+                    // .attr("dy","-20")
+                    // .style("text-anchor", "middle");
+
+                    // groupText.append("textPath")
+                    // .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    // .text(function(d, i) { return candidates[i].name; })
+                    // .style("fill", function(d, i) { return candidates[i].color; });
                 };
     
         };
