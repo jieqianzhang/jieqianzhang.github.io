@@ -36,7 +36,9 @@ path.chord {
 <body>
 
     <div id="graphic"></div>
-    <script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
 
 
@@ -69,12 +71,15 @@ path.chord {
        var circle = svg.append("circle")
             .attr("r", outerRadius);
 
-    
+        
+       queue()
+        .defer(d3.json, "matrix.json")
+        .defer(d3.csv, "candidates.csv")
+        .await(ready);
 
-        d3.csv("data.csv", function(candidates) {
-            d3.json("matrix.json", function(matrix) {
 
-                // computerize the matrix 
+       function ready(error, matrix, candidates) {
+                
                 layout.matrix(matrix);
 
                 // create a group for each candidate
@@ -82,9 +87,8 @@ path.chord {
                     .data(layout.groups)
                     .enter().append("g")
                     .attr("class", "group")
-                    .on("mouseover", mouseover);
-
-               
+                    .on("mouseover", mouseover)
+                    .on("mouseout",mouseout);               
 
                 // Add the group arc for each candidate
                 var groupPath = group.append("path")
@@ -93,13 +97,16 @@ path.chord {
                     })
                     .attr("d", arc)
                     .style("fill", function(d, i) {
+                        // console.log(i)
                         return candidates[i].color;
                     })
                     .style("opacity",".8");
 
+
+                
                 // Add the name of each candidate
                 var groupText = group.append("text")
-                    .attr("dx", "120")
+                    .attr("dx", "140")
                     .attr("dy","-20")
                     .style("text-anchor", "middle");
 
@@ -107,7 +114,6 @@ path.chord {
                     .attr("xlink:href", function(d, i) { return "#group" + i; })
                     .text(function(d, i) { return candidates[i].name; })
                     .style("fill", function(d, i) { return candidates[i].color; });
-
 
                 //Add ticks to show percentage
 
@@ -147,20 +153,64 @@ path.chord {
                         return candidates[d.source.index].color;
                     })
                     .attr("d", path);
-                    // .style("display","none");
+
 
                 //Add the mouseover interactive action 
 
                 function mouseover(d, i) {
+
+                    svg.selectAll("text")
+                        .remove();
+
+                    // get the name of the candidate the user hovered over on
+                
+                    // $(".group").on("mouseover",function(){
+
+                    // var thisCandidate = $(this).text(); 
+
+                    // console.log(thisCandidate)
+
+                    var groupText = group.append("text")
+                    .attr("dx", "140")
+                    .attr("dy","-20")
+                    .style("text-anchor", "middle");
+
+                    groupText.append("textPath")
+                    .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    .text(function(d, i) { 
+                        if (candidates[i]["Joe Biden"] === "0") {
+                            return candidates[i].name;
+                        }else{
+                        return candidates[i]["Joe Biden"] + ". " + candidates[i].name; }
+                        })
+                    .style("fill", function(d, i) { return candidates[i].color; });
+
+
                     chord.classed("fade", function(p) {
                         return p.source.index != i && p.target.index != i;
                     });
 
-                }
-        
+                  // });
 
-            });
-        });
+                };
+
+                function mouseout(d,i){
+
+                    svg.selectAll("text")
+                        .remove();
+
+                    var groupText = group.append("text")
+                    .attr("dx", "140")
+                    .attr("dy","-20")
+                    .style("text-anchor", "middle");
+
+                    groupText.append("textPath")
+                    .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    .text(function(d, i) { return candidates[i].name; })
+                    .style("fill", function(d, i) { return candidates[i].color; });
+                };
+    
+        };
 
         function responsivefy(svg) {
 
@@ -183,8 +233,10 @@ path.chord {
         }
 
     }
+
     </script>
 </body>
+
     <script>
     drawGraphic()
     </script>
