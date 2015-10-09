@@ -92,11 +92,15 @@ path.chord {
                     .data(layout.groups)
                     .enter().append("g")
                     .attr("class", "group")
+                    .attr("id", function(d, i) {
+                        return "candidate" + i;
+                    })
                     .on("mouseover", mouseover)
                     .on("mouseout",mouseout);               
 
                 // Add the group arc for each candidate
                 var groupPath = group.append("path")
+                    .attr("class", "groupPath")
                     .attr("id", function(d, i) {
                         return "group" + i;
                     })
@@ -180,8 +184,7 @@ path.chord {
                     // get the name of the candidate the user hovered over on
                     $(".group").on("mouseover",function(){
 
-                    var thisCandidate = ""
-                    var thisCandidate = $(this).text(); 
+                    var thisCandidate = $(this).attr('id'); 
 
                     console.log(thisCandidate)
 
@@ -194,25 +197,40 @@ path.chord {
                     .attr("xlink:href", function(d, i) { return "#group" + i; })
                     .text(function(d, i, j) {
 
-                       if (thisCandidate == "Lincoln Chafee"){
+                       if (thisCandidate == "candidate0"){
 
-                        return rank[i][0] + "." + candidates[i].name;
+                         if (rank[i][0] === 0){
+                                return candidates[i].name;
+                            } else {
+                            return rank[i][0] + "." + candidates[i].name;}
                           
-                        } else if (thisCandidate == "Hillary Clinton"){
+                        } else if (thisCandidate == "candidate1"){
 
-                            return rank[i][1] + "." + candidates[i].name;
+                            if (rank[i][1] === 0){
+                                return candidates[i].name;
+                            } else {
+                            return rank[i][1] + "." + candidates[i].name;}
 
-                        } else if (thisCandidate == "Martin O'Malley"){
+                        } else if (thisCandidate == "candidate2"){
 
-                            return rank[i][2] + "." + candidates[i].name;
+                             if (rank[i][2] === 0){
+                                return candidates[i].name;
+                            } else {
+                            return rank[i][2] + "." + candidates[i].name;}
 
-                        } else if (thisCandidate == "Lawrence Lessig"){
+                        } else if (thisCandidate == "candidate3"){
 
-                            return rank[i][3] + "." + candidates[i].name;
+                             if (rank[i][3] === 0){
+                                return candidates[i].name;
+                            } else {
+                            return rank[i][3] + "." + candidates[i].name;}
 
-                        } else if (thisCandidate == "Bernie Sanders"){
+                        } else if (thisCandidate == "candidate4"){
 
-                            return rank[i][4] + "." + candidates[i].name;
+                             if (rank[i][4] === 0){
+                                return candidates[i].name;
+                            } else {
+                            return rank[i][4] + "." + candidates[i].name;}
 
                         } else {
 
@@ -253,6 +271,9 @@ path.chord {
                     .text(function(d, i) { return candidates[i].name; })
                     .style("fill", function(d, i) { return candidates[i].color; });
                 };
+
+
+
     
         };
 
