@@ -216,7 +216,10 @@ path.chord {
 
                         } else {
 
-                            return rank[i][5] + "." + candidates[i].name;
+                            if (rank[i][5] === 0){
+                                return candidates[i].name;
+                            } else {
+                            return rank[i][5] + "." + candidates[i].name;}
                         }
 
 
