@@ -100,7 +100,7 @@ path.chord {
 
                 // Add the group arc for each candidate
                 var groupPath = group.append("path")
-                    .attr("class", "groupPath")
+                    .attr("class", "groupPath") 
                     .attr("id", function(d, i) {
                         return "group" + i;
                     })
@@ -171,11 +171,6 @@ path.chord {
                     svg.selectAll("text")
                         .remove();
 
-                    svg.selectAll(".chord")
-                    .transition()
-                    .duration(200)
-                    .style("fill", "#455A64");
-
                     chord.classed("fade", function(p) {
                         return p.source.index != i && p.target.index != i;
                     });
@@ -184,6 +179,12 @@ path.chord {
                     // get the name of the candidate the user hovered over on
 
                     var thisCandidate = $(this).attr('id'); 
+
+                    svg.selectAll(".chord")
+                    .transition()
+                    .duration(100)
+                    .style("fill", "#455A64");
+
 
                     var groupText = group.append("text")
                     .attr("dx", "140")
@@ -252,7 +253,7 @@ path.chord {
 
                     svg.selectAll(".chord")
                     .transition()
-                    .duration(200)
+                    .duration(10)
                     .style("fill", function(d) {
                         return candidates[d.source.index].color;
                     });
