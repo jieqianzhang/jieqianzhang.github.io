@@ -31,6 +31,10 @@ path.chord {
     opacity:0; 
 }
 
+/*div{
+    height:100vh;
+}
+*/
 </style>
 
 <body>
@@ -75,10 +79,11 @@ path.chord {
        queue()
         .defer(d3.json, "matrix.json")
         .defer(d3.csv, "candidates.csv")
+        .defer(d3.json, "rank.json")
         .await(ready);
 
 
-       function ready(error, matrix, candidates) {
+       function ready(error, matrix, candidates, rank) {
                 
                 layout.matrix(matrix);
 
@@ -97,7 +102,7 @@ path.chord {
                     })
                     .attr("d", arc)
                     .style("fill", function(d, i) {
-                        // console.log(i)
+
                         return candidates[i].color;
                     })
                     .style("opacity",".8");
@@ -159,48 +164,73 @@ path.chord {
 
                 function mouseover(d, i) {
 
-                    // svg.selectAll("text")
-                    //     .remove();
-
-                    // get the name of the candidate the user hovered over on
-                
-                    // $(".group").on("mouseover",function(){
-
-                    // var thisCandidate = $(this).text(); 
-
-                    // console.log(thisCandidate)
-
-                    // var groupText = group.append("text")
-                    // .attr("dx", "140")
-                    // .attr("dy","-20")
-                    // .style("text-anchor", "middle");
-
-                    // groupText.append("textPath")
-                    // .attr("xlink:href", function(d, i) { return "#group" + i; })
-                    // .text(function(d, i) { 
-                    //     if (candidates[i]["Joe Biden"] === "0") {
-                    //         return candidates[i].name;
-                    //     }else{
-                    //     return candidates[i]["Joe Biden"] + ". " + candidates[i].name; }
-                    //     })
-                    // .style("fill", function(d, i) { return candidates[i].color; });
+                    svg.selectAll("text")
+                        .remove();
 
                     svg.selectAll(".chord")
                     .transition()
                     .duration(200)
                     .style("fill", "#455A64");
-       
-
 
                     chord.classed("fade", function(p) {
                         return p.source.index != i && p.target.index != i;
                     });
+                    
 
-                  // });
+                    // get the name of the candidate the user hovered over on
+                    $(".group").on("mouseover",function(){
+
+                    var thisCandidate = ""
+                    var thisCandidate = $(this).text(); 
+
+                    console.log(thisCandidate)
+
+                    var groupText = group.append("text")
+                    .attr("dx", "140")
+                    .attr("dy","-20")
+                    .style("text-anchor", "middle");
+
+                    groupText.append("textPath")
+                    .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    .text(function(d, i, j) {
+
+                       if (thisCandidate == "Lincoln Chafee"){
+
+                        return rank[i][0] + "." + candidates[i].name;
+                          
+                        } else if (thisCandidate == "Hillary Clinton"){
+
+                            return rank[i][1] + "." + candidates[i].name;
+
+                        } else if (thisCandidate == "Martin O'Malley"){
+
+                            return rank[i][2] + "." + candidates[i].name;
+
+                        } else if (thisCandidate == "Lawrence Lessig"){
+
+                            return rank[i][3] + "." + candidates[i].name;
+
+                        } else if (thisCandidate == "Bernie Sanders"){
+
+                            return rank[i][4] + "." + candidates[i].name;
+
+                        } else {
+
+                            return rank[i][5] + "." + candidates[i].name;
+                        }
+
+
+                    })       
+                    .style("fill", function(d, i) { return candidates[i].color; });
+
+                  });
 
                 };
 
                 function mouseout(d,i){
+
+                    svg.selectAll("text")
+                        .remove();
 
                     svg.selectAll(".chord")
                     .transition()
@@ -208,20 +238,17 @@ path.chord {
                     .style("fill", function(d) {
                         return candidates[d.source.index].color;
                     });
-                
+            
+                    
+                    var groupText = group.append("text")
+                    .attr("dx", "140")
+                    .attr("dy","-20")
+                    .style("text-anchor", "middle");
 
-                    // svg.selectAll("text")
-                    //     .remove();
-
-                    // var groupText = group.append("text")
-                    // .attr("dx", "140")
-                    // .attr("dy","-20")
-                    // .style("text-anchor", "middle");
-
-                    // groupText.append("textPath")
-                    // .attr("xlink:href", function(d, i) { return "#group" + i; })
-                    // .text(function(d, i) { return candidates[i].name; })
-                    // .style("fill", function(d, i) { return candidates[i].color; });
+                    groupText.append("textPath")
+                    .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    .text(function(d, i) { return candidates[i].name; })
+                    .style("fill", function(d, i) { return candidates[i].color; });
                 };
     
         };
@@ -231,7 +258,7 @@ path.chord {
             var container = d3.select(svg.node().parentNode),
                 width = parseInt(svg.style("width")),
                 height = parseInt(svg.style("height")),
-                aspect = width / height;
+                aspect = width/height;
 
             svg.attr("viewBox", "0 0 " + width + " " + height)
                 .attr("perserveAspectRatio", "xMinYMid")
