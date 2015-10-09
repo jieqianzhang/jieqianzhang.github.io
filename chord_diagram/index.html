@@ -182,11 +182,8 @@ path.chord {
                     
 
                     // get the name of the candidate the user hovered over on
-                    $(".group").on("mouseover",function(){
 
                     var thisCandidate = $(this).attr('id'); 
-
-                    console.log(thisCandidate)
 
                     var groupText = group.append("text")
                     .attr("dx", "140")
@@ -244,7 +241,7 @@ path.chord {
                     })       
                     .style("fill", function(d, i) { return candidates[i].color; });
 
-                  });
+                 
 
                 };
 
