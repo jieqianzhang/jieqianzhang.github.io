@@ -101,8 +101,8 @@ path.chord {
                     .attr("id", function(d, i) {
                         return "candidate" + i;
                     })
-                    .on("mouseenter", mouseenter)
-                    .on("mouseleave",mouseleave);               
+                    .on("mouseover", mouseover)
+                    .on("mouseout",mouseout);               
 
                 // Add the group arc for each candidate
                 var groupPath = group.append("path")
@@ -176,7 +176,7 @@ path.chord {
 
                 //Add the mouseover interactive action 
 
-                function mouseenter(d, i) {
+                function mouseover(d, i) {
 
                     svg.selectAll("text")
                         .remove();
@@ -283,7 +283,7 @@ path.chord {
 
                 };
 
-                function mouseleave(d,i){
+                function mouseout(d,i){
 
                     // svg.selectAll("text")
                     //     .remove();
