@@ -31,7 +31,15 @@ path.chord {
     opacity:0; 
 }
 
+/*#text:hover path.fade {
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition:opacity 0.2s;
+    transition: opacity 0.2s;
+    opacity:0; 
+}
 
+*/
 
 </style>
 
@@ -115,7 +123,8 @@ path.chord {
                 var groupText = group.append("text")
                     .attr("dx", "140")
                     .attr("dy","-20")
-                    .style("text-anchor", "middle");
+                    .style("text-anchor", "middle")
+                    .attr("id","text");
                     
 
                 groupText.append("textPath")
@@ -184,7 +193,33 @@ path.chord {
                     svg.selectAll(".chord")
                     .transition()
                     .duration(100)
-                    .style("fill", "#455A64");
+                    .style("fill", function(d,i){
+                        if (thisCandidate == "candidate0"){
+
+                            return candidates[0].color;
+                          
+                        } else if (thisCandidate == "candidate1"){
+
+                            
+                            return candidates[1].color;
+
+                        } else if (thisCandidate == "candidate2"){
+
+                            return candidates[2].color;
+
+                        } else if (thisCandidate == "candidate3"){
+
+                             return candidates[3].color;
+
+                        } else if (thisCandidate == "candidate4"){
+
+                            return candidates[4].color;
+
+                        } else {
+
+                           return candidates[5].color;
+                        }
+                    });
 
 
                     var groupText = group.append("text")
