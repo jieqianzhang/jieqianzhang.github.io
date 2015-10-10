@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <title>Google Chord Diagram</title>
 <style>
@@ -41,9 +42,28 @@ path.chord {
 
 */
 
+#reset{
+    padding-left: 2px;
+    line-height: 12px;
+    background-color: white;
+    margin-left:20px;
+    margin-top: 10px;
+}
+
+a:hover{
+    cursor:pointer;
+}
+
 </style>
 
 <body>
+
+    <div class="bs-example">
+    <ul class="nav nav-pills" role="tablist">
+      </li>
+      <li role="presentation" class="active" id="reset"><a data-target="#">Reset</a></li>
+    </ul> 
+    </div> 
 
     <div id="graphic"></div>
     <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -101,8 +121,8 @@ path.chord {
                     .attr("id", function(d, i) {
                         return "candidate" + i;
                     })
-                    .on("mouseover", mouseover)
-                    .on("mouseout",mouseout);               
+                    .on("mouseover", mouseover);
+                    // .on("mouseout",mouseout);               
 
                 // Add the group arc for each candidate
                 var groupPath = group.append("path")
@@ -171,6 +191,7 @@ path.chord {
                         return candidates[d.source.index].color;
                     })
                     .attr("d", path);
+                    
                    
 
 
@@ -283,7 +304,7 @@ path.chord {
 
                 };
 
-                function mouseout(d,i){
+                // function mouseout(d,i){
 
                     // svg.selectAll("text")
                     //     .remove();
@@ -305,7 +326,9 @@ path.chord {
                     // .attr("xlink:href", function(d, i) { return "#group" + i; })
                     // .text(function(d, i) { return candidates[i].name; })
                     // .style("fill", function(d, i) { return candidates[i].color; });
-                };
+                // };
+
+
 
 
 
@@ -327,8 +350,8 @@ path.chord {
 
             function resize() {
                 var targetWidth = parseInt(container.style("width"));
-                svg.attr("width", targetWidth * 0.55);
-                svg.attr("height", Math.round(targetWidth / aspect * 0.55));
+                svg.attr("width", targetWidth * 0.50);
+                svg.attr("height", Math.round(targetWidth / aspect * 0.50));
             }
         }
 
@@ -339,4 +362,8 @@ path.chord {
 
     <script>
     drawGraphic()
+    d3.select("#reset")
+    .on("click", function(){
+      location.reload()
+    })
     </script>
