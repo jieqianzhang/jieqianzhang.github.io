@@ -23,7 +23,7 @@ path.chord {
     opacity: 0.8;
 }
 
-#round:hover path.fade {
+/*#round:hover */path.fade {
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     -ms-transition:opacity 0.2s;
@@ -31,10 +31,8 @@ path.chord {
     opacity:0; 
 }
 
-/*div{
-    height:100vh;
-}
-*/
+
+
 </style>
 
 <body>
@@ -95,8 +93,8 @@ path.chord {
                     .attr("id", function(d, i) {
                         return "candidate" + i;
                     })
-                    .on("mouseover", mouseover)
-                    .on("mouseout",mouseout);               
+                    .on("mouseenter", mouseenter)
+                    .on("mouseleave",mouseleave);               
 
                 // Add the group arc for each candidate
                 var groupPath = group.append("path")
@@ -118,11 +116,13 @@ path.chord {
                     .attr("dx", "140")
                     .attr("dy","-20")
                     .style("text-anchor", "middle");
+                    
 
                 groupText.append("textPath")
                     .attr("xlink:href", function(d, i) { return "#group" + i; })
                     .text(function(d, i) { return candidates[i].name; })
                     .style("fill", function(d, i) { return candidates[i].color; });
+                   
 
                 //Add ticks to show percentage
 
@@ -162,11 +162,12 @@ path.chord {
                         return candidates[d.source.index].color;
                     })
                     .attr("d", path);
+                   
 
 
                 //Add the mouseover interactive action 
 
-                function mouseover(d, i) {
+                function mouseenter(d, i) {
 
                     svg.selectAll("text")
                         .remove();
@@ -242,21 +243,22 @@ path.chord {
                     })       
                     .style("fill", function(d, i) { return candidates[i].color; });
 
+
                  
 
                 };
 
-                function mouseout(d,i){
+                function mouseleave(d,i){
 
                     svg.selectAll("text")
                         .remove();
 
-                    svg.selectAll(".chord")
-                    .transition()
-                    .duration(10)
-                    .style("fill", function(d) {
-                        return candidates[d.source.index].color;
-                    });
+                    // svg.selectAll(".chord")
+                    // .transition()
+                    // .duration(10)
+                    // .style("fill", function(d) {
+                    //     return candidates[d.source.index].color;
+                    // });
             
                     
                     var groupText = group.append("text")
