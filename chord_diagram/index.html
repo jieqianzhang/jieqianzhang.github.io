@@ -250,8 +250,8 @@ path.chord {
 
                 function mouseleave(d,i){
 
-                    svg.selectAll("text")
-                        .remove();
+                    // svg.selectAll("text")
+                    //     .remove();
 
                     // svg.selectAll(".chord")
                     // .transition()
@@ -261,15 +261,15 @@ path.chord {
                     // });
             
                     
-                    var groupText = group.append("text")
-                    .attr("dx", "140")
-                    .attr("dy","-20")
-                    .style("text-anchor", "middle");
+                    // var groupText = group.append("text")
+                    // .attr("dx", "140")
+                    // .attr("dy","-20")
+                    // .style("text-anchor", "middle");
 
-                    groupText.append("textPath")
-                    .attr("xlink:href", function(d, i) { return "#group" + i; })
-                    .text(function(d, i) { return candidates[i].name; })
-                    .style("fill", function(d, i) { return candidates[i].color; });
+                    // groupText.append("textPath")
+                    // .attr("xlink:href", function(d, i) { return "#group" + i; })
+                    // .text(function(d, i) { return candidates[i].name; })
+                    // .style("fill", function(d, i) { return candidates[i].color; });
                 };
 
 
