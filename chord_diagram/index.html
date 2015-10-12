@@ -32,20 +32,9 @@ path.chord {
     opacity:0; 
 }
 
-/*#text:hover path.fade {
-    -webkit-transition: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -ms-transition:opacity 0.2s;
-    transition: opacity 0.2s;
-    opacity:0; 
-}
-
-*/
-
 #reset{
     padding-left: 2px;
     line-height: 12px;
-    background-color: white;
     margin-left:20px;
     margin-top: 10px;
 }
@@ -192,7 +181,7 @@ a:hover{
                     })
                     .attr("d", path);
                     
-                   
+                
 
 
                 //Add the mouseover interactive action 
@@ -208,7 +197,6 @@ a:hover{
                     
 
                     // get the name of the candidate the user hovered over on
-
                     var thisCandidate = $(this).attr('id'); 
 
                     svg.selectAll(".chord")
@@ -299,9 +287,7 @@ a:hover{
                     })       
                     .style("fill", function(d, i) { return candidates[i].color; });
 
-
-                 
-
+                    
                 };
 
                 // function mouseout(d,i){
@@ -350,7 +336,7 @@ a:hover{
 
             function resize() {
                 var targetWidth = parseInt(container.style("width"));
-                svg.attr("width", targetWidth * 0.50);
+                svg.attr("width", targetWidth);
                 svg.attr("height", Math.round(targetWidth / aspect * 0.50));
             }
         }
@@ -363,7 +349,12 @@ a:hover{
     <script>
     drawGraphic()
     d3.select("#reset")
-    .on("click", function(){
-      location.reload()
+        .on("click", function(){
+            
+            location.reload()   
+                    
     })
+                 
+
+   
     </script>
