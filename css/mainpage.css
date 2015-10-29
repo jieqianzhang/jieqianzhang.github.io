@@ -31,13 +31,19 @@
     }
     
     .pic-frame h2{
-        font-size: 16px;
+        font-size: 18px;
+        color:#888787;
+        line-height: 18px;
+    }
+
+    .pic-frame h3{
+        font-size: 14px;
         color:black;
         line-height: 18px;
     }
 
     .pic-frame h4{
-        color:black;
+        color:#888787;
     }
     
     .links{
