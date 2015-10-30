@@ -31,6 +31,7 @@
     }
     
     .pic-frame h2{
+        padding-top: 2px;
         font-size: 15px;
         color:#888787;
         line-height: 18px;
@@ -48,7 +49,12 @@
     
     .links{
         text-decoration: none;
-        color:grey;
+        color: #c045cc;
+        opacity: .8;
+    }
+
+    .link2{
+        color:white;
     }
 
 
@@ -58,10 +64,12 @@
         /*font-size: 30px;*/
         position:absolute;
         margin-top: 50px;
-        margin-left: 320px;
-        margin-right: 50px;
+        margin-left: 280px;
+        margin-right: 80px;
         /*width:800px;*/
     }
+
+
 
     .intro h1{
         font-size: 40px;
@@ -73,13 +81,15 @@
     .intro h3{
         font-size: 16px;
         margin-top: 10px;
+        line-height: 24px;
         font-family: "Montserrat", sans-serif;
         /*font-family: 'Press Start 2P', cursive;*/
     }
 
-   /* i:hover{
-      color:rgba(29, 168, 183,1) !important;
-     }*/
+    i:hover{
+      color:rgba(192, 69, 204,.8) !important;
+     }
+
 
      #panel{
         display:none;
@@ -184,20 +194,23 @@
     }*/
 
     #hidden1{
-        background-color: #91219E ;
+        /*background-color: #91219E;*/
+        background-color: #93419d;
     }
 
     #hidden2{
-        background-color: #8121CF;
+        /*background-color: #8121CF;*/
+        background-color: #9148cc;
     }
 
     #hidden3{
-        background-color: #500f9b ;
+       /* background-color: #500f9b;*/
+       background-color: #5d289a;
     }
 
-    #hidden4{
+    /*#hidden4{
         background-color: #2E0854;
-    }
+    }*/
     
   /*  #hidden5{
         background-color: #8d186A;
@@ -210,6 +223,7 @@
         float: right;
         color: black;
         opacity:0.6;
+        font-family: "Abel", sans-serif;
     }
     
     .number i {
@@ -288,6 +302,16 @@
         width: 100%
     }
 
+    .icon .fa{
+        padding-left: 2px;
+        padding-right: 2px;
+
+    }
+
+    .icon:hover{
+        color:black;
+    }
+
     
     @media only screen and (min-width:768px) and (max-width:1500px) {
         .container {
@@ -314,7 +338,7 @@
 
         padding-top: 40px;
         float:left;
-        margin-left: 120px;
+        margin-left: 80px;
     }
     
     }
@@ -358,11 +382,13 @@
 
         }
 
-         .icon2{
+        .icon2{
             width:160px;
             margin-left: auto;
             margin-right: auto;
+
         }
+
     }
     
     
