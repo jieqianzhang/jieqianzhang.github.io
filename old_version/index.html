@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="image/icon.ico" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+ <!--    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P|Sarpanch:400,800' rel='stylesheet' type='text/css'> -->
+    <title>JQ ZHANG</title>
+</head>
+
+<body>
+
+    <header>
+       <!--  <div class="menubtn" id="menubtn">
+          <button value="false" class="c-hamburger c-hamburger--htx">
+            <span>toggle menu</span>
+          </button>
+        </div>
+
+        <div id="panel">
+            <h1>fdafhdakhfgaldhsjd</h1>
+        </div>
+ -->
+      
+
+        <div class="logo">
+            <img id="logopic" src="logo.png"></img>
+        </div>
+
+        <div class="intro">
+            <h1>JIEQIAN ZHANG</h1>
+            <h3>I am a data reporter and videographer at <a class="links link1" href="http://journalism.berkeley.edu/">UC Berkeley Graduate School of Journalism </a>. On the side, I visualize data for <a class = "link2" href="https://www.google.com/trends/">Google Trends</a> at <a class = "links link3" href = "https://newslab.withgoogle.com/">Google News Lab</a>. Previously a data intern at Asia Society and associate news producer at RTL Nieuws. I enjoy coding, building tools and making videos. Please contact me at:</h3>
+            <div class="col-lg-12 col-sm-9 text-center icon">
+                <a href="mailto:zhang.jieqian@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+                <a href="https://twitter.com/Jieqian_Zhang"><i class="fa fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/jieqian.zhang.1"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com/pub/jieqian-zhang/52/216/933"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                 <a href="https://github.com/jieqianzhang"><i class="fa fa-github fa-2x"></i></a>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-9 text-center icon2">
+                <a href="mailto:zhang.jieqian@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+                <a href="https://twitter.com/Jieqian_Zhang"><i class="fa fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/jieqian.zhang.1"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com/pub/jieqian-zhang/52/216/933"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                 <a href="https://github.com/jieqianzhang"><i class="fa fa-github fa-2x"></i></a>
+        </div>
+
+    </header>
+
+    <script>
+//     (function() {
+
+//     var toggles = document.querySelectorAll(".c-hamburger");
+
+//     for (var i = toggles.length - 1; i >= 0; i--) {
+//     var toggle = toggles[i];
+//     toggleHandler(toggle);
+//     };
+
+//     function toggleHandler(toggle) {
+//         toggle.addEventListener( "click", function(e) {
+//             e.preventDefault();
+//             (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+//     });
+//   }
+
+// })();
+    </script>
+
+    <section class="data">
+
+        <div class="toggle " id="hidden1">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 90%;">Data & Web</h2>
+                <div class="number" color="#8d186A">01</div>
+            </div>
+        </div>
+
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+
+                <div class = "pic-frame rounded" onclick="window.open('http://jieqianzhang.github.io/horserace_presidential/index.html','mywindow');">
+                    <div class = "pic">
+                        <img src="image/horserace.png"></img>
+                        <h2>2016 Presidential Campaign: Horserace</h2>
+                        <h3>Google News Lab</h3>
+                        <h4>Built with d3.js</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('http://bit.ly/1MUDUUM','mywindow');">
+                    <div class = "pic">
+                        <img src="image/tree.png"></img>
+                        <h2>GOP Debate: Tree Layout</h2>
+                        <h3>Google News Lab</h3>
+                        <h4>Built with d3.js</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('http://bit.ly/1k5Rzl2','mywindow');">
+                    <div class = "pic">
+                        <img src="image/chord_diagram.png"></img>
+                        <h2>Democratic candidates: who searched for who?</h2>
+                        <h3>Google News Lab</h3>
+                        <h4>Built with d3.js</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('http://jieqianzhang.github.io/cal_triangulation/index.html','mywindow');">
+                    <div class = "pic">
+                        <img src="image/triangulation.png"></img>
+                        <h2>Triangulation & Transition</h2>
+                        <h3>Well, it's just for fun...</h3>
+                        <h4>Built with Adobe Illustrator and d3.js</h4>
+                    </div>
+                </div>
+
+
+                <div class = "pic-frame rounded" onclick="window.open('http://jieqianzhang.github.io/sfauto/index.html','mywindow');">
+                    <div class = "pic">
+                        <img src="image/sfauto.png"></img>
+                        <h2>SF Auto Break-ins</h2>
+                        <h3>Personal project</h3>
+                        <h4>Built with R and d3.js</h4>
+                    </div>
+                </div>
+
+
+
+                <div class = "pic-frame rounded" onclick="window.open('http://jieqianzhang.github.io/multiline_carbon/index.html','mywindow');">
+                    <div class = "pic">
+                        <img src="image/carbon.png"></img>
+                        <h2>Carbon Intensity</h2>
+                        <h3>ChinaFile, Asia Society</h3>
+                        <h4>Built with d3.js</h4>
+                    </div>
+                </div>
+
+
+                <div class = "pic-frame rounded" onclick="window.open('http://jieqianzhang.github.io/pie_aiib/index.html','mywindow');">
+                    <div class = "pic">
+                        <img src="image/aiib.png"></img>
+                        <h2>Asian Infrustructure Investment Bank</h2>
+                        <h3>Personal project</h3>
+                        <h4>Built with d3.js</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('http://jieqianzhang.github.io/depression/index.html','mywindow');">
+                    <div class = "pic">
+                        <img src="image/studyaboard.png"></img>
+                        <h2>Against All Odds</h2>
+                        <h3>School Assignment</h3>
+                        <h4>Collaboration with Fan Fei, Jeremy Lin and Chloe Shi</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="toggle " id="hidden2">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 80%;">Videography</h2>
+                <div class="number">02</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+
+                <div class = "pic-frame rounded" onclick="window.open('https://vimeo.com/114204953','mywindow');">
+                    <div class = "pic">
+                        <img src="image/sister.png"></img>
+                        <h2>Sister, sister</h2>
+                        <h3>School Assignment</h3>
+                        <h4>Collaboration with Chloe Shi</h4>
+                    </div>
+                </div>
+                
+                <div class = "pic-frame rounded" onclick="window.open('https://www.youtube.com/watch?v=k3wTEsc7UMA','mywindow');">
+                    <div class = "pic">
+                        <img src="image/aj.png"></img>
+                        <h2>Rise of a Nation</h2>
+                        <h3>Al Jazeera Arabic</h3>
+                        <h4>Collaboration with Howyda Taha</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('https://youtu.be/dOl37Fwo8-o','mywindow');">
+                    <div class = "pic">
+                        <img src="image/onechild.png"></img>
+                        <h2>One-child Policy No More</h2>
+                        <h3>Metropolis TV, the Netherlands</h3>
+                        <h4>Collaboration with Marije Vlaskamp</h4>
+                    </div>
+                </div>
+
+                 <div class = "pic-frame rounded" onclick="window.open('https://youtu.be/I301m2jgxlk','mywindow');">
+                    <div class = "pic">
+                        <img src="image/speaker.png"></img>
+                        <h2>From criminal to inspirational speaker in China</h2>
+                        <h3>Metropolis TV, the Netherlands</h3>
+                        <h4>Collaboration with Marije Vlaskamp</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('https://youtu.be/tSX04grF3HU','mywindow');">
+                    <div class = "pic">
+                        <img src="image/pupil.png"></img>
+                        <h2>Mr. Lou's lonely pupils</h2>
+                        <h3>Metropolis TV, the Netherlands</h3>
+                        <h4>Collaboration with Marije Vlaskamp</h4>
+                    </div>
+                </div>
+
+                <div class = "pic-frame rounded" onclick="window.open('https://youtu.be/iMsg65NpdO8','mywindow');">
+                    <div class = "pic">
+                        <img src="image/promotion.png"></img>
+                        <h2>Condom Promotion Team</h2>
+                        <h3>Metropolis TV, the Netherlands</h3>
+                        <h4>Collaboration with Marije Vlaskamp</h4>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="toggle " id="hidden3">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 70%;">Photography</h2>
+                <div class="number">03</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded" onclick="window.open('http://static1.volkskrant.nl/static/nmc/red/frameset/2015/verlorengeneratie/','mywindow');">
+                    <div class = "pic">
+                        <img src="image/zhiqing.png"></img>
+                        <h2>Zhiqing, China's Sent-down Youth</h2>
+                        <h3>de Volkskrant, the Netherlands</h3>
+                        <h4>Collaboration with Marije Vlaskamp</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="toggle " id="hidden4">
+            <div class="container clearfix">
+                <h2 class="name" style="width: 60%;">Articles</h2>
+                <div class="number">04</div>
+            </div>
+        </div>
+        <div style="display: none" class="hidden">
+            <div class= "space"></div>
+            <div class="container clearfix">
+                
+
+
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+                <div class = "pic-frame rounded">
+                    <div class = "pic"></div>
+                </div>
+
+
+         </div>
+    </section> -->
+
+   
+    <footer>
+        <div class="container clearfix">
+            <div class="alignleft">
+                <p>© 2015 Jieqian Zhang | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" defer="defer" src="js/autoptimize.js"></script>
+</body>
+
+</html>
