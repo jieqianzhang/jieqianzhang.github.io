@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Carbon Density of Countries</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+</head>
+
+
+<style>
+
+body {
+  font-size: 12px;
+  font-family: 'Abel', sans-serif;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.tick line{
+    stroke: #000;
+    opacity: 1;
+    }
+
+#tooltip {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 5px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+    }
+
+#tooltip.hidden {
+        display: none;
+    }
+
+#tooltip p {
+        margin: 0;
+        font-family: 'Abel', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color:black;
+    }
+#title{
+  font-size: 20px;
+}
+
+p{
+  padding-left: 40px;
+  margin-top: 0px;
+  color:grey;
+}
+
+.link{
+  text-decoration: none;
+}
+
+
+
+</style>
+
+
+<body>
+
+<div id="graphic"></div>
+<div id="tooltip" class="hidden">
+<p><strong id="column"></strong> , <span id="year"></span></p>
+<p><span id="value"></span></p>
+</div>
+
+<p> Source: <a class="source" href="http://www.globalcarbonatlas.org/?q=en/content/welcome-carbon-atlas">Global Carbon Atlas</a></p>
+
+<script src="http://d3js.org/d3.v3.js"></script>
+<script>
+
+function drawGrahpics(){
+
+var margin = {top: 50, right: 50, bottom: 80, left: 50},
+    width = 630 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = d3.scale.category10();
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .ticks(15)
+    .innerTickSize(10)
+    .outerTickSize(0)
+    .tickPadding(10)
+    .tickFormat(d3.format("d.year"))
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .tickFormat(function(d) { return d ;})
+    .ticks(10)
+    .innerTickSize(- width)
+    .tickPadding(10)
+    .innerTickSize(0)
+    .outerTickSize(0)
+    .orient("left");
+
+var line = d3.svg.line()
+    .interpolate("basis")
+    .x(function(d) { return x(d.year); })
+    .y(function(d) { return y(d.carbon); });
+
+
+var svg = d3.select("#graphic").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.tsv("data.tsv", function(error, data) {
+  
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));
+
+  data.forEach(function(d) {
+    d.year = +[d.year];
+  });
+
+
+  var countries = color.domain().map(function(name) {
+    return {
+      name: name,
+      values: data.map(function(d) {
+        return {name:name, year: d.year, carbon: +d[name]};
+      })
+    };
+  });
+
+
+  x.domain(d3.extent(data, function(d) { return d.year; }));
+
+  y.domain([
+    d3.min(countries, function(c) { return d3.min(c.values, function(v) { return v.carbon; }); }),
+    d3.max(countries, function(c) { return d3.max(c.values, function(v) { return v.carbon; }); })
+  ]);
+
+// call xAxis
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+// call yAxis and sidetitle 
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+      .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", - height/2 - 30)
+            .attr("y", - 50)
+            .attr("dy", ".71em")
+            .style("text-anchor", "center")
+            .text("CO2 per GDP")
+            .attr("id","subtitle");
+
+
+// text of the title
+svg.append("text")
+            .text("Carbon Intensity by Year from 1970 to 2013") 
+            .attr("id","title")
+            .attr("text-align","center")
+            .attr("font-weight", "800")
+            .style("text-anchor", "middle")
+            .attr("x", width/2)
+            .attr("y", "-30")
+            .attr("fill","#071E22");  
+
+//end of the title 
+
+
+
+// start of doted lines on the background 
+  svg.append("line")
+        .attr(
+        {
+            "class":"horizontalGrid",
+            "x1" : 0,
+            "x2" : width,
+            "y1" : y(0)-3,
+            "y2" : y(0)-3,
+            "fill" : "none",
+            "shape-rendering" : "crispEdges",
+            "stroke" : "#000",
+            "stroke-width" : "1px"
+        });
+
+var lineardata = [1,2,3,4,5,6,7]
+
+
+svg.selectAll('line.dottedline')
+    .data(lineardata)
+    .enter()
+    .append('line')
+      .attr("class","dottedline")
+      .attr(
+        {
+            "class":"horizontalGrid",
+            "x1" : 0,
+            "x2" : width,
+            "y1" : function(d){
+              return y(d);
+            },
+            "y2" : function(d){
+              return y(d);
+            },
+            "fill" : "none",
+            "shape-rendering" : "crispEdges",
+            "stroke" : "#ddd",
+            "stroke-width" : "1px",
+            "stroke-dasharray": ("3, 3")
+        });
+
+   // end of dotted lines 
+
+   // append legend 
+
+      //China
+   svg.append("rect")
+            .attr("x", "-2")
+            .attr("y", height + 50)
+            .attr("width","30")
+            .attr("height", "4")
+            .style("fill", "#F06449");
+
+   svg.append("text")
+            .attr("x", "35")
+            .attr("y", height + 56)
+            .attr("text-anchor", "start")
+            .text("China");
+      
+        // Germany
+   svg.append("rect")
+            .attr("x", "95")
+            .attr("y", height + 50)
+            .attr("width","30")
+            .attr("height", "4")
+            .style("fill", "#FABC3C");
+
+   svg.append("text")
+            .attr("x", "130")
+            .attr("y", height + 56)
+            .attr("text-anchor", "start")
+            .text("Germany");
+
+        //India 
+   svg.append("rect")
+            .attr("x", "200")
+            .attr("y", height + 50)
+            .attr("width","30")
+            .attr("height", "4")
+            .style("fill", "#0F7173");
+
+   svg.append("text")
+            .attr("x", "235")
+            .attr("y", height + 56)
+            .attr("text-anchor", "start")
+            .text("India");
+
+        //Japan
+    svg.append("rect")
+            .attr("x", "290")
+            .attr("y", height + 50)
+            .attr("width","30")
+            .attr("height", "4")
+            .style("fill", "#6622CC");
+
+   svg.append("text")
+            .attr("x", "325")
+            .attr("y", height + 56)
+            .attr("text-anchor", "start")
+            .text("Japan");
+
+        //U.K.
+   svg.append("rect")
+            .attr("x", "380")
+            .attr("y", height + 50)
+            .attr("width","30")
+            .attr("height", "4")
+            .style("fill", "#F038FF");
+
+   svg.append("text")
+            .attr("x", "415")
+            .attr("y", height + 56)
+            .attr("text-anchor", "start")
+            .text("U.K.");
+
+        //U.S.
+   svg.append("rect")
+            .attr("x", "470")
+            .attr("y", height + 50)
+            .attr("width","30")
+            .attr("height", "4")
+            .style("fill", "#75dae6");
+
+   svg.append("text")
+            .attr("x", "505")
+            .attr("y", height + 56)
+            .attr("text-anchor", "start")
+            .text("U.S.");
+
+            
+
+  // end of legends
+
+
+  var countries = svg.selectAll(".country")
+      .data(countries)
+    .enter().append("g")
+      .attr("class", "country");
+
+
+
+  var path = svg.selectAll(".country").append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      .style("stroke", function(d) { if (d.name == "China") 
+                                        {return "#F06449"}
+                                        else if (d.name == "Germany")
+                                          {return "#FABC3C"}
+                                        else if (d.name == "India")
+                                          {return "#0F7173"}
+                                        else if (d.name == "Japan")
+                                          {return "#6622CC"}
+                                        else if (d.name == "U.K.")
+                                          {return "#F038FF"}
+                                        else {return "#75dae6";}
+                                         });
+      
+
+
+      
+
+      // .on("mouseover", function (d) {
+      //   countries.style("opacity",0.2);
+      //   countries.filter(function(path) {return path.name === d.name; }).style("opacity",1);
+      // })
+      // .on("mouseout", function (d) { 
+      //   countries.style("opacity",1)});
+
+
+  var point = countries.append("g")
+     .attr("class","line-point")
+
+  point.selectAll("circle")
+                .data(function(d,i){
+                  return d.values;
+                })
+                .enter()
+                .append("circle")
+                .attr("cx", function(d,i) {
+                  return x(d.year);
+                })
+                .attr("cy", function(d,i){
+                  return y(d.carbon);
+                })
+                .attr("r", 5)
+                .style("opacity", 0)
+                .style("fill", function(d) { if (d.name == "China") 
+                                        {return "#F06449"}
+                                        else if (d.name == "Germany")
+                                          {return "#FABC3C"}
+                                        else if (d.name == "India")
+                                          {return "#0F7173"}
+                                        else if (d.name == "Japan")
+                                          {return "#6622CC"}
+                                        else if (d.name == "U.K.")
+                                          {return "#F038FF"}
+                                        else {return "#75dae6";}
+                                         })
+                .on ("mouseover", function (d){
+                    d3.select(this)
+                      .style("opacity",1)
+                    var xPosition = parseFloat(d3.select(this).attr("cx"));
+                    var yPosition = parseFloat(d3.select(this).attr("cy"));
+                    d3.select("#tooltip")
+                       .select("#column")
+                       .text(d.name)
+                    d3.select("#tooltip")
+                        .style("left", xPosition + "px")
+                        .style("top", yPosition + "px")
+                        .select("#value")
+                        .text(d.carbon)
+                    d3.select("#tooltip")
+                       .select("#year")
+                       .text(d.year)
+                    d3.select("#tooltip")
+                       .classed("hidden",false)       
+                    ;})
+                .on("mouseout", function(){
+                    d3.select(this)
+                      .style("opacity",0)
+                    d3.select("#tooltip").classed("hidden", true);
+                    })
+
+
+  
+var totalLength = [path[0][0].getTotalLength(), path[0][2].getTotalLength()];
+
+console.log(totalLength);
+
+
+   d3.select(path[0][0])
+      .attr("stroke-dasharray", totalLength[0] + " " + totalLength[0] ) 
+      .attr("stroke-dashoffset", totalLength[0])
+      .transition()
+        .duration(3000)
+        .ease("linear")
+        .attr("stroke-dashoffset", 0);
+
+   d3.select(path[0][1])
+      .attr("stroke-dasharray", totalLength[1] + " " + totalLength[1] )
+      .attr("stroke-dashoffset", totalLength[1])
+      .transition()
+        .duration(3000)
+        .ease("linear")
+        .attr("stroke-dashoffset", 0);
+
+  d3.select(path[0][2])
+      .attr("stroke-dasharray", totalLength[1] + " " + totalLength[1] )
+      .attr("stroke-dashoffset", totalLength[1])
+      .transition()
+      .duration(3000)
+      .ease("linear")
+      .attr("stroke-dashoffset", 0);
+  d3.select(path[0][3])
+      .attr("stroke-dasharray", totalLength[1] + " " + totalLength[1] )
+      .attr("stroke-dashoffset", totalLength[1])
+      .transition()
+        .duration(3000)
+        .ease("linear")
+        .attr("stroke-dashoffset", 0);
+  d3.select(path[0][4])
+      .attr("stroke-dasharray", totalLength[1] + " " + totalLength[1] )
+      .attr("stroke-dashoffset", totalLength[1])
+      .transition()
+        .duration(3000)
+        .ease("linear")
+        .attr("stroke-dashoffset", 0);
+  d3.select(path[0][5])
+      .attr("stroke-dasharray", totalLength[1] + " " + totalLength[1] )
+      .attr("stroke-dashoffset", totalLength[1])
+      .transition()
+        .duration(3000)
+        .ease("linear")
+        .attr("stroke-dashoffset", 0);
+
+});
+
+}
+
+</script>
+
+</body>
+
+<script>
+drawGrahpics()
+</script>
+
+</html>
