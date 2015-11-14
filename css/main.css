@@ -167,13 +167,14 @@ footer p {
     }
     li {
         display: inline-block;
-        width: 60px;
+        width: 50px;
     }
     ul {
         font-family: "Abel", "Helvetica Neue", san-serif;
         font-size: 16px;
         list-style-type: none;
-        padding: 20px 0 20px 0;
+        padding-top: 20px;
+        padding-left: 0px;
         text-align: center;
         position: fixed;
         background-color: steelblue;
