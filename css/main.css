@@ -147,7 +147,7 @@ footer p {
         /*background: steelblue url(../image/before.png) fixed no-repeat 30px 30px;*/
         background: steelblue;
         overflow: hidden;
-        padding: 0 0 30px 0;
+       /* padding: 0 0 30px 0;*/
         height: 600px;
         width:100%;
     }
