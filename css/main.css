@@ -43,6 +43,10 @@ i:hover {
     padding-top: 0;
 }
 
+footer{
+    margin-bottom: 20px;
+}
+
 footer p {
     margin-top: 100px;
     margin-bottom: 20px;
