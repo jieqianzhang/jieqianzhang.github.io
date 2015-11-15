@@ -48,10 +48,10 @@ footer{
 }
 
 footer p {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    padding-top: 100px;
     left: 80px;
     position: absolute;
+    line-height: 30px;
 }
 
 @media only screen and (min-width:768px) and (max-width:1500px) {
@@ -79,13 +79,17 @@ footer p {
         font-family: "Abel", "Helvetica Neue", san-serif;
         font-size: 16px;
         list-style-type: none;
-        padding: 40px 0;
+        padding-top:30px; 
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 10px;
         position: fixed;
-        left: 40px;
+        margin-left: 0px;
+        left: 0px;
     }
     ul a {
-        text-decoration: underline;
-        color: #1a2f40;
+        text-decoration: none;
+        color: rgba(0,0,0, 0.8);
     }
     #intro {
         font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
@@ -152,7 +156,7 @@ footer p {
         background: steelblue;
         overflow-x: hidden;
        /* padding: 0 0 30px 0;*/
-        height: 600px;
+        height: 650px;
         width:100%;
     }
 
