@@ -37,6 +37,7 @@ i:hover {
 
 .screenshot img:hover {
     border: lightgrey solid 6px;
+    cursor:pointer;
 }
 
 .summary {
