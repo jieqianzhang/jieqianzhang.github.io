@@ -25,16 +25,16 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
 </head>
 <script>
-  $(document).ready(function(){
-        $.getJSON("js/data.json", function(json) {
-          addRows(json);
-          fillPage(json);
-        });
-      })
+$(document).ready(function() {
+    $.getJSON("js/data.json", function(json) {
+        addRows(json);
+        fillPage(json);
+    });
+})
 </script>
+
 <body>
     <div class="container intro">
         <div class="">
@@ -43,13 +43,15 @@
         <div class="header">
             <div class="text-center">
                 <h1 class="text-center page-header"><span class="font1">Jieqian</span><span class="font1"> Zhang</span></h1>
-                <p class="text-center intro_text">- HELLO<br>I am a graphics and data reporter,
+                <p class="text-center intro_text">- HELLO
+                    <br>I am a graphics and data reporter,
                     <br>recently graduated from <a href="http://journalism.berkeley.edu/students/jieqian_zhang/" target="_blank"> UC Berkeley Graduate School of Journalism </a>.
                     <br> Currently, I am a Google News Lab Fellow at <a href="https://www.revealnews.org" target="_blank"> the Center for Investigative Reporting</a>.
                     <br> Previously, I was a contributing graphics designer at <a href="https://www.google.com/trends/" target="_blank"> Google Trends</a>.
                     <br>I enjoy coding, building tools and making videos.
                     <br>Download my resume <a href="resume.pdf" target="_blank"> here </a>.
                     <br>
+                </p>
             </div>
         </div>
     </div>
@@ -63,5 +65,21 @@
     <div id="portfolio">
     </div>
 </body>
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-81544002-1', 'auto');
+ga('send', 'pageview');
+</script>
 
 </html>
