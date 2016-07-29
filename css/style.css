@@ -12,6 +12,11 @@ body {
     margin-left: -50px;
 }
 
+.intro_text{
+    font-size: 15px;
+    line-height: 25px;
+}
+
 .intro_text a{
     background-color: #F77962;
     color:white;
