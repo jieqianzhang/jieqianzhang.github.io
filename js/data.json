@@ -1,5 +1,11 @@
 [
 {
+  "pub":"The Wall Street Journal",
+  "link":"http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
+  "imglink":"image/immigelect.gif",
+  "type":"Interactive",
+  "description":"The New Face of American Immigration (Collaboration with Andrew Van Dam and Paul Overberg )"
+},{
   "pub":"The Center for Investigative Reporting",
   "link":"https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
   "imglink":"image/welfare.gif",
