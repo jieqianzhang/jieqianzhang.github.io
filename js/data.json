@@ -1,6 +1,24 @@
 [
 {
   "pub":"The Wall Street Journal",
+  "link":"http://graphics.wsj.com/elections/2016/election-map-quiz/",
+  "imglink":"image/quiz.png",
+  "type":"Interactive",
+  "description":"Guess the 2016 Electoral College Map (Collaboration with Shane Shifflett)"
+},{
+  "pub":"The Wall Street Journal",
+  "link":"http://www.wsj.com/articles/cant-hear-in-noisy-places-its-a-real-medical-condition-1474909624",
+  "imglink":"image/hearing.jpg",
+  "type":"Illustration",
+  "description":"Can’t Hear in Noisy Places? It’s a Real Medical Condition"
+},{
+  "pub":"The Wall Street Journal",
+  "link":"http://www.wsj.com/graphics/how-does-your-college-rank-2016/",
+  "imglink":"image/ranking.png",
+  "type":"Interactive",
+  "description":"Find Your College’s Ranking"
+},{
+  "pub":"The Wall Street Journal",
   "link":"http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
   "imglink":"image/immigelect.gif",
   "type":"Interactive",
@@ -24,13 +42,6 @@
   "type":"Web design, animation, illustration and data reporting",
   "description":"Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist. (Collaboration with Noelia González and Brett Murphy)"
 },{
-  "pub":"School project",
-  "link":"http://media.journalism.berkeley.edu/projects/2016/20160510_chinese_closet/index.html",
-  "imglink":"image/closet.gif",
-  "type":"Web design, graphics and data reporting",
-  "description":"The Chinese Closet (Collaboration with Fan Fei and Larry Zhou)"
-},
-{
   "pub":"Google Trends, Vox",
   "link":"http://www.vox.com/2016/2/2/10898008/super-bowl-patriots-flights",
   "imglink":"image/superbowl.gif",
