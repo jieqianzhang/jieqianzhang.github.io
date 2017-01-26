@@ -1,6 +1,19 @@
 [
 {
   "pub":"The Wall Street Journal",
+  "link":"http://www.wsj.com/graphics/dow-20000/",
+  "imglink":"image/dow.png",
+  "type":"Interactive",
+  "description":"How the Dow Breached 20000 (Collaboration with Stuart A. Thompson)"
+},
+{
+  "pub":"The Wall Street Journal",
+  "link":"http://www.wsj.com/graphics/trumps-inner-circle/",
+  "imglink":"image/trumpcabinet.png",
+  "type":"Interactive",
+  "description":"Trump’s Inner Circle (Collaboration with Jessia Ma)"
+}, {
+  "pub":"The Wall Street Journal",
   "link":"http://graphics.wsj.com/elections/2016/election-map-quiz/",
   "imglink":"image/quiz.png",
   "type":"Interactive",
