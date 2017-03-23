@@ -1,6 +1,27 @@
 [
 {
   "pub":"The Wall Street Journal",
+  "link":"https://www.wsj.com/graphics/which-cable-channels-can-justify-their-cost/",
+  "imglink":"image/smallchannels-scatter.png",
+  "type":"Interactive",
+  "description":"Which Cable Channels Can Justify Their Cost? (Collaboration with Shalini Ramachandran)"
+},
+{
+  "pub":"The Wall Street Journal",
+  "link":"https://www.wsj.com/graphics/channel-cost/",
+  "imglink":"image/smallchannels.png",
+  "type":"Interactive",
+  "description":"TV Channels Costing the Most Per Viewer (Collaboration with Shalini Ramachandran and Amol Sharma)"
+},
+{
+  "pub":"The Wall Street Journal",
+  "link":"https://graphics.wsj.com/you-decide-will-snaps-ipo-be-the-next-facebook-or-twitter/",
+  "imglink":"image/snap.png",
+  "type":"Interactive",
+  "description":"Will Snap’s IPO Be the Next Facebook or Twitter? (Collaboration with Julia Wolfe and Sean McDade)"
+},
+{
+  "pub":"The Wall Street Journal",
   "link":"http://www.wsj.com/graphics/dow-20000/",
   "imglink":"image/dow.png",
   "type":"Interactive",
