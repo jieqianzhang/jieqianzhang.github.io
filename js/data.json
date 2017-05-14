@@ -1,6 +1,13 @@
 [
  {
   "pub":"The Wall Street Journal",
+  "link":"https://graphics.wsj.com/twitter-sentiment",
+  "imglink":"image/twitter.gif",
+  "type":"Interactive",
+  "description":"U.S. Social Sentiment Index (Collaboration with Martin Burch)"
+},
+ {
+  "pub":"The Wall Street Journal",
   "link":"https://www.wsj.com/graphics/apple-cash/",
   "imglink":"image/apple-cash.gif",
   "type":"Interactive",
