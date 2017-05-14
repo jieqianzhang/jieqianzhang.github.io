@@ -1,177 +1,198 @@
 [
- {
-  "pub":"The Wall Street Journal",
-  "link":"https://graphics.wsj.com/twitter-sentiment",
-  "imglink":"image/twitter.gif",
-  "type":"Interactive",
-  "description":"U.S. Social Sentiment Index (Collaboration with Martin Burch)"
-},
- {
-  "pub":"The Wall Street Journal",
-  "link":"https://www.wsj.com/graphics/apple-cash/",
-  "imglink":"image/apple-cash.gif",
-  "type":"Interactive",
-  "description":"Apple’s Cash Pile Is Nearing $250 Billion. What Would You Do With That Much Money? (Collaboration with Tripp Mickle)"
-},
-{
-  "pub":"The Wall Street Journal",
-  "link":"https://www.wsj.com/graphics/which-cable-channels-can-justify-their-cost/",
-  "imglink":"image/smallchannels-scatter.png",
-  "type":"Interactive",
-  "description":"Which Cable Channels Can Justify Their Cost? (Collaboration with Shalini Ramachandran)"
-},
-{
-  "pub":"The Wall Street Journal",
-  "link":"https://www.wsj.com/graphics/channel-cost/",
-  "imglink":"image/smallchannels.png",
-  "type":"Interactive",
-  "description":"TV Channels Costing the Most Per Viewer (Collaboration with Shalini Ramachandran and Amol Sharma)"
-},
-{
-  "pub":"The Wall Street Journal",
-  "link":"https://graphics.wsj.com/you-decide-will-snaps-ipo-be-the-next-facebook-or-twitter/",
-  "imglink":"image/snap.png",
-  "type":"Interactive",
-  "description":"Will Snap’s IPO Be the Next Facebook or Twitter? (Collaboration with Julia Wolfe and Sean McDade)"
-},
-{
-  "pub":"The Wall Street Journal",
-  "link":"http://www.wsj.com/graphics/dow-20000/",
-  "imglink":"image/dow.png",
-  "type":"Interactive",
-  "description":"How the Dow Breached 20000 (Collaboration with Stuart A. Thompson)"
-},
-{
-  "pub":"The Wall Street Journal",
-  "link":"http://www.wsj.com/graphics/trumps-inner-circle/",
-  "imglink":"image/trumpcabinet.png",
-  "type":"Interactive",
-  "description":"Trump’s Inner Circle (Collaboration with Jessia Ma)"
-}, {
-  "pub":"The Wall Street Journal",
-  "link":"http://graphics.wsj.com/elections/2016/election-map-quiz/",
-  "imglink":"image/quiz.png",
-  "type":"Interactive",
-  "description":"Guess the 2016 Electoral College Map (Collaboration with Shane Shifflett)"
-},{
-  "pub":"The Wall Street Journal",
-  "link":"http://www.wsj.com/articles/cant-hear-in-noisy-places-its-a-real-medical-condition-1474909624",
-  "imglink":"image/hearing.jpg",
-  "type":"Illustration",
-  "description":"Can’t Hear in Noisy Places? It’s a Real Medical Condition"
-},{
-  "pub":"The Wall Street Journal",
-  "link":"http://www.wsj.com/graphics/how-does-your-college-rank-2016/",
-  "imglink":"image/ranking.png",
-  "type":"Interactive",
-  "description":"Find Your College’s Ranking"
-},{
-  "pub":"The Wall Street Journal",
-  "link":"http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
-  "imglink":"image/immigelect.gif",
-  "type":"Interactive",
-  "description":"The New Face of American Immigration (Collaboration with Andrew Van Dam and Paul Overberg )"
-},{
-  "pub":"The Wall Street Journal",
-  "link":"http://www.wsj.com/articles/martial-arts-move-may-lessen-impact-of-a-fall-on-hip-1475506572",
-  "imglink":"image/falling.png",
-  "type":"Illustration",
-  "description":"Martial-Arts Move May Lessen Impact of a Fall on Hip"
-},{
-  "pub":"The Center for Investigative Reporting",
-  "link":"https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
-  "imglink":"image/welfare.gif",
-  "type":"Interactive",
-  "description":"Welfare check: Less money is going to basic assistance"
-},{
-  "pub":"The Center for Investigative Reporting",
-  "link":"https://www.revealnews.org/episodes/bordering-on-insecurity/",
-  "imglink":"image/border.jpg",
-  "type":"Illustration",
-  "description":"Bordering on insecurity"
-},{
-  "pub":"School project",
-  "link":"http://media.journalism.berkeley.edu/projects/2016/20160510_transplanted/index.html",
-  "imglink":"image/transplanted.gif",
-  "type":"Web design, animation, illustration and data reporting",
-  "description":"Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist. (Collaboration with Noelia González and Brett Murphy)"
-},{
-  "pub":"Google Trends, Vox",
-  "link":"http://googletrends.github.io/iframe-scaffolder/#/view?urls=Full%20season%7Chttp:%252F%252Fgoogletrends.github.io%252Fsuperbowl50%252Fsuperbowl.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=default&title=Flying%20in%20for%20the%20Super%20Bowl:%20Who%20are%20the%20most%20loyal%20NFL%20fans%3F&description=Click%20on%20the%20interactive%20to%20see%20how%20Google%20Flights%20data%20shows%20search%20interest%20in%20flights%20to%20the%20Super%20Bowl%20by%20hometown%20during%20the%202015-16%20season.%20It%20illustrates%20which%20fans%20anticipated%20their%20teams%20making%20it%20to%20the%20final.%20Data%20is%20weighted%20by%20population%20and%20includes%20trips%20to%20SFO,%20SJC,%20and%20OAK%20inc%20the%20date%20of%20the%20Super%20Bowl.%20Analysis%20excludes%20San%20Francisco%2049ers%20and%20Oakland%20Raiders",
-  "imglink":"image/superbowl.gif",
-  "type":"Interactive",
-  "description":"Flying in for the Super Bowl: Who are the most loyal NFL fans?"
-},{
-  "pub":"Google Trends",
-  "link":"http://googletrends.github.io/iframe-scaffolder/#/view?urls=Main%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateCandidates.html,Issues%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateIssues.html,Early%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FEarlyDebateCandidates.html&layout=narrative&theme=default&title=Early%20GOP%20debate:%20%20who%20was%20top%20searched%3F&description=Changing%20ranks%20of%20Republican%20candidates%20in%20the%20debate%20on%20Google%20search",
-  "imglink":"image/horserace.gif",
-  "type":"Interactive",
-  "description":"Early GOP debate: who was top searched?"
-},{
-  "pub":"Google Trends",
-  "link":"http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
-  "imglink":"image/tree.gif",
-  "type":"Interactive",
-  "description":"Who's next? Top searched candidates by party.? "
-},{
-  "pub":"Google Trends",
-  "link":"http://googletrends.github.io/iframe-scaffolder/#/view?urls=Post%20debate%201%7Chttp:%252F%252Fgoogletrends.github.io%252Fchord_diagram%252F1013Chord.html,Pre%20debate%201%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands1%252Findex.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who%20searches%20for%20who%3F&description=We%20know%20which%20candidate%20is%20top%20in%20search,%20but%20if%20you%20search%20for%20Bernie%20or%20Hillary,%20who%20else%20do%20you%20search%20for%3F%20Roll%20over%20the%20chart%20to%20see%20who%20comes%20next",
-  "imglink":"image/chord.png",
-  "type":"Interactive",
-  "description":"Who searches for who? We know which candidate is top in search, but if you search for Bernie or Hillary, who else do you search for?"
-},{
-  "pub":"Personal Project",
-  "link":"http://jieqianzhang.github.io/sf_car_breakins_live/",
-  "imglink":"image/sf_live.png",
-  "type":"Interactive",
-  "description":"A LIVE San Francisco Car Break-ins Map"
-},{
-  "pub":"ChinaFile, Asia Society",
-  "link":"https://anticorruption.chinafile.com/",
-  "imglink":"image/chinafile.png",
-  "type":"Interactive",
-  "description":"Catching Tigers and Flies. (Responsible for data acquisition and cleaning)"
-},{
-  "pub":"Well, it's just for fun!",
-  "link":"http://jieqianzhang.github.io/cal_triangulation/index.html",
-  "imglink":"image/bear.png",
-  "type":"Interactive",
-  "description":"Triangulation and Transition"
-},{
-  "pub":"Castro Courier",
-  "link":"https://vimeo.com/114204953",
-  "imglink":"image/sister.png",
-  "type":"Video",
-  "description":"Sister, sister. (Collaboration with Chloe Shi)"
-},{
-  "pub":"Al Jazeera Documentary",
-  "link":"https://www.youtube.com/watch?v=k3wTEsc7UMA",
-  "imglink":"image/china.png",
-  "type":"Video",
-  "description":"Rise of a Nation (Collaboration with Howyda Taha)"
-},{
-  "pub":"Metropolis TV, the Netherlands",
-  "link":"https://www.youtube.com/watch?v=dOl37Fwo8-o&feature=youtu.be",
-  "imglink":"image/child.png",
-  "type":"Video",
-  "description":"One-child Policy No More (Collaboration with Marije Vlaskamp)"
-},{
-  "pub":"Metropolis TV, the Netherlands",
-  "link":"https://www.youtube.com/watch?v=I301m2jgxlk&feature=youtu.be",
-  "imglink":"image/speaker.png",
-  "type":"Video",
-  "description":"From criminal to inspirational speaker (Collaboration with Marije Vlaskamp)"
-},{
-  "pub":"Metropolis TV, the Netherlands",
-  "link":"https://www.youtube.com/watch?v=tSX04grF3HU&feature=youtu.be",
-  "imglink":"image/pupil.png",
-  "type":"Video",
-  "description":"Mr. Lou's lonely pupils (Collaboration with Marije Vlaskamp)"
-},{
-  "pub":"de Volkskrant, the Netherlands",
-  "link":"http://www.volkskrant.nl/kijkverder/2015/verlorengeneratie/",
-  "imglink":"image/zhiqin.png",
-  "type":"Photography",
-  "description":"Zhiqing, China's Sent-down Youth (Collaboration with Marije Vlaskamp)"
-}
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://graphics.wsj.com/twitter-sentiment",
+    "imglink": "image/twitter-sentiment.gif",
+    "type": "Interactive",
+    "description": "U.S. Social Sentiment Index (Collaboration with Martin Burch)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/apple-cash/",
+    "imglink": "image/apple-cash.gif",
+    "type": "Interactive",
+    "description": "Apple’s Cash Pile Is Nearing $250 Billion. What Would You Do With That Much Money? (Collaboration with Tripp Mickle)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/which-cable-channels-can-justify-their-cost/",
+    "imglink": "image/smallchannels-scatter.png",
+    "type": "Interactive",
+    "description": "Which Cable Channels Can Justify Their Cost? (Collaboration with Shalini Ramachandran)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/channel-cost/",
+    "imglink": "image/smallchannels.png",
+    "type": "Interactive",
+    "description": "TV Channels Costing the Most Per Viewer (Collaboration with Shalini Ramachandran and Amol Sharma)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://graphics.wsj.com/you-decide-will-snaps-ipo-be-the-next-facebook-or-twitter/",
+    "imglink": "image/snap.png",
+    "type": "Interactive",
+    "description": "Will Snap’s IPO Be the Next Facebook or Twitter? (Collaboration with Julia Wolfe and Sean McDade)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://www.wsj.com/graphics/dow-20000/",
+    "imglink": "image/dow.png",
+    "type": "Interactive",
+    "description": "How the Dow Breached 20000 (Collaboration with Stuart A. Thompson)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://www.wsj.com/graphics/trumps-inner-circle/",
+    "imglink": "image/trumpcabinet.png",
+    "type": "Interactive",
+    "description": "Trump’s Inner Circle (Collaboration with Jessia Ma)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
+    "imglink": "image/quiz.png",
+    "type": "Interactive",
+    "description": "Guess the 2016 Electoral College Map (Collaboration with Shane Shifflett)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://www.wsj.com/articles/cant-hear-in-noisy-places-its-a-real-medical-condition-1474909624",
+    "imglink": "image/hearing.jpg",
+    "type": "Illustration",
+    "description": "Can’t Hear in Noisy Places? It’s a Real Medical Condition"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://www.wsj.com/graphics/how-does-your-college-rank-2016/",
+    "imglink": "image/ranking.png",
+    "type": "Interactive",
+    "description": "Find Your College’s Ranking"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
+    "imglink": "image/immigelect.gif",
+    "type": "Interactive",
+    "description": "The New Face of American Immigration (Collaboration with Andrew Van Dam and Paul Overberg )"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "http://www.wsj.com/articles/martial-arts-move-may-lessen-impact-of-a-fall-on-hip-1475506572",
+    "imglink": "image/falling.png",
+    "type": "Illustration",
+    "description": "Martial-Arts Move May Lessen Impact of a Fall on Hip"
+  },
+  {
+    "pub": "The Center for Investigative Reporting",
+    "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
+    "imglink": "image/welfare.gif",
+    "type": "Interactive",
+    "description": "Welfare check: Less money is going to basic assistance"
+  },
+  {
+    "pub": "The Center for Investigative Reporting",
+    "link": "https://www.revealnews.org/episodes/bordering-on-insecurity/",
+    "imglink": "image/border.jpg",
+    "type": "Illustration",
+    "description": "Bordering on insecurity"
+  },
+  {
+    "pub": "School project",
+    "link": "http://media.journalism.berkeley.edu/projects/2016/20160510_transplanted/index.html",
+    "imglink": "image/transplanted.gif",
+    "type": "Web design, animation, illustration and data reporting",
+    "description": "Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist. (Collaboration with Noelia González and Brett Murphy)"
+  },
+  {
+    "pub": "Google Trends, Vox",
+    "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Full%20season%7Chttp:%252F%252Fgoogletrends.github.io%252Fsuperbowl50%252Fsuperbowl.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=default&title=Flying%20in%20for%20the%20Super%20Bowl:%20Who%20are%20the%20most%20loyal%20NFL%20fans%3F&description=Click%20on%20the%20interactive%20to%20see%20how%20Google%20Flights%20data%20shows%20search%20interest%20in%20flights%20to%20the%20Super%20Bowl%20by%20hometown%20during%20the%202015-16%20season.%20It%20illustrates%20which%20fans%20anticipated%20their%20teams%20making%20it%20to%20the%20final.%20Data%20is%20weighted%20by%20population%20and%20includes%20trips%20to%20SFO,%20SJC,%20and%20OAK%20inc%20the%20date%20of%20the%20Super%20Bowl.%20Analysis%20excludes%20San%20Francisco%2049ers%20and%20Oakland%20Raiders",
+    "imglink": "image/superbowl.gif",
+    "type": "Interactive",
+    "description": "Flying in for the Super Bowl: Who are the most loyal NFL fans?"
+  },
+  {
+    "pub": "Google Trends",
+    "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Main%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateCandidates.html,Issues%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateIssues.html,Early%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FEarlyDebateCandidates.html&layout=narrative&theme=default&title=Early%20GOP%20debate:%20%20who%20was%20top%20searched%3F&description=Changing%20ranks%20of%20Republican%20candidates%20in%20the%20debate%20on%20Google%20search",
+    "imglink": "image/horserace.gif",
+    "type": "Interactive",
+    "description": "Early GOP debate: who was top searched?"
+  },
+  {
+    "pub": "Google Trends",
+    "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
+    "imglink": "image/tree.gif",
+    "type": "Interactive",
+    "description": "Who's next? Top searched candidates by party.? "
+  },
+  {
+    "pub": "Google Trends",
+    "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Post%20debate%201%7Chttp:%252F%252Fgoogletrends.github.io%252Fchord_diagram%252F1013Chord.html,Pre%20debate%201%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands1%252Findex.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who%20searches%20for%20who%3F&description=We%20know%20which%20candidate%20is%20top%20in%20search,%20but%20if%20you%20search%20for%20Bernie%20or%20Hillary,%20who%20else%20do%20you%20search%20for%3F%20Roll%20over%20the%20chart%20to%20see%20who%20comes%20next",
+    "imglink": "image/chord.png",
+    "type": "Interactive",
+    "description": "Who searches for who? We know which candidate is top in search, but if you search for Bernie or Hillary, who else do you search for?"
+  },
+  {
+    "pub": "Personal Project",
+    "link": "http://jieqianzhang.github.io/sf_car_breakins_live/",
+    "imglink": "image/sf_live.png",
+    "type": "Interactive",
+    "description": "A LIVE San Francisco Car Break-ins Map"
+  },
+  {
+    "pub": "ChinaFile, Asia Society",
+    "link": "https://anticorruption.chinafile.com/",
+    "imglink": "image/chinafile.png",
+    "type": "Interactive",
+    "description": "Catching Tigers and Flies. (Responsible for data acquisition and cleaning)"
+  },
+  {
+    "pub": "Well, it's just for fun!",
+    "link": "http://jieqianzhang.github.io/cal_triangulation/index.html",
+    "imglink": "image/bear.png",
+    "type": "Interactive",
+    "description": "Triangulation and Transition"
+  },
+  {
+    "pub": "Castro Courier",
+    "link": "https://vimeo.com/114204953",
+    "imglink": "image/sister.png",
+    "type": "Video",
+    "description": "Sister, sister. (Collaboration with Chloe Shi)"
+  },
+  {
+    "pub": "Al Jazeera Documentary",
+    "link": "https://www.youtube.com/watch?v=k3wTEsc7UMA",
+    "imglink": "image/china.png",
+    "type": "Video",
+    "description": "Rise of a Nation (Collaboration with Howyda Taha)"
+  },
+  {
+    "pub": "Metropolis TV, the Netherlands",
+    "link": "https://www.youtube.com/watch?v=dOl37Fwo8-o&feature=youtu.be",
+    "imglink": "image/child.png",
+    "type": "Video",
+    "description": "One-child Policy No More (Collaboration with Marije Vlaskamp)"
+  },
+  {
+    "pub": "Metropolis TV, the Netherlands",
+    "link": "https://www.youtube.com/watch?v=I301m2jgxlk&feature=youtu.be",
+    "imglink": "image/speaker.png",
+    "type": "Video",
+    "description": "From criminal to inspirational speaker (Collaboration with Marije Vlaskamp)"
+  },
+  {
+    "pub": "Metropolis TV, the Netherlands",
+    "link": "https://www.youtube.com/watch?v=tSX04grF3HU&feature=youtu.be",
+    "imglink": "image/pupil.png",
+    "type": "Video",
+    "description": "Mr. Lou's lonely pupils (Collaboration with Marije Vlaskamp)"
+  },
+  {
+    "pub": "de Volkskrant, the Netherlands",
+    "link": "http://www.volkskrant.nl/kijkverder/2015/verlorengeneratie/",
+    "imglink": "image/zhiqin.png",
+    "type": "Photography",
+    "description": "Zhiqing, China's Sent-down Youth (Collaboration with Marije Vlaskamp)"
+  }
 ]
