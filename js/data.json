@@ -1,6 +1,13 @@
 [
   {
     "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/ceopay-2017/",
+    "imglink": "image/ceopay.gif",
+    "type": "Interactive",
+    "description": "Top to Bottom: Pay for 500 CEOs (Collaboration with Theo Francis)"
+  },
+  {
+    "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/twitter-sentiment",
     "imglink": "image/twitter-sentiment.gif",
     "type": "Interactive",
