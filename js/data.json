@@ -8,6 +8,27 @@
   },
   {
     "pub": "The Wall Street Journal",
+    "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
+    "imglink": "image/phone-call.jpg",
+    "type": "Mobile Interactive",
+    "description": "How to Make a Phone Call in 2017 (Collaboration with Joanna Stern and Stephanie Stamm)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/turnover-under-trump/",
+    "imglink": "image/trump-turnover.jpg",
+    "type": "Interactive",
+    "description": "Turnover Under Trump (Collaboration with Youjin Shin)"
+  },
+  {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/amazon-timeline/",
+    "imglink": "image/amazon.jpg",
+    "type": "Interactive",
+    "description": "How the Amazon Empire Expanded (Collaboration with Yaryna Serkez)"
+  },
+  {
+    "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/twitter-sentiment",
     "imglink": "image/twitter-sentiment.gif",
     "type": "Interactive",
