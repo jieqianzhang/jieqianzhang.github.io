@@ -140,13 +140,6 @@
     "description": "Welfare check: Less money is going to basic assistance"
   },
   {
-    "pub": "The Center for Investigative Reporting",
-    "link": "https://www.revealnews.org/episodes/bordering-on-insecurity/",
-    "imglink": "image/border.jpg",
-    "type": "Illustration",
-    "description": "Bordering on insecurity"
-  },
-  {
     "pub": "School project",
     "link": "http://media.journalism.berkeley.edu/projects/2016/20160510_transplanted/index.html",
     "imglink": "image/transplanted.gif",
@@ -201,47 +194,5 @@
     "imglink": "image/bear.png",
     "type": "Interactive",
     "description": "Triangulation and Transition"
-  },
-  {
-    "pub": "Castro Courier",
-    "link": "https://vimeo.com/114204953",
-    "imglink": "image/sister.png",
-    "type": "Video",
-    "description": "Sister, sister. (Collaboration with Chloe Shi)"
-  },
-  {
-    "pub": "Al Jazeera Documentary",
-    "link": "https://www.youtube.com/watch?v=k3wTEsc7UMA",
-    "imglink": "image/china.png",
-    "type": "Video",
-    "description": "Rise of a Nation (Collaboration with Howyda Taha)"
-  },
-  {
-    "pub": "Metropolis TV, the Netherlands",
-    "link": "https://www.youtube.com/watch?v=dOl37Fwo8-o&feature=youtu.be",
-    "imglink": "image/child.png",
-    "type": "Video",
-    "description": "One-child Policy No More (Collaboration with Marije Vlaskamp)"
-  },
-  {
-    "pub": "Metropolis TV, the Netherlands",
-    "link": "https://www.youtube.com/watch?v=I301m2jgxlk&feature=youtu.be",
-    "imglink": "image/speaker.png",
-    "type": "Video",
-    "description": "From criminal to inspirational speaker (Collaboration with Marije Vlaskamp)"
-  },
-  {
-    "pub": "Metropolis TV, the Netherlands",
-    "link": "https://www.youtube.com/watch?v=tSX04grF3HU&feature=youtu.be",
-    "imglink": "image/pupil.png",
-    "type": "Video",
-    "description": "Mr. Lou's lonely pupils (Collaboration with Marije Vlaskamp)"
-  },
-  {
-    "pub": "de Volkskrant, the Netherlands",
-    "link": "http://www.volkskrant.nl/kijkverder/2015/verlorengeneratie/",
-    "imglink": "image/zhiqin.png",
-    "type": "Photography",
-    "description": "Zhiqing, China's Sent-down Youth (Collaboration with Marije Vlaskamp)"
   }
 ]
