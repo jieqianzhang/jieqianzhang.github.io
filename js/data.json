@@ -96,6 +96,13 @@
     "type": "Interactive",
     "description": "How the Dow Breached 20000 (Collaboration with Stuart A. Thompson)"
   },
+ {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/cigarette-tax/",
+    "imglink": "image/cigtax.gif",
+    "type": "Interactive",
+    "description": "Cigarette Packs Get Pricier"
+  },
   {
     "pub": "The Wall Street Journal",
     "link": "http://www.wsj.com/graphics/trumps-inner-circle/",
