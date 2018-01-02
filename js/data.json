@@ -3,7 +3,7 @@
     "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
     "imglink": "image/homicide.jpg",
     "type": "Interactive",
-    "description": "Murder in America series (Collaboration with Gabriel Gianordoli)"
+    "description": "Murder in America series"
   },{
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
@@ -23,7 +23,7 @@
     "link": "https://www.wsj.com/graphics/space-debris-orbit/",
     "imglink": "image/satellites.jpg",
     "type": "Interactive",
-    "description": "Objects We’re Watching in Orbit (Collaboration with Joel Eastwood)"
+    "description": "Objects We’re Watching in Orbit"
   },
   {
     "pub": "The Wall Street Journal",
@@ -37,70 +37,70 @@
     "link": "https://www.wsj.com/graphics/ceopay-2017/",
     "imglink": "image/ceopay.gif",
     "type": "Interactive",
-    "description": "Top to Bottom: Pay for 500 CEOs (Collaboration with Theo Francis)"
+    "description": "Top to Bottom: Pay for 500 CEOs"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
     "imglink": "image/phone-call.jpg",
     "type": "Mobile Interactive",
-    "description": "How to Make a Phone Call in 2017 (Collaboration with Joanna Stern and Stephanie Stamm)"
+    "description": "How to Make a Phone Call in 2017"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/turnover-under-trump/",
     "imglink": "image/trump-turnover.jpg",
     "type": "Interactive",
-    "description": "Turnover Under Trump (Collaboration with Youjin Shin)"
+    "description": "Turnover Under Trump"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/amazon-timeline/",
     "imglink": "image/amazon.jpg",
     "type": "Interactive",
-    "description": "How the Amazon Empire Expanded (Collaboration with Yaryna Serkez)"
+    "description": "How the Amazon Empire Expanded"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/twitter-sentiment",
     "imglink": "image/twitter-sentiment.gif",
     "type": "Interactive",
-    "description": "U.S. Social Sentiment Index (Collaboration with Martin Burch)"
+    "description": "U.S. Social Sentiment Index"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/apple-cash/",
     "imglink": "image/apple-cash.gif",
     "type": "Interactive",
-    "description": "Apple’s Cash Pile Is Nearing $250 Billion. What Would You Do With That Much Money? (Collaboration with Tripp Mickle)"
+    "description": "Apple’s Cash Pile Is Nearing $250 Billion. What Would You Do With That Much Money?"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/which-cable-channels-can-justify-their-cost/",
     "imglink": "image/smallchannels-scatter.png",
     "type": "Interactive",
-    "description": "Which Cable Channels Can Justify Their Cost? (Collaboration with Shalini Ramachandran)"
+    "description": "Which Cable Channels Can Justify Their Cost?"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/channel-cost/",
     "imglink": "image/smallchannels.png",
     "type": "Interactive",
-    "description": "TV Channels Costing the Most Per Viewer (Collaboration with Shalini Ramachandran and Amol Sharma)"
+    "description": "TV Channels Costing the Most Per Viewer"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/you-decide-will-snaps-ipo-be-the-next-facebook-or-twitter/",
     "imglink": "image/snap.png",
     "type": "Interactive",
-    "description": "Will Snap’s IPO Be the Next Facebook or Twitter? (Collaboration with Julia Wolfe and Sean McDade)"
+    "description": "Will Snap’s IPO Be the Next Facebook or Twitter?"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "http://www.wsj.com/graphics/dow-20000/",
     "imglink": "image/dow.png",
     "type": "Interactive",
-    "description": "How the Dow Breached 20000 (Collaboration with Stuart A. Thompson)"
+    "description": "How the Dow Breached 20000"
   },
  {
     "pub": "The Wall Street Journal",
@@ -114,14 +114,14 @@
     "link": "http://www.wsj.com/graphics/trumps-inner-circle/",
     "imglink": "image/trumpcabinet.png",
     "type": "Interactive",
-    "description": "Trump’s Inner Circle (Collaboration with Jessia Ma)"
+    "description": "Trump’s Inner Circle"
   },
   {
     "pub": "The Wall Street Journal",
     "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
     "imglink": "image/quiz.png",
     "type": "Interactive",
-    "description": "Guess the 2016 Electoral College Map (Collaboration with Shane Shifflett)"
+    "description": "Guess the 2016 Electoral College Map"
   },
   {
     "pub": "The Wall Street Journal",
@@ -142,7 +142,7 @@
     "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
     "imglink": "image/immigelect.gif",
     "type": "Interactive",
-    "description": "The New Face of American Immigration (Collaboration with Andrew Van Dam and Paul Overberg )"
+    "description": "The New Face of American Immigration"
   },
   {
     "pub": "The Wall Street Journal",
@@ -163,7 +163,7 @@
     "link": "http://media.journalism.berkeley.edu/projects/2016/20160510_transplanted/index.html",
     "imglink": "image/transplanted.gif",
     "type": "Web design, animation, illustration and data reporting",
-    "description": "Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist. (Collaboration with Noelia González and Brett Murphy)"
+    "description": "Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist."
   },
   {
     "pub": "Google Trends, Vox",
