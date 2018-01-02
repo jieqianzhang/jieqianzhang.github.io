@@ -1,4 +1,10 @@
-[ {
+[  {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
+    "imglink": "image/homicide.jpg",
+    "type": "Interactive",
+    "description": "Murder in America series (Collaboration with Gabriel Gianordoli)"
+  },{
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
     "imglink": "image/poy.gif",
