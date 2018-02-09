@@ -1,5 +1,11 @@
 [  {
     "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
+    "imglink": "image/skates.gif",
+    "type": "Interactive",
+    "description": "How Music in Figure Skating Has Changed"
+  }, {
+    "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
     "imglink": "image/homicide.jpg",
     "type": "Interactive",
