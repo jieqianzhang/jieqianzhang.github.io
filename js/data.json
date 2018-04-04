@@ -1,4 +1,10 @@
-[  {
+[ {
+    "pub": "The Wall Street Journal",
+    "link": "https://graphics.wsj.com/the-spotify-ipo-playlist/",
+    "imglink": "image/spotify.png",
+    "type": "Interactive",
+    "description": "The Spotify IPO Playlist"
+  }, {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
     "imglink": "image/skates.gif",
