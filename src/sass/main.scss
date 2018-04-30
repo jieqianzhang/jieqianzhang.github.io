@@ -45,7 +45,7 @@ section#intro{
       -webkit-background-clip: text;
       text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(45deg, #1D2671, #C33764, #470ef4, #24f88a,#1D2671);
+      background-image: linear-gradient(90deg, #1D2671, #C33764, #470ef4, #24f88a,#1D2671);
       background-size: 200% auto;
       animation: animatedBackground 40s linear infinite;
     }
@@ -127,6 +127,7 @@ section#projects{
     p.description{
       position:absolute;
       top: 55%;
+      top: calc(50% + 5px);
       right: -50%;
       width: 50%;
 
@@ -154,6 +155,7 @@ section#projects{
     p.description{
       position:absolute;
       top: 55%;
+      top: calc(50% + 5px);
       left: -50%;
       width: 50%;
       text-align: right;
