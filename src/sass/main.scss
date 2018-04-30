@@ -1,0 +1,328 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  margin-bottom: 40px;
+}
+
+.defs-only {
+  position: absolute;
+  height: 0; width: 0;
+  overflow: none;
+  left: -100%;
+}
+
+section{
+  height: auto;
+  min-height: 60vh;
+  position:relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section#intro{
+  display:flex;
+  flex-direction:project;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items: center;
+  padding-left:5%;
+  padding-right:5%;
+  .intro-text{
+    width: 100%;
+    z-index: 99;
+    h1{
+      color: #222;
+      margin: 0 auto;
+      font-size: 100px;
+      line-height: 1em;
+      font-weight:700;
+      letter-spacing: 0.5px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(45deg, #1D2671, #C33764, #470ef4, #24f88a,#1D2671);
+      background-size: 200% auto;
+      animation: animatedBackground 40s linear infinite;
+    }
+    h5{
+      color:#222;
+      font-weight: 100;
+      font-size:24px;
+      margin-top:10px;
+      margin-bottom:20px;
+      a{
+        color: #222;
+        border-bottom:1px solid #222;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section#projects{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  padding-left:5%;
+  padding-right:5%;
+
+  li.project{
+    width: 50%;
+    vertical-align: top;
+    position:relative;
+    list-style-type: none;
+
+  }
+  //make the second div align bottom
+  li:nth-child(2){
+    align-self: flex-end;
+  }
+  //make the odd numbered div float right
+  li:nth-child(2n){
+    div.project-wrapper{
+      float:left;
+    }
+  }
+  // make the even number div float-left
+  li:nth-child(2n+1){
+    div.project-wrapper{
+      float:right;
+    }
+  }
+
+  // style all the description on the right side
+  .project-wrapper.right{
+    p.description{
+      margin-right: 5px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+  }
+  .project-wrapper.right.top{
+    p.description{
+      position:absolute;
+      top: 5px;
+      right: 0%;
+      width: 50%;
+
+    }
+  }
+  .project-wrapper.feature.right.top{
+    p.description{
+      position:absolute;
+      top: 5px;
+      right: -50%;
+      width: 50%;
+
+    }
+  }
+  .project-wrapper.feature.right.middle{
+    p.description{
+      position:absolute;
+      top: 55%;
+      right: -50%;
+      width: 50%;
+
+    }
+  }
+  //style all descriptions on the left side
+  .project-wrapper.left{
+    p.description{
+      margin-left: 5px;
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+  }
+  .project-wrapper.left.top{
+    p.description{
+      position:absolute;
+      top: 5px;
+      left: 0%;
+      width: 50%;
+      text-align: right;
+
+    }
+  }
+  .project-wrapper.feature.left{
+    p.description{
+      position:absolute;
+      top: 55%;
+      left: -50%;
+      width: 50%;
+      text-align: right;
+
+    }
+  }
+  .project a {
+    text-decoration: none;
+    color:#222;
+    cursor: pointer;
+  }
+  .project a:hover {
+      text-decoration: none;
+  }
+  .project-wrapper {
+      width: 50%;
+      padding: 5px;
+
+      .image-wrapper{
+        width: 100%;
+        position:relative;
+
+        &:before{
+          content:"";
+          position:absolute;
+          width:100%;
+          height:100%;
+          top: 0px;
+          // background: linear-gradient(45deg, rgba(255, 192, 203, 0.4), rgba(0, 0, 255, 0.4));
+          background: rgba(0, 0, 0, 0.1);
+          z-index: 1;
+        }
+      }
+
+      img {
+          width: 100%;
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+      }
+  }
+
+  .project-wrapper.feature {
+      width: 100%;
+      padding: 5px;
+
+      .image-wrapper{
+        width: 100%;
+        position:relative;
+
+        &:before{
+          content:"";
+          position:absolute;
+          width:100%;
+          height:100%;
+          top: 0px;
+          // background: linear-gradient(45deg, rgba(255, 192, 203, 0.4), rgba(0, 0, 255, 0.4));
+          background: rgba(0, 0, 0, 0.1);
+          z-index: 1;
+        }
+      }
+
+      img {
+          width: 100%;
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+      }
+
+  }
+
+  p.description  {
+      span{
+        font-weight: 300;
+          -webkit-font-smoothing: antialiased;
+      }
+      font-size: 14px;
+      font-weight: 500;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.4em;
+      padding-top: 15px;
+      position:absolute;
+      border-top: 1px solid grey;
+      color: #333;
+
+  }
+  .project:hover{
+    .project-wrapper img{
+      -webkit-filter: none; /* Safari 6.0 - 9.0 */
+      filter: none;
+      transition: 1s;
+
+    }
+    .image-wrapper:before{
+      background: transparent;
+    }
+    p.description{
+      color: black;
+      opacity: 1;
+    }
+
+  }
+}
+
+
+// social links
+
+.text-center.icon{
+  text-align: left;
+  padding-left: 0px;
+}
+.fa-2x {
+font-size: 1.4em !important;
+color: #333;
+}
+
+ul a:hover {
+  text-decoration: none;
+}
+
+i {
+  color: #f7f7f7;
+}
+
+.icon .fa {
+  padding-right: 4.5px;
+  padding-left: 4.5px;
+}
+
+h5#copyright{
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+
+
+@media screen and (max-width: 660px) {
+  section#intro {
+    align-items: center;
+    padding-bottom: 20px;
+    .intro-text{
+      width: 100%;
+      h1{
+        font-size:76px !important;
+      }
+    }
+
+  }
+  section#projects{
+    li.project{
+      width: 100%;
+      .project-wrapper{
+        width: 100% !important;
+      }
+    }
+    p.description{
+      position:relative !important;
+      width: 100% !important;
+      left: 0px !important;
+      border-top: 0px;
+      text-align:left !important;
+      margin-left: 0px !important;
+    }
+  }
+
+}
+
+@keyframes animatedBackground{
+to{
+    background-position: 200% center;
+  }
+}

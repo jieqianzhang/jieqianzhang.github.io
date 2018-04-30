@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jieqian Zhang - Portfolio">
+  <meta name="keywords" content="Jieqian, Jieqian Zhang, Data, Visualization, Graphics, New York">
+  <meta name="author" content="Jieqian Zhang">
+  <title>Jieqian Zhang</title>
+  <link href="web/dist/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="shortcut icon" href="img/icon.ico"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js"></script>
+  <script src="web/dist/js/script.js"></script>
+</head>
+
+<body>
+  <svg class="defs-only">
+  <filter id="monochrome" color-interpolation-filters="sRGB"
+          x="0" y="0" height="100%" width="100%">
+    <feColorMatrix
+      type="matrix"
+      values="1.3 -0.3 1.1 0 0
+              0 1.3 0.2 0 0
+              0 0 0.8 0.2 0
+              0 0 0 1 0 "/>
+  </filter>
+</svg>
+  <section id="intro">
+    <div class="intro-text">
+      <h1>Hello.</h1>
+      <h1>I am Jieqian</h1>
+      <h5>Code + design at <a href="https://www.wsj.com/" target="_blank">the Wall Street Journal</a></h5>
+      <div class="col-lg-12 col-sm-9 text-center icon">
+        <a href="mailto:zhang.jieqian@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+        <a href="https://twitter.com/Jieqian_Zhang" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+        <a href="https://www.facebook.com/jieqian.zhang.1" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/jieqian-zhang-93321652" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a href="https://github.com/jieqianzhang" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+      </div>
+    </div>
+
+
+  </section>
+  <section id="projects">
+    {{#each projects}} {{>project}} {{/each}}
+  </section>
+  <h5 id="copyright">© Copyright 2018 Jieqian Zhang</h5>
+</body>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-81544002-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>
