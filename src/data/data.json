@@ -7,6 +7,13 @@
       "description": "The Spotify IPO Playlist",
       "feature": true,
       "descriptionPosition": "right top"
+    }, {
+      "pub": "The Wall Street Journal",
+      "link": "https://www.wsj.com/graphics/india-money-crisis-is-fake-news/",
+      "imglink": "web/images/rupee.jpg",
+      "type": "Interactive",
+      "description": "The Money Nodody Wants",
+      "descriptionPosition": "right top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -14,24 +21,38 @@
       "imglink": "web/images/figureskating.jpg",
       "type": "Interactive",
       "description": "How Music in Figure Skating Has Changed",
-      "descriptionPosition": "right top"
-    },
-    {
+      "descriptionPosition": "left top"
+    }, {
+      "pub": "The Wall Street Journal",
+      "link": "https://graphics.wsj.com/nra-ads-video-history/",
+      "imglink": "web/images/nra.jpg",
+      "type": "Interactive",
+      "description": "NRA Advertising Through the Years",
+      "feature": true,
+      "descriptionPosition": "left middle"
+    }, {
+      "pub": "The Wall Street Journal",
+      "link": "https://www.wsj.com/graphics/ceopay-2018/",
+      "imglink": "web/images/ceopay.jpg",
+      "type": "Interactive",
+      "description": "How Much Do CEOs Make?",
+      "feature": true,
+      "descriptionPosition": "right middle"
+    }, {
       "pub": "The Wall Street Journal",
       "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
       "imglink": "web/images/murder.jpg",
       "type": "Interactive",
       "description": "Murder in America series",
-      "descriptionPosition": "left top"
+      "descriptionPosition": "right top"
     },
     {
       "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
-      "imglink": "web/images/poy.jpg",
+      "link": "https://www.wsj.com/graphics/space-debris-orbit/",
+      "imglink": "web/images/debris.jpg",
       "type": "Interactive",
-      "description": "2017 The Year in Photos",
-      "feature": true,
-      "descriptionPosition": "left middle"
+      "description": "Objects We’re Watching in Orbit",
+      "descriptionPosition": "left top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -40,22 +61,13 @@
       "type": "Interactive",
       "description": "The Damage Left in Irma's Wake",
       "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
+      "descriptionPosition": "left middle"
+    }, {
       "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/space-debris-orbit/",
-      "imglink": "web/images/debris.jpg",
+      "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
+      "imglink": "web/images/poy.jpg",
       "type": "Interactive",
-      "description": "Objects We’re Watching in Orbit",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/ceopay-2017/",
-      "imglink": "web/images/ceopay.jpg",
-      "type": "Interactive",
-      "description": "Top to Bottom: Pay for 500 CEOs",
+      "description": "2017 The Year in Photos",
       "feature": true,
       "descriptionPosition": "right middle"
     },
