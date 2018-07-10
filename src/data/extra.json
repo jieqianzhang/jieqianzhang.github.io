@@ -4,60 +4,60 @@
     "imglink": "images/candidates.jpg",
     "type": "Interactive",
     "description": "Who searches for who? We know which candidate is top in search, but if you search for Bernie or Hillary, who else do you search for?"
-  },
-  {
+}, {
+    "pub": "The Wall Street Journal",
+    "link": "https://graphics.wsj.com/nra-ads-video-history/",
+    "imglink": "web/images/nra.jpg",
+    "type": "Interactive",
+    "description": "NRA Advertising Through the Years",
+    "feature": true,
+    "descriptionPosition": "left middle"
+}, {
     "pub": "School project",
     "link": "http://media.journalism.berkeley.edu/projects/2016/20160510_transplanted/index.html",
     "imglink": "images/transplanted.gif",
     "type": "Web design, animation, illustration and data reporting",
     "description": "Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist."
-  },
-  {
+}, {
     "pub": "The Wall Street Journal",
     "link": "http://www.wsj.com/graphics/how-does-your-college-rank-2016/",
     "imglink": "images/ranking.png",
     "type": "Interactive",
     "description": "Find Your College’s Ranking"
-  },
-  {
+}, {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/cigarette-tax/",
     "imglink": "images/cigtax.gif",
     "type": "Interactive",
     "description": "Cigarette Packs Get Pricier"
-  },
-  {
+}, {
     "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/you-decide-will-snaps-ipo-be-the-next-facebook-or-twitter/",
     "imglink": "images/snap.png",
     "type": "Interactive",
     "description": "Will Snap’s IPO Be the Next Facebook or Twitter?"
-  },
-  {
+}, {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/apple-cash/",
     "imglink": "images/apple-cash.gif",
     "type": "Interactive",
     "description": "Apple’s Cash Pile Is Nearing $250 Billion. What Would You Do With That Much Money?"
-  },
-  {
+}, {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/which-cable-channels-can-justify-their-cost/",
     "imglink": "images/smallchannels-scatter.png",
     "type": "Interactive",
     "description": "Which Cable Channels Can Justify Their Cost?"
-  },
-  {
+}, {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/channel-cost/",
     "imglink": "images/smallchannels.png",
     "type": "Interactive",
     "description": "TV Channels Costing the Most Per Viewer"
-  }, {
+}, {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/amazon-timeline/",
     "imglink": "images/amazon.jpg",
     "type": "Interactive",
     "description": "How the Amazon Empire Expanded"
-  },
-]
+}, ]
