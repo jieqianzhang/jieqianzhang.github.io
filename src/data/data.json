@@ -1,184 +1,167 @@
 {
-  "projects": [{
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/the-spotify-ipo-playlist/",
-      "imglink": "web/images/spotify.jpg",
-      "type": "Interactive",
-      "description": "The Spotify IPO Playlist",
-      "feature": true,
-      "descriptionPosition": "right top"
+    "projects": [{
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/why-a-60-year-old-spy-plane-still-matters/",
+        "imglink": "web/images/u2.gif",
+        "type": "Interactive",
+        "description": "Why a 60-Year-Old Spy Plane Still Matters",
+        "feature": true,
+        "descriptionPosition": "right top"
     }, {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/india-money-crisis-is-fake-news/",
-      "imglink": "web/images/rupee.jpg",
-      "type": "Interactive",
-      "description": "The Money Nodody Wants",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
-      "imglink": "web/images/figureskating.jpg",
-      "type": "Interactive",
-      "description": "How Music in Figure Skating Has Changed",
-      "descriptionPosition": "left top"
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/india-money-crisis-is-fake-news/",
+        "imglink": "web/images/rupee.jpg",
+        "type": "Interactive",
+        "description": "The Money Nodody Wants",
+        "descriptionPosition": "right top"
     }, {
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/nra-ads-video-history/",
-      "imglink": "web/images/nra.jpg",
-      "type": "Interactive",
-      "description": "NRA Advertising Through the Years",
-      "feature": true,
-      "descriptionPosition": "left middle"
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
+        "imglink": "web/images/figureskating.jpg",
+        "type": "Interactive",
+        "description": "How Music in Figure Skating Has Changed",
+        "descriptionPosition": "left top"
     }, {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/ceopay-2018/",
-      "imglink": "web/images/ceopay.jpg",
-      "type": "Interactive",
-      "description": "How Much Do CEOs Make?",
-      "feature": true,
-      "descriptionPosition": "right middle"
+        "pub": "The Wall Street Journal",
+        "link": "https://graphics.wsj.com/the-spotify-ipo-playlist/",
+        "imglink": "web/images/spotify.jpg",
+        "type": "Interactive",
+        "description": "The Spotify IPO Playlist",
+        "feature": true,
+        "descriptionPosition": "left middle"
     }, {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
-      "imglink": "web/images/murder.jpg",
-      "type": "Interactive",
-      "description": "Murder in America series",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/space-debris-orbit/",
-      "imglink": "web/images/debris.jpg",
-      "type": "Interactive",
-      "description": "Objects We’re Watching in Orbit",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/hurricane-irma-trail-of-destruction/",
-      "imglink": "web/images/irma.jpg",
-      "type": "Interactive",
-      "description": "The Damage Left in Irma's Wake",
-      "feature": true,
-      "descriptionPosition": "left middle"
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/ceopay-2018/",
+        "imglink": "web/images/ceopay.jpg",
+        "type": "Interactive",
+        "description": "How Much Do CEOs Make?",
+        "feature": true,
+        "descriptionPosition": "right middle"
     }, {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
-      "imglink": "web/images/poy.jpg",
-      "type": "Interactive",
-      "description": "2017 The Year in Photos",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/articles/dr-vallentines-decision-1505487165",
-      "imglink": "web/images/decision.jpg",
-      "type": "Interactive",
-      "description": "Dr. Vallentines' Decision",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
-      "imglink": "web/images/phone-call.jpg",
-      "type": "Mobile Interactive",
-      "description": "How to Make a Phone Call in 2017",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/turnover-under-trump/",
-      "imglink": "web/images/turnover.jpg",
-      "type": "Interactive",
-      "description": "Turnover Under Trump",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/twitter-sentiment",
-      "imglink": "web/images/twitter.jpg",
-      "type": "Interactive",
-      "description": "U.S. Social Sentiment Index",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://www.wsj.com/graphics/dow-20000/",
-      "imglink": "web/images/dow20k.jpg",
-      "type": "Interactive",
-      "description": "How the Dow Breached 20000",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
-      "imglink": "web/images/election.jpg",
-      "type": "Interactive",
-      "description": "Guess the 2016 Electoral College Map",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "The Center for Investigative Reporting",
-      "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
-      "imglink": "web/images/healthcare.jpg",
-      "type": "Interactive",
-      "description": "Welfare check: Less money is going to basic assistance",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "Google Trends, Vox",
-      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Full%20season%7Chttp:%252F%252Fgoogletrends.github.io%252Fsuperbowl50%252Fsuperbowl.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=default&title=Flying%20in%20for%20the%20Super%20Bowl:%20Who%20are%20the%20most%20loyal%20NFL%20fans%3F&description=Click%20on%20the%20interactive%20to%20see%20how%20Google%20Flights%20data%20shows%20search%20interest%20in%20flights%20to%20the%20Super%20Bowl%20by%20hometown%20during%20the%202015-16%20season.%20It%20illustrates%20which%20fans%20anticipated%20their%20teams%20making%20it%20to%20the%20final.%20Data%20is%20weighted%20by%20population%20and%20includes%20trips%20to%20SFO,%20SJC,%20and%20OAK%20inc%20the%20date%20of%20the%20Super%20Bowl.%20Analysis%20excludes%20San%20Francisco%2049ers%20and%20Oakland%20Raiders",
-      "imglink": "web/images/superbowl.jpg",
-      "type": "Interactive",
-      "description": "Flying in for the Super Bowl: Who are the most loyal NFL fans?",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
-      "imglink": "web/images/immigration.jpg",
-      "type": "Interactive",
-      "description": "The New Face of American Immigration",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "Google Trends",
-      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Main%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateCandidates.html,Issues%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateIssues.html,Early%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FEarlyDebateCandidates.html&layout=narrative&theme=default&title=Early%20GOP%20debate:%20%20who%20was%20top%20searched%3F&description=Changing%20ranks%20of%20Republican%20candidates%20in%20the%20debate%20on%20Google%20search",
-      "imglink": "web/images/horserace.jpg",
-      "type": "Interactive",
-      "description": "Early GOP debate: who was top searched?",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "Google Trends",
-      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
-      "imglink": "web/images/candidates.jpg",
-      "type": "Interactive",
-      "description": "Who's next? Top searched candidates by party.? ",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "Personal Project",
-      "link": "http://jieqianzhang.github.io/sf_car_breakins_live/",
-      "imglink": "web/images/sfbreakin.jpg",
-      "type": "Interactive",
-      "description": "A LIVE San Francisco Car Break-ins Map",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "ChinaFile, Asia Society",
-      "link": "https://anticorruption.chinafile.com/",
-      "imglink": "web/images/corruption.jpg",
-      "type": "Interactive",
-      "description": "Catching Tigers and Flies. (Responsible for data acquisition and cleaning)",
-      "descriptionPosition": "right top"
-    }
-  ]
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
+        "imglink": "web/images/murder.jpg",
+        "type": "Interactive",
+        "description": "Murder in America series",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/space-debris-orbit/",
+        "imglink": "web/images/debris.jpg",
+        "type": "Interactive",
+        "description": "Objects We’re Watching in Orbit",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://graphics.wsj.com/hurricane-irma-trail-of-destruction/",
+        "imglink": "web/images/irma.jpg",
+        "type": "Interactive",
+        "description": "The Damage Left in Irma's Wake",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
+        "imglink": "web/images/poy.jpg",
+        "type": "Interactive",
+        "description": "2017 The Year in Photos",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/articles/dr-vallentines-decision-1505487165",
+        "imglink": "web/images/decision.jpg",
+        "type": "Interactive",
+        "description": "Dr. Vallentines' Decision",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
+        "imglink": "web/images/phone-call.jpg",
+        "type": "Mobile Interactive",
+        "description": "How to Make a Phone Call in 2017",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/turnover-under-trump/",
+        "imglink": "web/images/turnover.jpg",
+        "type": "Interactive",
+        "description": "Turnover Under Trump",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://graphics.wsj.com/twitter-sentiment",
+        "imglink": "web/images/twitter.jpg",
+        "type": "Interactive",
+        "description": "U.S. Social Sentiment Index",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://www.wsj.com/graphics/dow-20000/",
+        "imglink": "web/images/dow20k.jpg",
+        "type": "Interactive",
+        "description": "How the Dow Breached 20000",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
+        "imglink": "web/images/election.jpg",
+        "type": "Interactive",
+        "description": "Guess the 2016 Electoral College Map",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "The Center for Investigative Reporting",
+        "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
+        "imglink": "web/images/healthcare.jpg",
+        "type": "Interactive",
+        "description": "Welfare check: Less money is going to basic assistance",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "Google Trends, Vox",
+        "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Full%20season%7Chttp:%252F%252Fgoogletrends.github.io%252Fsuperbowl50%252Fsuperbowl.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=default&title=Flying%20in%20for%20the%20Super%20Bowl:%20Who%20are%20the%20most%20loyal%20NFL%20fans%3F&description=Click%20on%20the%20interactive%20to%20see%20how%20Google%20Flights%20data%20shows%20search%20interest%20in%20flights%20to%20the%20Super%20Bowl%20by%20hometown%20during%20the%202015-16%20season.%20It%20illustrates%20which%20fans%20anticipated%20their%20teams%20making%20it%20to%20the%20final.%20Data%20is%20weighted%20by%20population%20and%20includes%20trips%20to%20SFO,%20SJC,%20and%20OAK%20inc%20the%20date%20of%20the%20Super%20Bowl.%20Analysis%20excludes%20San%20Francisco%2049ers%20and%20Oakland%20Raiders",
+        "imglink": "web/images/superbowl.jpg",
+        "type": "Interactive",
+        "description": "Flying in for the Super Bowl: Who are the most loyal NFL fans?",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
+        "imglink": "web/images/immigration.jpg",
+        "type": "Interactive",
+        "description": "The New Face of American Immigration",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "Google Trends",
+        "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Main%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateCandidates.html,Issues%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateIssues.html,Early%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FEarlyDebateCandidates.html&layout=narrative&theme=default&title=Early%20GOP%20debate:%20%20who%20was%20top%20searched%3F&description=Changing%20ranks%20of%20Republican%20candidates%20in%20the%20debate%20on%20Google%20search",
+        "imglink": "web/images/horserace.jpg",
+        "type": "Interactive",
+        "description": "Early GOP debate: who was top searched?",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "Google Trends",
+        "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
+        "imglink": "web/images/candidates.jpg",
+        "type": "Interactive",
+        "description": "Who's next? Top searched candidates by party.? ",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "Personal Project",
+        "link": "http://jieqianzhang.github.io/sf_car_breakins_live/",
+        "imglink": "web/images/sfbreakin.jpg",
+        "type": "Interactive",
+        "description": "A LIVE San Francisco Car Break-ins Map",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "ChinaFile, Asia Society",
+        "link": "https://anticorruption.chinafile.com/",
+        "imglink": "web/images/corruption.jpg",
+        "type": "Interactive",
+        "description": "Catching Tigers and Flies. (Responsible for data acquisition and cleaning)",
+        "descriptionPosition": "right top"
+    }]
 }
