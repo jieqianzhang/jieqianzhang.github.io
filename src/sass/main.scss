@@ -322,6 +322,13 @@ h5#copyright{
       padding-left: 0px !important;
     }
   }
+  .project-page{
+    .project-visual-wrapper{
+      h2{
+        font-size: 59px !important;
+      }
+    }
+  }
 
 }
 
@@ -329,4 +336,65 @@ h5#copyright{
 to{
     background-position: 200% center;
   }
+}
+
+//styling for each project pop up 
+.project-page{
+  text-align: center;
+  .project-visual-wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    h2{
+      width: 100%;
+      max-width: 620px;
+      text-align: center;
+      margin: 70px auto;
+      font-size: 82px;
+      line-height: 1.2em;
+      letter-spacing: .5px;
+      color: #000;
+      font-weight: 600;
+    }
+    img.project-screenshot{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    img.project-screenshot.small{
+      max-width: 620px;
+    }
+    p{
+      font-size: 16px; 
+      line-height: 1.8em;
+      width: 100%; 
+      max-width: 620px;
+      margin: 0 auto;
+      font-weight: 300;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    p.project-link{
+      margin-bottom: 80px;
+      text-align: center;
+    }
+     a{
+      margin-bottom: 30px;
+    }
+  }
+ 
+  a.home{
+    color: black;
+    opacity: 0.6;
+    &:hover{
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+  h5{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
 }

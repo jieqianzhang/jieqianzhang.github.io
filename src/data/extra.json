@@ -1,10 +1,39 @@
-[{
+[
+  {
+    "pub": "Personal Project",
+    "link": "http://jieqianzhang.github.io/sf_car_breakins_live/",
+    "imglink": "web/images/sfbreakin.jpg",
+    "slug": "sfbreakin",
+    "type": "Interactive",
+    "description": "A LIVE San Francisco Car Break-ins Map",
+    "descriptionPosition": "right top"
+  },
+  {
+    "pub": "ChinaFile, Asia Society",
+    "link": "https://anticorruption.chinafile.com/",
+    "imglink": "web/images/corruption.jpg",
+    "slug": "corruption",
+    "type": "Interactive",
+    "description": "Catching Tigers and Flies. (Responsible for data acquisition and cleaning)",
+    "descriptionPosition": "left top"
+  },
+  {
+    "pub": "Google Trends, Vox",
+    "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Full%20season%7Chttp:%252F%252Fgoogletrends.github.io%252Fsuperbowl50%252Fsuperbowl.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=default&title=Flying%20in%20for%20the%20Super%20Bowl:%20Who%20are%20the%20most%20loyal%20NFL%20fans%3F&description=Click%20on%20the%20interactive%20to%20see%20how%20Google%20Flights%20data%20shows%20search%20interest%20in%20flights%20to%20the%20Super%20Bowl%20by%20hometown%20during%20the%202015-16%20season.%20It%20illustrates%20which%20fans%20anticipated%20their%20teams%20making%20it%20to%20the%20final.%20Data%20is%20weighted%20by%20population%20and%20includes%20trips%20to%20SFO,%20SJC,%20and%20OAK%20inc%20the%20date%20of%20the%20Super%20Bowl.%20Analysis%20excludes%20San%20Francisco%2049ers%20and%20Oakland%20Raiders",
+    "imglink": "web/images/superbowl.jpg",
+    "slug": "superbowl",
+    "type": "Interactive",
+    "description": "Flying in for the Super Bowl: Who are the most loyal NFL fans?",
+    "descriptionPosition": "left top"
+  },
+  {
     "pub": "Google Trends",
     "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Post%20debate%201%7Chttp:%252F%252Fgoogletrends.github.io%252Fchord_diagram%252F1013Chord.html,Pre%20debate%201%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands1%252Findex.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who%20searches%20for%20who%3F&description=We%20know%20which%20candidate%20is%20top%20in%20search,%20but%20if%20you%20search%20for%20Bernie%20or%20Hillary,%20who%20else%20do%20you%20search%20for%3F%20Roll%20over%20the%20chart%20to%20see%20who%20comes%20next",
     "imglink": "images/candidates.jpg",
     "type": "Interactive",
     "description": "Who searches for who? We know which candidate is top in search, but if you search for Bernie or Hillary, who else do you search for?"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/nra-ads-video-history/",
     "imglink": "web/images/nra.jpg",
@@ -12,52 +41,61 @@
     "description": "NRA Advertising Through the Years",
     "feature": true,
     "descriptionPosition": "left middle"
-}, {
+  },
+  {
     "pub": "School project",
     "link": "http://media.journalism.berkeley.edu/projects/2016/20160510_transplanted/index.html",
     "imglink": "images/transplanted.gif",
     "type": "Web design, animation, illustration and data reporting",
     "description": "Transplanted: how undocumented immigrants with terminal kidney failure fight to navigate a health care system that doesn’t acknowledge they exist."
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "http://www.wsj.com/graphics/how-does-your-college-rank-2016/",
     "imglink": "images/ranking.png",
     "type": "Interactive",
     "description": "Find Your College’s Ranking"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/cigarette-tax/",
     "imglink": "images/cigtax.gif",
     "type": "Interactive",
     "description": "Cigarette Packs Get Pricier"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://graphics.wsj.com/you-decide-will-snaps-ipo-be-the-next-facebook-or-twitter/",
     "imglink": "images/snap.png",
     "type": "Interactive",
     "description": "Will Snap’s IPO Be the Next Facebook or Twitter?"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/apple-cash/",
     "imglink": "images/apple-cash.gif",
     "type": "Interactive",
     "description": "Apple’s Cash Pile Is Nearing $250 Billion. What Would You Do With That Much Money?"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/which-cable-channels-can-justify-their-cost/",
     "imglink": "images/smallchannels-scatter.png",
     "type": "Interactive",
     "description": "Which Cable Channels Can Justify Their Cost?"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/channel-cost/",
     "imglink": "images/smallchannels.png",
     "type": "Interactive",
     "description": "TV Channels Costing the Most Per Viewer"
-}, {
+  },
+  {
     "pub": "The Wall Street Journal",
     "link": "https://www.wsj.com/graphics/amazon-timeline/",
     "imglink": "images/amazon.jpg",
     "type": "Interactive",
     "description": "How the Amazon Empire Expanded"
-}, ]
+  }
+]
