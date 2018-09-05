@@ -36,7 +36,7 @@
       "type": "Interactive",
       "description": "The Spotify IPO Playlist",
       "feature": true,
-      "descriptionPosition": "left middle"
+      "descriptionPosition": "left top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -46,7 +46,7 @@
       "description": "How Much Do CEOs Make?",
       "slug": "ceopay",
       "feature": true,
-      "descriptionPosition": "right middle"
+      "descriptionPosition": "right top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -74,7 +74,7 @@
       "type": "Interactive",
       "description": "The Damage Left in Irma's Wake",
       "feature": true,
-      "descriptionPosition": "left middle"
+      "descriptionPosition": "left top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -84,7 +84,7 @@
       "type": "Interactive",
       "description": "2017 The Year in Photos",
       "feature": true,
-      "descriptionPosition": "right middle"
+      "descriptionPosition": "right top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -112,7 +112,7 @@
       "type": "Interactive",
       "description": "Turnover Under Trump",
       "feature": true,
-      "descriptionPosition": "left middle"
+      "descriptionPosition": "left top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -122,15 +122,15 @@
       "type": "Interactive",
       "description": "Guess the 2016 Electoral College Map",
       "feature": true,
-      "descriptionPosition": "right middle"
+      "descriptionPosition": "right top"
     },
     {
       "pub": "Google Trends",
-      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
+      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
       "imglink": "web/images/candidates.jpg",
       "slug": "candidates",
       "type": "Interactive",
-      "description": "Who's next? Top searched candidates by party.? ",
+      "description": "Who's next? top searched candidates by party.? ",
       "descriptionPosition": "right top"
     },
     {
@@ -150,7 +150,7 @@
       "type": "Interactive",
       "description": "How the Dow Breached 20000",
       "feature": true,
-      "descriptionPosition": "left middle"
+      "descriptionPosition": "left top"
     },
     {
       "pub": "The Wall Street Journal",
@@ -160,10 +160,10 @@
       "type": "Interactive",
       "description": "The New Face of American Immigration",
       "feature": true,
-      "descriptionPosition": "right middle"
+      "descriptionPosition": "right top"
     },
     {
-      "pub": "The Center for Investigative Reporting",
+      "pub": "The top for Investigative Reporting",
       "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
       "imglink": "web/images/healthcare.jpg",
       "slug": "healthcare",
