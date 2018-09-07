@@ -1,5 +1,14 @@
 [
   {
+    "pub": "The Wall Street Journal",
+    "link": "https://www.wsj.com/graphics/india-money-crisis-is-fake-news/",
+    "imglink": "web/images/rupee.jpg",
+    "slug": "rupee",
+    "type": "Interactive",
+    "description": "The Money Nodody Wants",
+    "descriptionPosition": "right top"
+  },
+  {
     "pub": "Personal Project",
     "link": "http://jieqianzhang.github.io/sf_car_breakins_live/",
     "imglink": "web/images/sfbreakin.jpg",

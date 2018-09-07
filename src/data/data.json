@@ -2,21 +2,21 @@
   "projects": [
     {
       "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/why-a-60-year-old-spy-plane-still-matters/",
-      "imglink": "web/images/u2.gif",
-      "slug": "u2",
+      "link": "https://www.wsj.com/graphics/genz-is-coming-to-your-office/",
+      "imglink": "web/images/genz.gif",
+      "slug": "genz",
       "type": "Interactive",
-      "description": "Why a 60-Year-Old Spy Plane Still Matters",
+      "description": "Gen Z Is Coming to Your Office. Get Ready to Adapt.",
       "feature": true,
       "descriptionPosition": "right top"
     },
     {
       "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/india-money-crisis-is-fake-news/",
-      "imglink": "web/images/rupee.jpg",
-      "slug": "rupee",
+      "link": "https://www.wsj.com/graphics/why-a-60-year-old-spy-plane-still-matters/",
+      "imglink": "web/images/u2.gif",
+      "slug": "u2",
       "type": "Interactive",
-      "description": "The Money Nodody Wants",
+      "description": "Why a 60-Year-Old Spy Plane Still Matters",
       "descriptionPosition": "right top"
     },
     {
