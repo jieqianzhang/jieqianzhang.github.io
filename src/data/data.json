@@ -1,193 +1,173 @@
 {
-  "projects": [
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/midterm-elections-2018-results/",
-      "imglink": "web/images/midterm.png",
-      "slug": "midterm",
-      "type": "Interactive",
-      "description": "Midterm Elections 2018: Live Results",
-      "feature": true,
-      "descriptionPosition": "right top"
-    },{
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/the-long-road-ahead-for-autonomous-vehicles/",
-      "imglink": "web/images/autonomous-car.gif",
-      "slug": "autonomous-car",
-      "type": "Interactive",
-      "description": "The Bumps Ahead for Autonomous Vehicles",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/why-a-60-year-old-spy-plane-still-matters/",
-      "imglink": "web/images/u2.gif",
-      "slug": "u2",
-      "type": "Interactive",
-      "description": "Why a 60-Year-Old Spy Plane Still Matters",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/genz-is-coming-to-your-office/",
-      "imglink": "web/images/genz.gif",
-      "slug": "genz",
-      "type": "Interactive",
-      "description": "Gen Z Is Coming to Your Office. Get Ready to Adapt.",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/the-spotify-ipo-playlist/",
-      "imglink": "web/images/spotify.jpg",
-      "slug": "spotify",
-      "type": "Interactive",
-      "description": "The Spotify IPO Playlist",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
-      "imglink": "web/images/figureskating.jpg",
-      "slug": "figure-skating",
-      "type": "Interactive",
-      "description": "How Music in Figure Skating Has Changed",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
-      "imglink": "web/images/murder.jpg",
-      "type": "Interactive",
-      "slug": "murder-in-america",
-      "description": "Murder in America series",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/ceopay-2018/",
-      "imglink": "web/images/ceopay.jpg",
-      "type": "Interactive",
-      "description": "How Much Do CEOs Make?",
-      "slug": "ceopay",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/hurricane-irma-trail-of-destruction/",
-      "imglink": "web/images/irma.jpg",
-      "slug": "irma",
-      "type": "Interactive",
-      "description": "The Damage Left in Irma's Wake",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/space-debris-orbit/",
-      "imglink": "web/images/debris.jpg",
-      "slug": "debris",
-      "type": "Interactive",
-      "description": "Objects We’re Watching in Orbit",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://graphics.wsj.com/twitter-sentiment",
-      "imglink": "web/images/twitter.jpg",
-      "slug": "twitter-sentiment",
-      "type": "Interactive",
-      "description": "U.S. Social Sentiment Index",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
-      "imglink": "web/images/poy.jpg",
-      "slug": "poy",
-      "type": "Interactive",
-      "description": "2017 The Year in Photos",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "https://www.wsj.com/graphics/turnover-under-trump/",
-      "imglink": "web/images/turnover.jpg",
-      "slug": "turnover-under-trump",
-      "type": "Interactive",
-      "description": "Turnover Under Trump",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
-      "imglink": "web/images/phone-call.jpg",
-      "slug": "phone-call",
-      "type": "Mobile Interactive",
-      "description": "How to Make a Phone Call in 2017",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "Google Trends",
-      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
-      "imglink": "web/images/candidates.jpg",
-      "slug": "candidates",
-      "type": "Interactive",
-      "description": "Who's next? Top searched candidates by party.? ",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
-      "imglink": "web/images/election.jpg",
-      "slug": "election-quiz",
-      "type": "Interactive",
-      "description": "Guess the 2016 Electoral College Map",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://www.wsj.com/graphics/dow-20000/",
-      "imglink": "web/images/dow20k.jpg",
-      "slug": "dow20k",
-      "type": "Interactive",
-      "description": "How the Dow Breached 20000",
-      "feature": true,
-      "descriptionPosition": "right middle"
-    },
-    {
-      "pub": "Google Trends",
-      "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Main%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateCandidates.html,Issues%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateIssues.html,Early%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FEarlyDebateCandidates.html&layout=narrative&theme=default&title=Early%20GOP%20debate:%20%20who%20was%20top%20searched%3F&description=Changing%20ranks%20of%20Republican%20candidates%20in%20the%20debate%20on%20Google%20search",
-      "imglink": "web/images/horserace.jpg",
-      "slug": "horserace",
-      "type": "Interactive",
-      "description": "Early GOP debate: who was top searched?",
-      "descriptionPosition": "right top"
-    },
-    {
-      "pub": "The Center for Investigative Reporting",
-      "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
-      "imglink": "web/images/healthcare.jpg",
-      "slug": "healthcare",
-      "type": "Interactive",
-      "description": "Welfare check: Less money is going to basic assistance",
-      "descriptionPosition": "left top"
-    },
-    {
-      "pub": "The Wall Street Journal",
-      "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
-      "imglink": "web/images/immigration.jpg",
-      "slug": "immigration",
-      "type": "Interactive",
-      "description": "The New Face of American Immigration",
-      "feature": true,
-      "descriptionPosition": "left middle"
-    }
-  ]
+    "projects": [{
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/midterm-elections-2018-results/",
+        "imglink": "images/midterm.png",
+        "slug": "midterm",
+        "type": "Interactive",
+        "description": "Midterm Elections 2018: Live Results",
+        "feature": true,
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/the-long-road-ahead-for-autonomous-vehicles/",
+        "imglink": "images/autonomous-car.gif",
+        "slug": "autonomous-car",
+        "type": "Interactive",
+        "description": "The Bumps Ahead for Autonomous Vehicles",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/why-a-60-year-old-spy-plane-still-matters/",
+        "imglink": "images/u2.gif",
+        "slug": "u2",
+        "type": "Interactive",
+        "description": "Why a 60-Year-Old Spy Plane Still Matters",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/genz-is-coming-to-your-office/",
+        "imglink": "images/genz.gif",
+        "slug": "genz",
+        "type": "Interactive",
+        "description": "Gen Z Is Coming to Your Office. Get Ready to Adapt.",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://graphics.wsj.com/the-spotify-ipo-playlist/",
+        "imglink": "images/spotify.jpg",
+        "slug": "spotify",
+        "type": "Interactive",
+        "description": "The Spotify IPO Playlist",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
+        "imglink": "images/figureskating.jpg",
+        "slug": "figure-skating",
+        "type": "Interactive",
+        "description": "How Music in Figure Skating Has Changed",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
+        "imglink": "images/murder.jpg",
+        "type": "Interactive",
+        "slug": "murder-in-america",
+        "description": "Murder in America series",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/ceopay-2018/",
+        "imglink": "images/ceopay.jpg",
+        "type": "Interactive",
+        "description": "How Much Do CEOs Make?",
+        "slug": "ceopay",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://graphics.wsj.com/hurricane-irma-trail-of-destruction/",
+        "imglink": "images/irma.jpg",
+        "slug": "irma",
+        "type": "Interactive",
+        "description": "The Damage Left in Irma's Wake",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/space-debris-orbit/",
+        "imglink": "images/debris.jpg",
+        "slug": "debris",
+        "type": "Interactive",
+        "description": "Objects We’re Watching in Orbit",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://graphics.wsj.com/twitter-sentiment",
+        "imglink": "images/twitter.jpg",
+        "slug": "twitter-sentiment",
+        "type": "Interactive",
+        "description": "U.S. Social Sentiment Index",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
+        "imglink": "images/poy.jpg",
+        "slug": "poy",
+        "type": "Interactive",
+        "description": "2017 The Year in Photos",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "https://www.wsj.com/graphics/turnover-under-trump/",
+        "imglink": "images/turnover.jpg",
+        "slug": "turnover-under-trump",
+        "type": "Interactive",
+        "description": "Turnover Under Trump",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
+        "imglink": "images/phone-call.jpg",
+        "slug": "phone-call",
+        "type": "Mobile Interactive",
+        "description": "How to Make a Phone Call in 2017",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "Google Trends",
+        "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
+        "imglink": "images/candidates.jpg",
+        "slug": "candidates",
+        "type": "Interactive",
+        "description": "Who's next? Top searched candidates by party.? ",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
+        "imglink": "images/election.jpg",
+        "slug": "election-quiz",
+        "type": "Interactive",
+        "description": "Guess the 2016 Electoral College Map",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://www.wsj.com/graphics/dow-20000/",
+        "imglink": "images/dow20k.jpg",
+        "slug": "dow20k",
+        "type": "Interactive",
+        "description": "How the Dow Breached 20000",
+        "feature": true,
+        "descriptionPosition": "right middle"
+    }, {
+        "pub": "Google Trends",
+        "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Main%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateCandidates.html,Issues%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FMainDebateIssues.html,Early%20debate%7Chttp:%2F%2Fgoogletrends.github.io%2FGOPDebate1%2FEarlyDebateCandidates.html&layout=narrative&theme=default&title=Early%20GOP%20debate:%20%20who%20was%20top%20searched%3F&description=Changing%20ranks%20of%20Republican%20candidates%20in%20the%20debate%20on%20Google%20search",
+        "imglink": "images/horserace.jpg",
+        "slug": "horserace",
+        "type": "Interactive",
+        "description": "Early GOP debate: who was top searched?",
+        "descriptionPosition": "right top"
+    }, {
+        "pub": "The Center for Investigative Reporting",
+        "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
+        "imglink": "images/healthcare.jpg",
+        "slug": "healthcare",
+        "type": "Interactive",
+        "description": "Welfare check: Less money is going to basic assistance",
+        "descriptionPosition": "left top"
+    }, {
+        "pub": "The Wall Street Journal",
+        "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
+        "imglink": "images/immigration.jpg",
+        "slug": "immigration",
+        "type": "Interactive",
+        "description": "The New Face of American Immigration",
+        "feature": true,
+        "descriptionPosition": "left middle"
+    }]
 }
