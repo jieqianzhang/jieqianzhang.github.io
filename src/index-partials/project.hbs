@@ -1,28 +1,28 @@
 <li class="project">
   {{#if feature}}
     <div class="project-wrapper feature {{descriptionPosition}}">
-      <a href='/projects/{{slug}}/' target="_blank">
+      <a href='/pages/{{slug}}/' target="_blank">
         <div class="image-wrapper">
           <img src= {{imglink}}>
         </div>
       </a>
-      <a href='/projects/{{slug}}/' target="_blank">
+      <a href='/pages/{{slug}}/' target="_blank">
         <p class="description">
-          {{description}}</br><span>{{pub}}</span>
+          {{headline}}</br><span>{{pub}}</span>
         </p>
       </a>
     </div>
   {{/if}}
   {{#unless feature}}
     <div class="project-wrapper {{descriptionPosition}}">
-      <a href='/projects/{{slug}}/' target="_blank">
+      <a href='/pages/{{slug}}/' target="_blank">
         <div class="image-wrapper">
           <img src= {{imglink}}>
         </div>
       </a>
-      <a href='/projects/{{slug}}/' target="_blank">
+      <a href='/pages/{{slug}}/' target="_blank">
         <p class="description">
-          {{description}}</br><span>{{pub}}</span>
+          {{headline}}</br><span>{{pub}}</span>
         </p>
       </a>
     </div>

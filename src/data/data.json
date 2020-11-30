@@ -5,7 +5,8 @@
         "imglink": "images/midterm.png",
         "slug": "midterm",
         "type": "Interactive",
-        "description": "Midterm Elections 2018: Live Results",
+        "headline": "Midterm Elections 2018: Live Results",
+        "intro": "Find the latest midterm elections polls results here, as we track who wins the House and the Senate, in live maps by state.",
         "feature": true,
         "descriptionPosition": "right top"
     }, {
@@ -14,134 +15,165 @@
         "imglink": "images/autonomous-car.gif",
         "slug": "autonomous-car",
         "type": "Interactive",
-        "description": "The Bumps Ahead for Autonomous Vehicles",
-        "descriptionPosition": "right top"
+        "headline": "The Bumps Ahead for Autonomous Vehicles",
+        "intro": "How soda cans, bad weather and snakes present challenges to the latest technology.",
+        "descriptionPosition": "right top",
+        "screenshots": ["av-1.png", "av-2.png", "av-3.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/why-a-60-year-old-spy-plane-still-matters/",
         "imglink": "images/u2.gif",
         "slug": "u2",
         "type": "Interactive",
-        "description": "Why a 60-Year-Old Spy Plane Still Matters",
-        "descriptionPosition": "left top"
+        "headline": "Why a 60-Year-Old Spy Plane Still Matters",
+        "intro": "The U-2 spy plane first became operational in 1956. Today the U.S. Air Force still uses an updated model of the aircraft to conduct missions over Afghanistan, Syria and Iraq, as well as humanitarian surveillance over disaster struck areas. Here is why this 60-year-old spy plan still matters, explained in videos and 3D graphics.",
+        "descriptionPosition": "left top",
+        "screenshots": ["u2-1.png", "u2-2.png", "u2-3.png", "u2-4.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/genz-is-coming-to-your-office/",
         "imglink": "images/genz.gif",
         "slug": "genz",
         "type": "Interactive",
-        "description": "Gen Z Is Coming to Your Office. Get Ready to Adapt.",
+        "headline": "Gen Z Is Coming to Your Office. Get Ready to Adapt.",
+        "intro": "The generation now entering the workforce is sober, industrious and driven by money. They are also socially awkward and timid about taking the reins.",
         "feature": true,
-        "descriptionPosition": "left middle"
+        "descriptionPosition": "left middle",
+        "screenshots": ["genz-1.gif", "genz-2.png", "genz-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://graphics.wsj.com/the-spotify-ipo-playlist/",
         "imglink": "images/spotify.jpg",
         "slug": "spotify",
         "type": "Interactive",
-        "description": "The Spotify IPO Playlist",
+        "headline": "The Spotify IPO Playlist",
+        "intro": "As Spotify makes its public debut, here is a playlist to help you learn about the company and its unusual IPO.",
         "feature": true,
-        "descriptionPosition": "right middle"
+        "descriptionPosition": "right middle",
+        "screenshots": ["spotify-1.jpg", "spotify-2.jpg"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/music-in-figure-skating/",
         "imglink": "images/figureskating.jpg",
         "slug": "figure-skating",
         "type": "Interactive",
-        "description": "How Music in Figure Skating Has Changed",
-        "descriptionPosition": "right top"
+        "headline": "How Music in Figure Skating Has Changed",
+        "intro": "The use of pop and rock music is no longer a novelty in competitive figure skating: A look at the music choices of figure skaters.",
+        "descriptionPosition": "right top",
+        "screenshots": ["figureskating-0.png", "figureskating-1.png", "figureskating-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/articles/murder-in-america-what-makes-cities-more-dangerous-1514293200",
         "imglink": "images/murder.jpg",
         "type": "Interactive",
         "slug": "murder-in-america",
-        "description": "Murder in America series",
-        "descriptionPosition": "left top"
+        "headline": "Murder in America series",
+        "intro": "Murder in America is deeply local. Homicides in the U.S. rose about 9% last year, according to the Federal Bureau of Investigation, and more than one-third of the increase was concentrated in neighborhoods where just one-third of Chicago residents live. Meanwhile, improvements in areas where 30% of Los Angeles residents live accounted for one quarter of the 13% drop in U.S. murders between 2002 and 2014.",
+        "descriptionPosition": "left top",
+        "screenshots": ["murder-2.jpg", "murder-1.jpg"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/ceopay-2018/",
         "imglink": "images/ceopay.jpg",
         "type": "Interactive",
-        "description": "How Much Do CEOs Make?",
+        "headline": "How Much Do CEOs Make?",
         "slug": "ceopay",
+        "intro": "We analyzed S&P 500 companies' proxies data and visualized how much CEOs make. Median pay reached $12.1 million for CEOs of the biggest U.S. companies in 2017, a new post-recession high, as profits and stock prices soared. Most S&P 500 CEOs received raises of 9.7% or better last year.",
         "feature": true,
-        "descriptionPosition": "left middle"
+        "descriptionPosition": "left middle",
+        "screenshots": ["ceopay-1.png", "ceopay-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://graphics.wsj.com/hurricane-irma-trail-of-destruction/",
         "imglink": "images/irma.jpg",
         "slug": "irma",
         "type": "Interactive",
-        "description": "The Damage Left in Irma's Wake",
+        "headline": "The Damage Left in Irma's Wake",
+        "intro": "As Hurricane Irma takes aim at Florida, video footage and photos show a path of destruction",
         "feature": true,
-        "descriptionPosition": "right middle"
+        "descriptionPosition": "right middle",
+        "screenshots": ["irma-1.png", "irma-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/space-debris-orbit/",
         "imglink": "images/debris.jpg",
         "slug": "debris",
         "type": "Interactive",
-        "description": "Objects We’re Watching in Orbit",
-        "descriptionPosition": "right top"
+        "headline": "Objects We’re Watching in Orbit",
+        "intro": "The Joint Space Operations Center in California is currently tracking about 23,000 objects in orbit—including live satellites, derelict rocket parts, decommissioned spacecraft and wreckage.",
+        "descriptionPosition": "right top",
+        "screenshots": ["debris-1.jpg", "debris-2.jpg"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://graphics.wsj.com/twitter-sentiment",
         "imglink": "images/twitter.jpg",
         "slug": "twitter-sentiment",
         "type": "Interactive",
-        "description": "U.S. Social Sentiment Index",
-        "descriptionPosition": "left top"
+        "headline": "U.S. Social Sentiment Index",
+        "intro": "Measuring the content of millions of Twitter messages each hour is one way to gauge the nation’s changing mood in near-real time. Here, the Wall Street Journal and IHS Markit have plotted that sentiment, comparing it to recent norms.",
+        "descriptionPosition": "left top",
+        "screenshots": ["twitter-sentiment-1.png", "twitter-sentiment-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/2017-the-year-in-photos/",
         "imglink": "images/poy.jpg",
         "slug": "poy",
         "type": "Interactive",
-        "description": "2017 The Year in Photos",
+        "headline": "2017 The Year in Photos",
+        "intro": "From sweeping political changes in Washington, Paris and other capitals to a total solar eclipse that swept across the U.S. for the first time in a century, 2017 was a year for the books. Of the two million images our photo editors look through each year, we've picked 100 of our favorites in this photo recap of the moments that captivated our shared imagination.",
         "feature": true,
-        "descriptionPosition": "left middle"
+        "descriptionPosition": "left middle",
+        "screenshots": ["poy-1.png", "poy-2.png", "poy-3.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "https://www.wsj.com/graphics/turnover-under-trump/",
         "imglink": "images/turnover.jpg",
         "slug": "turnover-under-trump",
         "type": "Interactive",
-        "description": "Turnover Under Trump",
+        "headline": "Turnover Under Trump",
+        "intro": "A secretary of state, chief of staff, press secretary, three communications directors, a chief strategist and a health secretary are among the senior officials who have left the Trump administration. Here is a list of the Trump Administration's major departures.",
         "feature": true,
-        "descriptionPosition": "right middle"
+        "descriptionPosition": "right middle",
+        "screenshots": ["turnover-1.png", "turnover-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "http://www.wsj.com/graphics/how-to-make-phone-calls-2017/",
         "imglink": "images/phone-call.jpg",
         "slug": "phone-call",
         "type": "Mobile Interactive",
-        "description": "How to Make a Phone Call in 2017",
-        "descriptionPosition": "right top"
+        "headline": "How to Make a Phone Call in 2017",
+        "intro": "WSJ columnist Joanna Stern provided a sense of phone call quality across technologies.",
+        "descriptionPosition": "right top",
+        "screenshots": ["phone-call-1.png", "phone-call-2.png"]
     }, {
         "pub": "Google Trends",
         "link": "http://googletrends.github.io/iframe-scaffolder/#/view?urls=Democrats%7Chttp:%252F%252Fgoogletrends.github.io%252Fdemcands_tree%252F,Republicans%7Chttp:%252F%252Fgoogletrends.github.io%252Fcollapsible_tree%252Findex_01.html&active=0&sharing=1&autoplay=0&loop=1&layout=narrative&theme=red&title=Who's%20next%3F%20Top%20searched%20candidates%20by%20party&description=If%20you%20search%20for%20Donald%20Trump%20or%20Hillary%20Clinton,%20who%20is%20second%20on%20the%20list%20(or%20third,%20or%20fourth,%20or%20fifth%E2%80%A6)%3F%20Click%20on%20a%20candidate%20to%20see%20the%20top%20five%20related%20candidates,%20ranked.%20Click%20'all%20candidates'%20to%20go%20back%20to%20the%20beginning.",
         "imglink": "images/candidates.jpg",
         "slug": "candidates",
         "type": "Interactive",
-        "description": "Who's next? Top searched candidates by party.? ",
-        "descriptionPosition": "left top"
+        "headline": "Who's next? Top searched candidates by party.? ",
+        "intro": "If you search for Donald Trump or Hillary Clinton, who is second on the list (or third, or fourth, or fifth…)? A visualization tool for the Google News Lab.",
+        "descriptionPosition": "left top",
+        "screenshots": ["candidates-1.png", "candidates-2.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "http://graphics.wsj.com/elections/2016/election-map-quiz/",
         "imglink": "images/election.jpg",
         "slug": "election-quiz",
         "type": "Interactive",
-        "description": "Guess the 2016 Electoral College Map",
+        "headline": "Guess the 2016 Electoral College Map",
+        "intro": "",
         "feature": true,
-        "descriptionPosition": "left middle"
+        "descriptionPosition": "left middle",
+        "screenshots": ["election-quiz.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "http://www.wsj.com/graphics/dow-20000/",
         "imglink": "images/dow20k.jpg",
         "slug": "dow20k",
         "type": "Interactive",
-        "description": "How the Dow Breached 20000",
+        "headline": "How the Dow Breached 20000",
+        "intro": "Five stocks gave the Dow Jones Industrial Average a huge boost on its way from its March 9, 2009, low to its first close above 20000. Heavyweights include Boeing, which contributed 993.8 points to the Dow during this time. At the other extreme, Apple—the latest entrant to the Dow, replacing AT&T in 2015—subtracted 41.8 points.",
         "feature": true,
         "descriptionPosition": "right middle"
     }, {
@@ -150,24 +182,30 @@
         "imglink": "images/horserace.jpg",
         "slug": "horserace",
         "type": "Interactive",
-        "description": "Early GOP debate: who was top searched?",
-        "descriptionPosition": "right top"
+        "headline": "Early GOP debate: who was top searched?",
+        "intro": "Changing ranks of Republican candidates in the debate on Google search. A visualization tool for the Google News Lab.",
+        "descriptionPosition": "right top",
+        "screenshots": ["horserace.png"]
     }, {
         "pub": "The Center for Investigative Reporting",
         "link": "https://www.revealnews.org/article/welfare-check-less-money-is-going-to-basic-assistance/",
         "imglink": "images/healthcare.jpg",
         "slug": "healthcare",
         "type": "Interactive",
-        "description": "Welfare check: Less money is going to basic assistance",
-        "descriptionPosition": "left top"
+        "headline": "Welfare check: Less money is going to basic assistance",
+        "intro": "The 1996 welfare reform law gave control of $16.5 billion in federal spending to states in the form of block grants. The goal of the reforms was to help those who needed public assistance lift themselves out of poverty by giving them some financial support and getting them working.But two decades later, most states have higher rates of families living in poverty. At the same time, 45 states are spending a smaller percentage of their welfare dollars on basic assistance, which includes cash welfare, child care and work-related assistance. This is how those changes look like over time.",
+        "descriptionPosition": "left top",
+        "screenshots": ["healthcare.png"]
     }, {
         "pub": "The Wall Street Journal",
         "link": "http://graphics.wsj.com/immigration-from-mexico-china-and-india/",
         "imglink": "images/immigration.jpg",
         "slug": "immigration",
         "type": "Interactive",
-        "description": "The New Face of American Immigration",
+        "headline": "The New Face of American Immigration",
+        "intro": "The 2016 presidential candidates have focused on migrants from Mexico, but nationally and in most states, India and China have become the top sources for new arrivals.",
         "feature": true,
-        "descriptionPosition": "left middle"
+        "descriptionPosition": "left middle",
+        "screenshots": ["immigration.png"]
     }]
 }
